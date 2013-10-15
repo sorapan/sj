@@ -17,7 +17,7 @@ div#header {
 
     background-color:  rgb(240,240,240);
     float: left;
-    height: 60px;
+    height: 75px;
     width: 100%;
     color: rgb(85,85,85);
 
@@ -25,26 +25,24 @@ div#header {
 
 div#header div#sign{
 
-    background-color: gold;
+    background-color: transparent;
     float: left;
     height: 100%;
-    width: 100px;
+    width: 120px;
 
 }
 
 div#header div#sign img{
 
-    height: 90%;
+    height: 100%;
     width: auto;
-    margin-top: 3%;
-    margin-left: 20%;
 
 }
 
 div#header h2 {
 
     display: inline;
-    line-height: 50px;
+    line-height: 60px;
     padding-left: 20px;
 
 }
@@ -73,7 +71,7 @@ div#top_menu button{
 
 div#top_menu button:hover{
 
-    background-color: gold;
+    background-color: rgb(240,240,240);
     border: 1px solid white;
 
 }

@@ -13,7 +13,7 @@
 <body>
 
 <div id="header">
-    <div id="sign"><img src="img/aa3.png"></div>
+    <div id="sign"><img src="img/logo.jpg"></div>
     <h2>สงขลาเจริญการช่าง - Insurance System</h2>
 </div>
 
