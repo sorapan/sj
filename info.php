@@ -3,4 +3,6 @@
 for($i=0;$i<10;$i++)echo "oh god";
 phpinfo();
 
+echo "non";
+
 ?>
