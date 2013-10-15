@@ -34,8 +34,10 @@ div#header div#sign{
 
 div#header div#sign img{
 
-    height: 100%;
-    margin-left: 25%;
+    height: 90%;
+    width: auto;
+    margin-top: 3%;
+    margin-left: 20%;
 
 }
 
