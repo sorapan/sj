@@ -23,7 +23,6 @@
         <button>Sample</button>
     </div>
 </div>
-
 <div id="blogmenu1">
     <div id="menu1">
     </div>
