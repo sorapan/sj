@@ -8,7 +8,7 @@ class Content extends Core{
 
         $count_array = 0;
         $data = array();
-        $query = $this->query("Select * From post Order By date DESC");
+        $query = $this->query("Select * From post Order By date DESC Limit 5 Offset 0");
         while($row = $query->fetch(PDO::FETCH_ASSOC)){
 
             $data["date"][$count_array] = date('d/m/Y - h:i A',(int)$row['date']);
