@@ -125,7 +125,8 @@ div#menu1.fixed{
 
 /* ---------------------content--------------------- */
 
-div#content{
+div#blog_content{
+
     position: inherit;
     float: left;
     background-color: transparent;
@@ -133,6 +134,16 @@ div#content{
     min-height: 25%;
     height: auto;
 
+
+}
+
+div#content{
+
+    float: left;
+    width: 100%;
+    min-height: 25%;
+    height: auto;
+    background-color: transparent;
 
 }
 

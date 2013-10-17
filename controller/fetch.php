@@ -4,17 +4,16 @@ date_default_timezone_set('Asia/Bangkok');
 include "../access_data/content_lib.php";
 
 $LastTime = isset($_POST['timestamp']) ? $_POST['timestamp'] : 0;
-$firsttimeFetch = isset($_POST['firsttimeFetch']) ? $_POST['firsttimeFetch'] : 0;
 
 $NewLastTime = NewTimeStamp();
 
 ini_set('max_execution_time', 31);
-$timeout = 280; //300
+$timeout = 300; //300
 
 while($timeout > 0){
 
 
-    if($LastTime >= $NewLastTime){
+    if($NewLastTime <= $LastTime){
 
         $timeout--;
         $NewLastTime = NewTimeStamp();
@@ -32,7 +31,7 @@ while($timeout > 0){
 
 }
 
-if($firsttimeFetch == 1)fetchIt();
+if($_POST['firsttimeFetch'] == 1)fetchIt();
 else fetchLastest();
 
 

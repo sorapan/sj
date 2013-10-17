@@ -36,14 +36,13 @@ $(function(){
                     '</div>');
 
                 }
-                content.append('<div id="loadmore"><h2>Loadmore</h2></div>');
 
                 timestamp = parseInt(data.now_time);
                 firsttimeFetch = data.firsttimeFetch;
 
 
             },
-            complete: function(){s
+            complete: function(){
 
                 CycleUpdate();
 
@@ -91,10 +90,6 @@ $(function(){
             }
 
         });
-
-    }
-
-    function getData(){
 
     }
 
