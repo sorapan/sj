@@ -18,7 +18,7 @@ class Content extends Core{
 
         }
 
-        $data['crrt_time'] = $this->Timestamp();
+        $data['now_time'] = $this->Timestamp();
         return json_encode($data);
 
     }

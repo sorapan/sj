@@ -2,9 +2,11 @@ $(function(){
 
     Cycle();
 
+    var timestamp = null;
+
+
     function Cycle(){
 
-        var timestamp = null;
 
         $.ajax({
 
@@ -33,9 +35,9 @@ $(function(){
 
                 }
 
-                timestamp = parseInt(data.crrt_time);
+                timestamp = parseInt(data.now_time);
 
-                //Cycle();
+                Cycle();
 
             }
 
