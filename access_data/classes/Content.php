@@ -19,6 +19,22 @@ class Content extends Core{
         }
 
         $data['now_time'] = $this->Timestamp();
+        $data['firsttimeFetch'] = 0;
+        return json_encode($data);
+
+    }
+
+    public function fetchReplyLastest(){
+
+        $data = array();
+        $query = $this->query("Select * From post Order By date DESC");
+        $row = $query->fetch(PDO::FETCH_ASSOC);
+        $data["date"]= date('d/m/Y - h:i A',(int)$row['date']);
+        $data["msg"] = $row['content'];
+        $data["hdr"] = $row['header'];
+        $data['now_time'] = $this->Timestamp();
+        $data['firsttimeFetch'] = 0;
+
         return json_encode($data);
 
     }

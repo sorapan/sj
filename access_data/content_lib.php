@@ -1,4 +1,4 @@
 <?php
 
-include "class/Core.php";
-include "class/Content.php";
+include "classes/Core.php";
+include "classes/Content.php";

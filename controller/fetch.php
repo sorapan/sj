@@ -4,6 +4,7 @@ date_default_timezone_set('Asia/Bangkok');
 include "../access_data/content_lib.php";
 
 $LastTime = isset($_POST['timestamp']) ? $_POST['timestamp'] : 0;
+
 $NewLastTime = NewTimeStamp();
 
 
@@ -31,12 +32,21 @@ while($timeout > 0){
 
 
 }
-fetchIt();
+
+if($_POST['firsttimeFetch'] == 1)fetchIt();
+else fetchLastest();
+
 
 
 function fetchIt(){
 
     echo callClass("fetchReply");
+
+}
+
+function fetchLastest(){
+
+    echo callClass("fetchReplyLastest");
 
 }
 

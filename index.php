@@ -5,9 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
     <link rel="stylesheet" href="css/style1.css">
-    <script src="jquery/jquery.js"></script>
-    <script src="control_page.js"></script>
-    <script src="content.js"></script>
+    <script src="js/jquery/jquery.js"></script>
+    <script src="js/PageController.js"></script>
+    <script src="js/Content.js"></script>
 
 </head>
 <body>
