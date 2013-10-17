@@ -8,7 +8,7 @@ $LastTime = isset($_POST['timestamp']) ? $_POST['timestamp'] : 0;
 $NewLastTime = NewTimeStamp();
 
 ini_set('max_execution_time', 31);
-$timeout = 300; //300
+$timeout = 260; //300
 
 while($timeout > 0){
 
@@ -31,8 +31,13 @@ while($timeout > 0){
 
 }
 
-if($_POST['firsttimeFetch'] == 1)fetchIt();
-else fetchLastest();
+if($timeout > 0){
+
+    if($_POST['firsttimeFetch'] == 1)fetchIt();
+    else fetchLastest();
+
+}
+
 
 
 
