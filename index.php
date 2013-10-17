@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html>
+<html>
 <head>
     <title>Hello</title>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
@@ -37,4 +37,4 @@
 
 
 </body>
-    </html>
+</html>
