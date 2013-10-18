@@ -13,7 +13,7 @@ $(function(){
         $(window).scroll(function () {
             var scrollTop = $(window).scrollTop(); // check the visible top of the browser
 
-            if(offset.top+10<scrollTop){
+            if(offset.top<scrollTop){
 
                 target.addClass('fixed');
 
