@@ -1,46 +1,57 @@
 $(function(){
 
+
+    var offset = 5;
+    var busy = false;
+    var loadmore = $(' #loadmore');
+
     Loadmore();
 
     function Loadmore(){
 
         var content = $(' #content');
-        var loadmore = $(' #loadmore');
+
 
 
         $(window).scroll(function(){
 
-            if($(window).scrollTop()+$(window).height() > 5+content.height()+$(" #header").height()+$(" #top_menu").height() ){
+            if($(window).scrollTop()+$(window).height()+loadmore.height() > $(document).height()){
 
+                // 140 is header + topmenu height
+
+                //setTimeout(function(){loadmore.html("<h2>Please wait...</h2>");} , 500);
+
+                busy = true;
+
+                loadmore.html("<h2>Please wait...</h2>");
 
                 setTimeout(function(){
 
-                    loadmore.html("<h2>Please wait...</h2>");
+                    responseData();
+                    offset += 5;
 
                 } , 500);
 
 
-                setTimeout(function(){
-
-                    $.ajax({
-                        url : "controller/",
-                        type : "",
-                        data : {
-
-                        }
-
-                    });
-
-                } , 1000);
-
-
-            }else{
-
-                loadmore.html("<h2>Loadmore</h2>");
-
             }
 
 
+
+        });
+
+    }
+
+    function responseData(){
+
+
+        $.post("controller/loadmore.php", {
+
+            offset        : offset
+
+        },function(data) {
+
+            var content = $("#content");
+            content.append(data);
 
         });
 

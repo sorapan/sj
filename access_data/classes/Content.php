@@ -6,9 +6,10 @@ class Content extends Core{
 
     public function fetchReply(){
 
+
         $count_array = 0;
         $data = array();
-        $query = $this->query("Select * From post Order By date DESC Limit 5 Offset 0");
+        $query = $this->query("Select * From post Order By date DESC Limit 5");
         while($row = $query->fetch(PDO::FETCH_ASSOC)){
 
             $data["date"][$count_array] = date('d/m/Y - h:i A',(int)$row['date']);
@@ -24,7 +25,26 @@ class Content extends Core{
 
     }
 
+    public function fetchLoadmore($off){
+
+        $count_array = 0;
+        $data = array();
+        $query = $this->query("Select * From post Order By date DESC Limit 5 Offset $off");
+        while($row = $query->fetch(PDO::FETCH_ASSOC)){
+
+            $data["date"][$count_array] = date('d/m/Y - h:i A',(int)$row['date']);
+            $data["msg"][$count_array] = $row['content'];
+            $data["hdr"][$count_array] = $row['header'];
+            $count_array++;
+
+        }
+
+        return $data;
+
+    }
+
     public function fetchReplyLastest(){
+
 
         $data = array();
         $query = $this->query("Select * From post Order By date DESC");

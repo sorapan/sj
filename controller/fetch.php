@@ -1,6 +1,5 @@
 <?php
 
-date_default_timezone_set('Asia/Bangkok');
 include "../access_data/content_lib.php";
 
 $LastTime = isset($_POST['timestamp']) ? $_POST['timestamp'] : 0;

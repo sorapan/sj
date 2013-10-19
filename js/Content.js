@@ -34,6 +34,7 @@ $(function(){
                         '</div>'+
                     '</div>');
 
+
                 }
 
                 timestamp = parseInt(data.now_time);
