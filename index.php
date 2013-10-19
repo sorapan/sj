@@ -8,6 +8,8 @@
     <script src="js/jquery/jquery.js"></script>
     <script src="js/PageController.js"></script>
     <script src="js/Content.js"></script>
+    <script src="js/Loadmore.js"></script>
+
 
 </head>
 <body>

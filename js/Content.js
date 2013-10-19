@@ -4,7 +4,6 @@ $(function(){
     var firsttimeFetch = 1;
 
     Cycle();
-    Loadmore();
 
     function Cycle(){
 
@@ -88,35 +87,6 @@ $(function(){
                 CycleUpdate();
 
             }
-
-        });
-
-    }
-
-    function Loadmore(){
-
-        var content = $(' #content');
-        var loadmore = $(' #loadmore');
-
-
-        $(window).scroll(function(){
-
-            if($(window).scrollTop()+$(window).height() > 5+content.height()+$(" #header").height()+$(" #top_menu").height() ){
-
-
-                setTimeout(function(){
-
-                    loadmore.css({
-                        'background-color' : 'red'
-                    });
-
-                    loadmore.html("<h2>fuck</h2>");
-
-                } , 500);
-
-            }
-
-
 
         });
 

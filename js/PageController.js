@@ -15,12 +15,17 @@ $(function(){
 
             if(offset.top<scrollTop){
 
-                target.addClass('fixed');
+                target.css({
+                    'position' : 'fixed',
+                    'top' : '0'
+                });
 
             }
             else{
 
-                target.removeClass('fixed');
+                target.css({
+                    'position' : 'relative'
+                });
 
             }
 

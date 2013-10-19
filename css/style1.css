@@ -108,21 +108,6 @@ div#blogmenu1{
 
 }
 
-/* ---------------------Set for follow the page--------------------- */
-
-
-div#top_menu.fixed {
-    position: fixed;
-    top: 0;
-}
-
-div#menu1.fixed{
-    position: fixed;
-    /*top: 60px;  /* This is a top_menu heights */
-
-    top:0;
-}
-
 
 /* ---------------------content--------------------- */
 
