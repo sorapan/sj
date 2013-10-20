@@ -36,7 +36,11 @@
 <div id="blog_content">
 
     <div id="content"></div>
+<<<<<<< HEAD
     <div id="loadmore"><h2>Loadmores</h2></div>
+=======
+
+>>>>>>> aa
 
 </div>
 
