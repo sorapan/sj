@@ -4,7 +4,7 @@ include "../access_data/content_lib.php";
 
 $LastTime = isset($_POST['timestamp']) ? $_POST['timestamp'] : 0;
 
-$NewLastTime = NewTimeStamp();
+$NewLastTime = Content::Timestamp();
 
 ini_set('max_execution_time', 31);
 $timeout = 260; //300
@@ -15,7 +15,7 @@ while($timeout > 0){
     if($NewLastTime <= $LastTime){
 
         $timeout--;
-        $NewLastTime = NewTimeStamp();
+        $NewLastTime = Content::Timestamp();
 
         clearstatcache();
         flush();
@@ -32,26 +32,8 @@ while($timeout > 0){
 
 if($timeout > 0){
 
-    if($_POST['firsttimeFetch'] == 1)fetchIt();
-    else fetchLastest();
-
-}
-
-function fetchIt(){
-
-    echo Content::fetchReply();
-
-}
-
-function fetchLastest(){
-
-    echo Content::fetchReplyLastest();
-
-}
-
-function NewTimeStamp(){
-
-    return Content::Timestamp();
+    if($_POST['firsttimeFetch'] == 1) echo Content::fetchReply();
+    else echo Content::fetchReplyLastest();
 
 }
 
