@@ -1,26 +1,27 @@
 $(function(){
 
-
     var offset = 5;
     var busy = false;
     var loadmore = $(' #loadmore');
+    var content = $(' #content');
+
 
     Loadmore();
 
+
     function Loadmore(){
 
-        var content = $(' #content');
+        $(window).data('ajaxready', true).scroll(function() {
 
+            if($(window).data('ajaxready') == false) return;
 
-
-        $(window).scroll(function(){
-
-            if($(window).scrollTop()+$(window).height()+loadmore.height() > $(document).height()){
+            if($(window).scrollTop()+$(window).height()+loadmore.height()+60 > $(document).height()){
 
                 // 140 is header + topmenu height
 
                 //setTimeout(function(){loadmore.html("<h2>Please wait...</h2>");} , 500);
 
+                $(window).data('ajaxready', false);
                 busy = true;
 
                 loadmore.html("<h2>Please wait...</h2>");
@@ -29,13 +30,16 @@ $(function(){
 
                     responseData();
                     offset += 5;
+                    $(window).data('ajaxready', true);
 
-                } , 500);
+                } , 2000);
 
+            }else{
+
+                busy = false;
+                loadmore.html("<h2>Loadmore</h2>");
 
             }
-
-
 
         });
 
@@ -43,15 +47,23 @@ $(function(){
 
     function responseData(){
 
+        $.ajax({
 
-        $.post("controller/loadmore.php", {
+            url : 'controller/loadmore.php',
+            type : 'POST',
+            data : {
 
-            offset        : offset
+                offset : offset
 
-        },function(data) {
+            },
+            success : function(data){
 
-            var content = $("#content");
-            content.append(data);
+                alert("fuck");
+
+                var content = $("#content");
+                content.append(data);
+
+            }
 
         });
 
