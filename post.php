@@ -5,12 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
     <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/indexStyle.css">
     <script src="js/jquery/jquery.js"></script>
-    <script src="js/plugin/Public.js"></script>
-    <script src="js/index_page/PageController.js"></script>
-    <script src="js/index_page/Content.js"></script>
-    <script src="js/index_page/Loadmore.js"></script>
 
 
 </head>
@@ -27,16 +22,9 @@
         <button>Sample</button>
     </div>
 </div>
-<div id="blogmenu1">
-    <div id="menu1">
-    </div>
-</div>
 
 
-<div id="blog_content">
-
-    <div id="content"></div>
-    <div id="loadmore"><h2>Loadmore</h2></div>
+<div id="content">
 
 </div>
 

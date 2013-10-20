@@ -1,0 +1,117 @@
+div#menu1{
+
+    float: left;
+    background-color: rgb(205,205,205);
+    height: 450px;
+    width: 300px;
+    position:relative;
+}
+
+/* ---------------------For stable page--------------------- */
+
+div#blogtop_menu{
+
+    float: left;
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+
+}
+
+div#blogmenu1{
+
+    float: left;
+    background-color: transparent;
+    height: 500px;
+    width: 300px;
+
+}
+
+
+/* ---------------------content--------------------- */
+
+div#blog_content{
+
+    position: inherit;
+    float: left;
+    background-color: transparent;
+    width: 60%;
+    min-height: 25%;
+    height: auto;
+
+
+}
+
+div#content{
+
+    float: left;
+    width: 100%;
+    min-height: 25%;
+    height: auto;
+    background-color: transparent;
+
+}
+
+div#content div.reply{
+
+    float: left;
+    background-color: white;
+    height: 180px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 2px solid white;
+
+}
+
+div#content div.reply div.head{
+
+    float: left;
+    color:white;
+    background-color: rgb(85,85,85);
+    height: 30px;
+    width: 100%;
+
+}
+
+div#content div.reply div.head div.head_msg{
+
+    padding-left: 5px;
+
+}
+
+div#content div.reply div.message{
+
+    float: left;
+    background-color: white;
+    height: 150px;
+    width: 100%;
+
+}
+
+div#content div.reply div.message div.message_hdr{
+
+    padding: 5px;
+    font-size: large;
+
+}
+
+div#content div.reply div.message div.message_msg{
+
+    padding: 5px;
+
+}
+
+/* ---------------------end of content--------------------- */
+
+
+div#loadmore {
+
+    float:left;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgb(85,85,85);
+    color: white;
+
+}
