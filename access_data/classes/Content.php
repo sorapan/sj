@@ -21,6 +21,7 @@ class Content extends Core{
 
         $data['now_time'] = self::Timestamp();
         $data['firsttimeFetch'] = 0;
+
         return json_encode($data);
 
     }

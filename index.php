@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="css/style1.css">
     <script src="js/jquery/jquery.js"></script>
+    <script src="js/plugin/Public.js"></script>
     <script src="js/PageController.js"></script>
     <script src="js/Content.js"></script>
     <script src="js/Loadmore.js"></script>

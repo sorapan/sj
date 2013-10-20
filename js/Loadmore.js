@@ -17,24 +17,24 @@ $(function(){
             if($(window).scrollTop()+$(window).height()+loadmore.height()+60 > $(document).height()){
 
                 // 140 is header + topmenu height
-
                 //setTimeout(function(){loadmore.html("<h2>Please wait...</h2>");} , 500);
 
                 $(window).data('ajaxready', false);
 
+                setTimeout(function(){
+
                 loadmore.html("<h2>Please wait...</h2>");
+
+                }, 500);
 
                 setTimeout(function(){
 
                     responseData();
                     offset += 5;
                     $(window).data('ajaxready', true);
+                    loadmore.html("<h2>Loadmore</h2>");
 
-                } , 2000);
-
-            }else{
-
-                loadmore.html("<h2>Loadmore</h2>");
+                } , 1000);
 
             }
 
@@ -56,21 +56,28 @@ $(function(){
             dataType : 'Json',
             success : function(data){
 
-                var content = $("#content");
+                if(typeof data.msg != 'undefined'){
 
-                for(i=0 ; i<data.msg.length ; i++){
+                    for(i=0 ; i<data.msg.length ; i++){
 
-                    content.append(''+
-                        '<div class="reply">'+
-                        '<div class="head"><div class="head_msg">'+ data.date[i] +'</div></div>'+
-                        '<div class="message">'+
-                        '<div class="message_hdr">'+ data.hdr[i] +'<hr></div>'+
-                        '<div class="message_msg">'+ data.msg[i] +'</div>'+
-                        '</div>'+
-                        '</div>');
+                        $.replyElement({
 
+                            date : data.date[i],
+                            header : data.hdr[i],
+                            message : data.msg[i]
+
+                        });
+
+                    }
+
+                }else{
+
+                    offset -= 5;
+                    loadmore.html("<h2>END</h2>");
 
                 }
+
+
 
             }
 

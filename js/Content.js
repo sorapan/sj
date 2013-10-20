@@ -21,18 +21,16 @@ $(function(){
             success: function(data){
 
 
-                var content = $("#content");
 
                 for(i=0 ; i<data.msg.length ; i++){
 
-                    content.append(''+
-                    '<div class="reply">'+
-                    '<div class="head"><div class="head_msg">'+ data.date[i] +'</div></div>'+
-                        '<div class="message">'+
-                            '<div class="message_hdr">'+ data.hdr[i] +'<hr></div>'+
-                            '<div class="message_msg">'+ data.msg[i] +'</div>'+
-                        '</div>'+
-                    '</div>');
+                    $.replyElement({
+
+                        date : data.date[i],
+                        header : data.hdr[i],
+                        message : data.msg[i]
+
+                    });
 
 
                 }
@@ -68,16 +66,13 @@ $(function(){
             dataType:"JSON",
             success: function(data){
 
+                $.replyElement({
 
-                var content = $(" div#content");
+                    date : data.date,
+                    header : data.hdr,
+                    message : data.msg
 
-                content.prepend('<div class="reply">'+
-                    '<div class="head"><div class="head_msg">'+ data.date +'</div></div>'+
-                    '<div class="message">'+
-                    '<div class="message_hdr">'+ data.hdr +'<hr></div>'+
-                    '<div class="message_msg">'+ data.msg +'</div>'+
-                    '</div>'+
-                    '</div>');
+                });
 
                 timestamp = parseInt(data.now_time);
                 firsttimeFetch = data.firsttimeFetch;
