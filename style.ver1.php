@@ -5,7 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
     <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/post.css">
     <script src="js/jquery/jquery.js"></script>
 
 
@@ -26,15 +25,6 @@
 
 
 <div id="content">
-
-    <form method="POST" action="">
-
-        <label for="header">หัวข้อ : </label>
-        <input type="text" id="header"><br>
-        <label for="message">ข้อความ : </label>
-        <textarea id="message"></textarea><br>
-
-    </form>
 
 </div>
 

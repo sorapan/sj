@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
     <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/indexStyle.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery/jquery.js"></script>
     <script src="js/plugin/Public.js"></script>
     <script src="js/index_page/PageController.js"></script>
