@@ -1,7 +1,6 @@
 $(function(){
 
     var offset = 5;
-    var busy = false;
     var loadmore = $(' #loadmore');
     var content = $(' #content');
 
@@ -22,7 +21,6 @@ $(function(){
                 //setTimeout(function(){loadmore.html("<h2>Please wait...</h2>");} , 500);
 
                 $(window).data('ajaxready', false);
-                busy = true;
 
                 loadmore.html("<h2>Please wait...</h2>");
 
@@ -36,7 +34,6 @@ $(function(){
 
             }else{
 
-                busy = false;
                 loadmore.html("<h2>Loadmore</h2>");
 
             }
@@ -56,12 +53,24 @@ $(function(){
                 offset : offset
 
             },
+            dataType : 'Json',
             success : function(data){
 
-                alert("fuck");
-
                 var content = $("#content");
-                content.append(data);
+
+                for(i=0 ; i<data.msg.length ; i++){
+
+                    content.append(''+
+                        '<div class="reply">'+
+                        '<div class="head"><div class="head_msg">'+ data.date[i] +'</div></div>'+
+                        '<div class="message">'+
+                        '<div class="message_hdr">'+ data.hdr[i] +'<hr></div>'+
+                        '<div class="message_msg">'+ data.msg[i] +'</div>'+
+                        '</div>'+
+                        '</div>');
+
+
+                }
 
             }
 

@@ -37,31 +37,21 @@ if($timeout > 0){
 
 }
 
-
-
-
 function fetchIt(){
 
-    echo callContent()->fetchReply();
+    echo Content::fetchReply();
 
 }
 
 function fetchLastest(){
 
-    echo callContent()->fetchReplyLastest();
+    echo Content::fetchReplyLastest();
 
 }
 
 function NewTimeStamp(){
 
-    return callContent()->Timestamp();
-
-}
-
-function callContent(){
-
-    $instant = new Content();
-    return $instant;
+    return Content::Timestamp();
 
 }
 
