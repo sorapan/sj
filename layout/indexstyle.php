@@ -4,20 +4,20 @@
     <title>Hello</title>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
-    <link rel="stylesheet" href="../css/style1.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <script src="../js/jquery/jquery.js"></script>
-    <script src="../js/plugin/Public.js"></script>
-    <script src="../js/index_page/PageController.js"></script>
-    <script src="../js/index_page/Content.js"></script>
-    <script src="../js/index_page/Loadmore.js"></script>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery/jquery.js"></script>
+    <script src="js/plugin/Public.js"></script>
+    <script src="js/index_page/PageController.js"></script>
+    <script src="js/index_page/Content.js"></script>
+    <script src="js/index_page/Loadmore.js"></script>
 
 
 </head>
 <body>
 
 <div id="header">
-    <div id="sign"><img src="../img/logo.jpg"></div>
+    <div id="sign"><img src="img/logo.jpg"></div>
     <h2>สงขลาเจริญการช่าง - Insurance System</h2>
 </div>
 
@@ -30,6 +30,14 @@
 
 
 <?php
+
+$page = $_GET['page'];
+
+if(!empty($page)){
+
+    include "../".$page.".php";
+
+}
 
 ?>
 

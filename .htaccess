@@ -1,0 +1,9 @@
+
+DirectoryIndex layout/indexstyle.php?page=aa
+
+<IfModule mod_rewrite.c>
+
+   RewriteEngine on
+   RewriteRule    ^([a-zA-Z0-9_-]+)$ layout/indexstyle.php?page=$1
+
+</IfModule>
