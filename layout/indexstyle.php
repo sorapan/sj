@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/post.css">
     <script src="js/jquery/jquery.js"></script>
     <script src="js/plugin/Public.js"></script>
     <script src="js/index_page/PageController.js"></script>
@@ -35,7 +36,16 @@ $page = $_GET['page'];
 
 if(!empty($page)){
 
-    include "../".$page.".php";
+    if(file_exists("../".$page.".php")){
+
+        @include "../".$page.".php";
+
+    }else{
+
+        echo "Something is Wrong";
+
+    }
+
 
 }
 

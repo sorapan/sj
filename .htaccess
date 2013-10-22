@@ -1,9 +1,14 @@
-
-DirectoryIndex layout/indexstyle.php?page=aa
-
 <IfModule mod_rewrite.c>
 
-   RewriteEngine on
-   RewriteRule    ^([a-zA-Z0-9_-]+)$ layout/indexstyle.php?page=$1
+   RewriteEngine On
+   RewriteBase /patel/
+
+   RewriteCond %{REQUEST_FILENAME} -f
+   RewriteRule ^([^/]*)\.php$ $1 [R]
+   RewriteRule ^([^/]*)\.html$ $1 [R,L]
+
+
+   RewriteRule ^([^/]*)/$ $1 [R,L]
+   RewriteRule ^([^/]*)$ layout/indexstyle.php?page=$1 [L]
 
 </IfModule>
