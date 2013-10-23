@@ -4,8 +4,8 @@
     <title>Hello</title>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
-    <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/post.css">
     <script src="js/jquery/jquery.js"></script>
     <script src="js/plugin/Public.js"></script>
@@ -24,7 +24,7 @@
 
 <div id="blogtop_menu">
     <div id="top_menu">
-        <a class="button_navi" href="/patel/aa"><div class="button">Main</div></a>
+        <a class="button_navi" href="/patel/main"><div class="button">Main</div></a>
         <a class="button_navi" href="/patel/post"><div class="button">Post</div></a>
     </div>
 </div>
