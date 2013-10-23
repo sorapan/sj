@@ -2,6 +2,7 @@ $(function(){
 
     //FollowThePage(" #top_menu, #menu1");
     FollowThePage(" #menu1");
+    CheckUrlNButtonValue();
 
 
     function FollowThePage(targ){
@@ -30,6 +31,26 @@ $(function(){
             }
 
         });
+    }
+
+    function CheckUrlNButtonValue(){
+
+        var str=location.href.toLowerCase();
+
+        $(" a.button_navi ").each(function() {
+
+            if (str.indexOf(this.href.toLowerCase()) > -1) {
+
+                $(this).css({
+
+                    'background-color' : 'red'
+
+                });
+
+            }
+
+        });
+
     }
 
 });

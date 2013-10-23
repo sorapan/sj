@@ -24,8 +24,8 @@
 
 <div id="blogtop_menu">
     <div id="top_menu">
-        <button>Sample</button>
-        <button>Sample</button>
+        <a class="button_navi" href="/patel/aa">Sample</a>
+        <button class="button_navi">Sample</button>
     </div>
 </div>
 

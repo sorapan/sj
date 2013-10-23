@@ -59,7 +59,7 @@ div#top_menu{
 
 }
 
-div#top_menu button{
+div#top_menu .button_navi{
 
     border: 0;
     background-color: transparent;
