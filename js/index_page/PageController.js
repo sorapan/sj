@@ -36,14 +36,16 @@ $(function(){
     function CheckUrlNButtonValue(){
 
         var str=location.href.toLowerCase();
+        var button = $(" .button_navi ");
 
-        $(" a.button_navi ").each(function() {
+        button.each(function() {
 
             if (str.indexOf(this.href.toLowerCase()) > -1) {
 
-                $(this).css({
+                $(this).find(" div").css({
 
-                    'background-color' : 'red'
+                    'background-color' : 'rgb(85,85,85)',
+                    'color' : 'white',
 
                 });
 
