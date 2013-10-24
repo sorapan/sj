@@ -7,7 +7,6 @@
    RewriteRule ^([^/]*)\.php$ $1 [R]
    RewriteRule ^([^/]*)\.html$ $1 [R,L]
 
-
    RewriteRule ^([^/]*)/$ $1 [R,L]
    RewriteRule ^([^/]*)$ layout/indexstyle.php?page=$1 [L]
 

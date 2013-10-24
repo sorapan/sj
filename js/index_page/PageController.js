@@ -44,8 +44,8 @@ $(function(){
 
                 $(this).find(" div").css({
 
-                    'background-color' : 'rgb(85,85,85)',
-                    'color' : 'white',
+                    'color' : 'rgb(85,85,85)',
+                    'border-bottom': '4px solid gold'
 
                 });
 

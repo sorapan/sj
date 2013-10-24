@@ -4,7 +4,7 @@
     <title>Hello</title>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/post.css">
     <script src="js/jquery/jquery.js"></script>
@@ -46,6 +46,10 @@ if(!empty($page)){
 
     }
 
+
+}else{
+
+    echo "Something is Wrong";
 
 }
 
