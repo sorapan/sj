@@ -1,13 +1,27 @@
+<head>
+
+    <link rel="stylesheet" href="css/post.css">
+
+</head>
+<body>
 
 <div id="form_content">
 
+
+
     <form method="POST" action="">
 
-        <label for="header">หัวข้อ : </label>
-        <input type="text" id="header"><br>
-        <label for="message">ข้อความ : </label>
-        <textarea id="message"></textarea><br>
+        <table>
+
+        <tr><td><label for="header">หัวข้อ : </label></td><td><input type="text" id="header"></td></tr>
+        <tr><td><label for="message">ข้อความ : </label></td><td><textarea id="message"></textarea></td></tr>
+            <tr><td></td><td><input type="submit" value="Okay"></td></tr>
+
+        </table>
 
     </form>
 
+
 </div>
+
+</body>

@@ -5,13 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
     <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/post.css">
+
     <script src="js/jquery/jquery.js"></script>
-    <script src="js/plugin/Public.js"></script>
     <script src="js/index_page/PageController.js"></script>
-    <script src="js/index_page/Content.js"></script>
-    <script src="js/index_page/Loadmore.js"></script>
+    <script src="js/plugin/Public.js"></script>
 
 
 </head>
