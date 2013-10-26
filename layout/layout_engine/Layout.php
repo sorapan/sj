@@ -2,16 +2,25 @@
 
 class Layout {
 
-    public static function Choose($get_page){
+    public function __construct($page){
 
-        $page =  isset($get_page) ? $get_page : 0;
-        if($page) {
+        $page = $_GET['page'];
 
-            echo "do something";
+        if(!empty($page)){
+
+            if(file_exists("../".$page.".php")){
+
+                return @include "../".$page.".php";
+
+            }else{
+
+                echo "Something is Wrong";
+
+            }
 
         }else{
 
-            require "../".$page;
+            echo "Something is Wrong";
 
         }
 

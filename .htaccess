@@ -3,7 +3,7 @@
    RewriteEngine On
    RewriteBase /patel/
 
-   RewriteCond %{REQUEST_FILENAME} -f
+
    RewriteRule ^([^/]*)\.php$ $1 [R]
    RewriteRule ^([^/]*)\.html$ $1 [R,L]
 
