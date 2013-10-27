@@ -1,14 +1,10 @@
-<IfModule mod_rewrite.c>
-
-   RewriteEngine On
-   RewriteBase /patel/
 
 
-   RewriteRule ^([^/]*)\.php$ $1 [R]
-   RewriteRule ^([^/]*)\.html$ $1 [R,L]
+RewriteEngine On
+RewriteBase /patel/
 
-   RewriteRule ^([^/]*)/$ $1 [R,L]
+RewriteRule ^([^/]*)\.php$ $1 [R]
+RewriteRule ^([^/]*)\.html$ $1 [R]
+RewriteRule ^([^/]*)/$ $1 [R]
+RewriteRule ^([^/]*)$ layout/indexstyle.php?page=$1 [L]
 
-   RewriteRule ^([^/]*)$ layout/indexstyle.php?page=$1 [L]
-
-</IfModule>

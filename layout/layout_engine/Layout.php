@@ -5,24 +5,34 @@ class Layout {
     public function __construct($page){
 
         $page = $_GET['page'];
+        $error_msg = "Something is Wrong";
 
-        if(!empty($page)){
+        if(isset($page)){
 
-            if(file_exists("../".$page.".php")){
+            if(!empty($page)){
 
-                return @include "../".$page.".php";
+                if(file_exists("../".$page.".php")){
+
+                    return @include "../".$page.".php";
+
+                }else{
+
+                    echo $error_msg;
+
+                }
 
             }else{
 
-                echo "Something is Wrong";
+                echo $error_msg;
 
             }
 
         }else{
 
-            echo "Something is Wrong";
+            echo $error_msg;
 
         }
+
 
     }
 
