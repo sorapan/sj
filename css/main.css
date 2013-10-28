@@ -7,16 +7,17 @@ div#menu1{
     position:relative;
 }
 
-/* ---------------------For stable page--------------------- */
-
-div#blogtop_menu{
+div#sub_menu{
 
     float: left;
-    height: 45px;
     width: 100%;
-    background-color: transparent;
+    height: 60px;
+    background-color: rgb(235,235,235);
+    border-bottom: 1px solid rgb(195,195,195);
 
 }
+
+/* ---------------------For stable page--------------------- */
 
 div#blogmenu1{
 
@@ -113,5 +114,18 @@ div#loadmore {
     margin-bottom: 10px;
     background-color: rgb(85,85,85);
     color: white;
+
+}
+
+div#up{
+
+    float: left;
+    position: fixed;
+    background-color: rgb(85,85,85);
+    color: white;
+    height: 0;
+    width: 150px;
+    bottom: 0;
+    right: 30px;
 
 }

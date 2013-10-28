@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style1.css">
 
     <script src="js/jquery/jquery.js"></script>
-    <script src="js/index_page/PageController.js"></script>
+    <script src="js/PageControl.js"></script>
     <script src="js/plugin/Public.js"></script>
 
 
