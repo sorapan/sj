@@ -24,7 +24,7 @@
 
     <div id="content"></div>
 
-    <div id="loadmore"><h2>Loadmore</h2></div>
+    <div id="loadmore">Loadmore</div>
 
 
 </div>
