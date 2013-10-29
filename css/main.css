@@ -123,9 +123,13 @@ div#up{
     position: fixed;
     background-color: rgb(85,85,85);
     color: white;
-    height: 0;
+    text-align: center;
+    font-size: 26px;
+    height: 90px;
+    line-height: 90px;
     width: 150px;
     bottom: 0;
     right: 30px;
+    cursor: pointer;
 
 }

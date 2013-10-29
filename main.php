@@ -29,6 +29,6 @@
 
 </div>
 
-<div id="up"></div>
+<div id="up">UP</div>
 
 </body>

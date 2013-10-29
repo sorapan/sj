@@ -3,6 +3,30 @@ $(function(){
     //FollowThePage(" #top_menu, #menu1");
     FollowThePage(" #menu1");
 
+    var divup = $(" #up");
+
+    divup.hide();
+
+    $(window).scroll(function(){
+
+        if($(this).scrollTop() > 100) divup.slideDown();
+        else divup.slideUp();
+
+    });
+
+
+    divup.click(function(){
+
+        $(" html, body").animate({
+
+            scrollTop : 0
+
+        },500);
+
+        return false;
+
+    });
+
 
     function FollowThePage(targ){
 
@@ -38,19 +62,6 @@ $(function(){
 
         });
     }
-
-    function upper(up){
-
-        var divup = $(" #up");
-
-        divup.animate({
-
-            height : up
-
-        });
-
-    }
-
 
 
 });
