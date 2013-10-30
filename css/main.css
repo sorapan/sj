@@ -31,7 +31,6 @@ div#search{
     margin-right: 20px;
     vertical-align: middle;
 
-
 }
 
 div#search input#search_input,div#search div#search_button{
@@ -171,7 +170,7 @@ div#up{
     line-height: 40px;
     width: 100px;
     bottom: 0;
-    right: 50px;
+    right: 8%;
     cursor: pointer;
 
 }
