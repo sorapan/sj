@@ -5,34 +5,44 @@ class Layout {
     public function __construct($page){
 
         $page = $_GET['page'];
-        $error_msg = "Something is Wrong";
 
         if(isset($page)){
 
-            if(!empty($page)){
+            self::CallPage($page);
 
-                if(file_exists("../".$page.".php")){
+        }else{
 
-                    return @include "../".$page.".php";
+            echo self::ErrorMessage();
 
-                }else{
+        }
 
-                    echo $error_msg;
+    }
 
-                }
+    private static function CallPage($page){
+
+        if(!empty($page)){
+
+            if(file_exists("../".$page.".php")){
+
+                return @include "../".$page.".php";
 
             }else{
 
-                echo $error_msg;
+                echo self::ErrorMessage();
 
             }
 
         }else{
 
-            echo $error_msg;
+            return @include "../main.php";
 
         }
 
+    }
+
+    private static function ErrorMessage(){
+
+        return "Something is Wrong";
 
     }
 

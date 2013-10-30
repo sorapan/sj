@@ -9,7 +9,7 @@ $(function(){
 
         button.each(function() {
 
-            if (str.indexOf(this.href.toLowerCase()) > -1) {
+            if (str == this.href.toLowerCase()) { //if (str.indexOf(this.href.toLowerCase()) > -1) {
 
                 $(this).find(" div").css({
 
