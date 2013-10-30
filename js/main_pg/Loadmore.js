@@ -60,7 +60,7 @@ $(function(){
 
                     for(i=0 ; i<data.msg.length ; i++){
 
-                        $.replyElement({
+                        $.rb_replyElementObject({
 
                             date : data.date[i],
                             header : data.hdr[i],

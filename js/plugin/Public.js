@@ -1,6 +1,6 @@
 (function($){
 
-    $.replyElement = function(a){
+    $.rb_replyElementObject = function(a){
 
         var data = $.extend({
 
