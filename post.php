@@ -1,9 +1,6 @@
-<head>
 
-    <link rel="stylesheet" href="css/post.css">
+<link rel="stylesheet" href="css/post.css">
 
-</head>
-<body>
 
 <div id="form_content">
 
@@ -24,4 +21,3 @@
 
 </div>
 
-</body>

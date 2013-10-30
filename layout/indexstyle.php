@@ -16,7 +16,7 @@
 
 <div id="header">
     <div id="sign"><img src="img/logo.jpg"></div>
-    <h2>สงขลาเจริญการช่าง - Insurance System</h2>
+    สงขลาเจริญการช่าง : Insurance System
 </div>
 
 <div id="blogtop_menu">
@@ -29,7 +29,7 @@
 
 <?php
 
-include "layout_engine_lib.php";
+include "layout_engine/layout_engine_lib.php";
 
 ?>
 

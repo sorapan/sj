@@ -18,7 +18,7 @@
                 '<div class="reply">'+
                 '<div class="head"><div class="head_msg">'+ data.date +'</div></div>'+
                 '<div class="message">'+
-                '<div class="message_hdr">'+ data.header +'<hr></div>'+
+                '<div class="message_hdr">'+ data.header +'</div>'+
                 '<div class="message_msg">'+ data.message +'</div>'+
                 '</div>'+
                 '</div>');

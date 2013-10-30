@@ -9,8 +9,8 @@ $(function(){
 
     $(window).scroll(function(){
 
-        if($(this).scrollTop() > 100) divup.slideDown();
-        else divup.slideUp();
+        if($(this).scrollTop() > 100) divup.slideDown(300);
+        else divup.slideUp(300);
 
     });
 

@@ -4,7 +4,7 @@ body{
     margin:0;
     padding:0;
     overflow-x: hidden;
-    background-color: rgb(225,225,225);
+    background-color: rgb(220,220,220);
 
 }
 
@@ -21,7 +21,9 @@ div#header {
 
     background-color:  white;
     float: left;
-    height: 75px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 22px;
     width: 100%;
     color: rgb(85,85,85);
 
