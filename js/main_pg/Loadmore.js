@@ -23,7 +23,7 @@ $(function(){
 
                 setTimeout(function(){
 
-                loadmore.html("<h2>Please wait...</h2>");
+                loadmore.html("Please wait...");
 
                 }, 500);
 
@@ -32,7 +32,7 @@ $(function(){
                     responseData();
                     offset += 5;
                     $(window).data('ajaxready', true);
-                    loadmore.html("<h2>Loadmore</h2>");
+                    loadmore.html("Loadmore");
 
                 } , 1000);
 
@@ -73,7 +73,7 @@ $(function(){
                 }else{
 
                     offset -= 5;
-                    loadmore.html("<h2>END</h2>");
+                    loadmore.html("END");
 
                 }
 

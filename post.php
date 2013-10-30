@@ -1,43 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Hello</title>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
-    <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/post.css">
-    <script src="js/jquery/jquery.js"></script>
+<link rel="stylesheet" href="css/post.css">
 
 
-</head>
-<body>
-
-<div id="header">
-    <div id="sign"><img src="img/logo.jpg"></div>
-    <h2>สงขลาเจริญการช่าง - Insurance System</h2>
-</div>
-
-<div id="blogtop_menu">
-    <div id="top_menu">
-        <button>Sample</button>
-        <button>Sample</button>
-    </div>
-</div>
+<div id="form_content">
 
 
-<div id="content">
 
     <form method="POST" action="">
 
-        <label for="header">หัวข้อ : </label>
-        <input type="text" id="header"><br>
-        <label for="message">ข้อความ : </label>
-        <textarea id="message"></textarea><br>
+        <table>
+
+        <tr><td><label for="header">หัวข้อ : </label></td><td><input type="text" id="header"></td></tr>
+        <tr><td><label for="message">ข้อความ : </label></td><td><textarea id="message"></textarea></td></tr>
+            <tr><td></td><td><input type="submit" value="Okay"></td></tr>
+
+        </table>
 
     </form>
 
+
 </div>
 
-
-</body>
-</html>

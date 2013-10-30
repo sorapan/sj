@@ -5,18 +5,57 @@ div#menu1{
     height: 450px;
     width: 300px;
     position:relative;
+    border-bottom: 1px solid rgb(175,175,175);
 }
 
-/* ---------------------For stable page--------------------- */
 
-div#blogtop_menu{
+
+/* ---------------------Sub menu--------------------- */
+
+div#sub_menu{
 
     float: left;
-    height: 60px;
     width: 100%;
-    background-color: transparent;
+    height: 40px;
+    background-color: rgb(230,230,230);
+    border-bottom: 1px solid rgb(195,195,195);
 
 }
+
+div#search{
+
+    float: right;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 8px;
+    margin-right: 20px;
+    vertical-align: middle;
+
+}
+
+div#search input#search_input,div#search div#search_button{
+
+    float:right;
+    border: 0;
+    height: 23px;
+
+}
+
+div#search div#search_button{
+
+    background-color: rgb(85,85,85);
+    color: White;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    width: 50px;
+    cursor: pointer;
+
+}
+
+
+
+/* ---------------------For stable layout when some "div" was moving--------------------- */
 
 div#blogmenu1{
 
@@ -28,17 +67,16 @@ div#blogmenu1{
 }
 
 
-/* ---------------------content--------------------- */
+/* ---------------------Content--------------------- */
 
 div#blog_content{
 
     position: inherit;
     float: left;
     background-color: transparent;
-    width: 60%;
+    width: 55%;
     min-height: 25%;
     height: auto;
-
 
 }
 
@@ -59,7 +97,7 @@ div#content div.reply{
     height: 180px;
     width: 100%;
     margin-bottom: 10px;
-    border: 2px solid white;
+    border: 1px solid rgb(175,175,175);
 
 }
 
@@ -91,6 +129,8 @@ div#content div.reply div.message{
 div#content div.reply div.message div.message_hdr{
 
     padding: 5px;
+    margin: 5px;
+    background-color: rgb(235,235,235);
     font-size: large;
 
 }
@@ -101,7 +141,7 @@ div#content div.reply div.message div.message_msg{
 
 }
 
-/* ---------------------end of content--------------------- */
+/* ---------------------End of content--------------------- */
 
 
 div#loadmore {
@@ -109,9 +149,28 @@ div#loadmore {
     float:left;
     width: 100%;
     height: 60px;
+    font-size: 20px;
+    line-height: 60px;
     text-align: center;
     margin-bottom: 10px;
     background-color: rgb(85,85,85);
     color: white;
+
+}
+
+div#up{
+
+    float: left;
+    position: fixed;
+    background-color: rgb(85,85,85);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    width: 100px;
+    bottom: 0;
+    right: 8%;
+    cursor: pointer;
 
 }

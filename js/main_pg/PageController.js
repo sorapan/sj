@@ -3,6 +3,30 @@ $(function(){
     //FollowThePage(" #top_menu, #menu1");
     FollowThePage(" #menu1");
 
+    var divup = $(" #up");
+
+    divup.hide();
+
+    $(window).scroll(function(){
+
+        if($(this).scrollTop() > 100) divup.slideDown(300);
+        else divup.slideUp(300);
+
+    });
+
+
+    divup.click(function(){
+
+        $(" html, body").animate({
+
+            scrollTop : 0
+
+        },500);
+
+        return false;
+
+    });
+
 
     function FollowThePage(targ){
 
@@ -11,26 +35,34 @@ $(function(){
         var offset = target.offset();
 
         $(window).scroll(function () {
+
+
             var scrollTop = $(window).scrollTop(); // check the visible top of the browser
 
             if(offset.top<scrollTop){
 
                 target.css({
-                    'position' : 'fixed',
-                    'top' : '0'
+
+                    'position' : "fixed",
+                    'top' : 0
+
                 });
 
             }
             else{
 
                 target.css({
+
                     'position' : 'relative'
+
                 });
+
 
             }
 
         });
     }
+
 
 });
 
