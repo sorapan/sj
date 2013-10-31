@@ -6,5 +6,5 @@ RewriteBase /patel/
 RewriteRule ^([^/]*)\.php$ $1 [R]
 RewriteRule ^([^/]*)\.html$ $1 [R]
 RewriteRule ^([^/]*)/$ $1 [R]
-RewriteRule ^([^/]*)$ layout/indexstyle.php?page=$1 [L]
+RewriteRule ^([^/]*)$ Display/Layout/indexstyle.php?page=$1 [L]
 

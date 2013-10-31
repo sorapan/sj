@@ -22,9 +22,9 @@ class Layout {
 
         if(!empty($page)){
 
-            if(file_exists("../".$page.".php")){
+            if(file_exists("../Main/".$page.".php")){
 
-                return @include "../".$page.".php";
+                return @include "../Main/".$page.".php";
 
             }else{
 
@@ -34,7 +34,7 @@ class Layout {
 
         }else{
 
-            return @include "../main.php";
+            return @include "../Main/main.php";
 
         }
 

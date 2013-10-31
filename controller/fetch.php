@@ -1,6 +1,6 @@
 <?php
 
-include "../access_data/content_lib.php";
+include "../access_data/content_lib.inc";
 
 $LastTime = isset($_POST['timestamp']) ? $_POST['timestamp'] : 0;
 

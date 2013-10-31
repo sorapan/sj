@@ -1,6 +1,6 @@
 <?php
 
-include "../access_data/loadmore_lib.php";
+include "../access_data/loadmore_lib.inc";
 
 $offsetit = isset($_POST['offset']) ? $_POST['offset'] : 0;
 

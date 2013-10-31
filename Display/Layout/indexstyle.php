@@ -29,7 +29,7 @@
 
 <?php
 
-include "layout_engine/layout_engine_lib.php";
+include "layout_engine/layout_engine_lib.inc";
 
 ?>
 
