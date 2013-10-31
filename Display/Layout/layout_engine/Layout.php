@@ -38,6 +38,8 @@ class Layout {
 
         }
 
+        return null;
+
     }
 
     private static function ErrorMessage(){

@@ -1,9 +1,9 @@
 
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="webroot/css/main.css">
 
-<script src="js/main_pg/PageController.js"></script>
-<script src="js/main_pg/Content.js"></script>
-<script src="js/main_pg/Loadmore.js"></script>
+<script src="webroot/js/main_pg/PageController.js"></script>
+<script src="webroot/js/main_pg/Content.js"></script>
+<script src="webroot/js/main_pg/Loadmore.js"></script>
 
 
 <div id="sub_menu">

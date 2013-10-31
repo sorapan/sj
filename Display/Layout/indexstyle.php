@@ -4,18 +4,18 @@
     <title>Hello</title>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="webroot/css/style1.css">
 
-    <script src="js/jquery/jquery.js"></script>
-    <script src="js/PageControl.js"></script>
-    <script src="js/plugin/Public.js"></script>
+    <script src="webroot/js/jquery/jquery.js"></script>
+    <script src="webroot/js/PageControl.js"></script>
+    <script src="webroot/js/plugin/Public.js"></script>
 
 
 </head>
 <body>
 
 <div id="header">
-    <div id="sign"><img src="img/logo.jpg"></div>
+    <div id="sign"><img src="webroot/img/logo.jpg"></div>
     สงขลาเจริญการช่าง : Insurance System
 </div>
 

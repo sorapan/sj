@@ -7,9 +7,12 @@ class Main {
     public function main(){
 
 
-
     }
 
+    public function post(){
+
+
+    }
 
 
 } 
