@@ -12,15 +12,6 @@ function __autoload($class){
 
 }
 
-//require "libs/Bootstrap.php";
-//require "libs/Model.php";
-//require "libs/Controller.php";
-//require "libs/View.php";
-//
-//require "libs/Database.php";
-//require "libs/Session.php";
-//require "libs/Hash.php";
-
 $app = new Bootstrap();
 
 

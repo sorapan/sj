@@ -37,8 +37,8 @@
 
 <div id="blogtop_menu">
     <div id="top_menu">
-        <a class="button_navi" href="<?php echo URL ?>"><div class="button">Main</div></a>
-        <a class="button_navi" href="<?php echo URL."/post" ?>"><div class="button">Post</div></a>
+        <a class="button_navi" href="<?php echo URL?>"><div class="button">Main</div></a>
+        <a class="button_navi" href="<?php echo URL?>post"><div class="button">Post</div></a>
     </div>
 </div>
 
