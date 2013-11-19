@@ -1,0 +1,75 @@
+html{
+
+    overflow-x: hidden;
+
+}
+
+html, body{
+
+    background-color: gold;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+#blog{
+
+    height: auto;
+    width: 1200px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border-right:2px solid cornflowerblue;
+    border-left:2px solid cornflowerblue;
+
+}
+
+#header, #content{
+
+    float: left;
+    width: 1200px;
+
+}
+
+#header a{
+    float: left;
+    margin-right: 5px;
+    text-decoration: none;
+    width: 100px;
+    height: 20px;
+    background: white;
+    padding: 5px;
+    text-align: center;
+    color: cornflowerblue;
+}
+
+#header{
+
+    background-color: cornflowerblue;
+    padding: 10px;
+    height: 20%;
+
+}
+
+#content{
+
+    background-color: white;
+    min-height: 450px;
+    height: 80%;
+    padding: 10px 15px 10px 15px;
+
+}
+
+#footer{
+
+    float: left;
+    background-color: cornflowerblue;
+    color:white;
+    width: 100%;
+    height:  25%;
+    bottom: 0;
+    padding: 10px;
+
+}

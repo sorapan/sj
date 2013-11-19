@@ -1,10 +1,9 @@
-
+#php_flag display_errors On
+#php_value error_reporting 9999
 
 RewriteEngine On
-RewriteBase /patel/
 
-RewriteRule ^([^/]*)\.php$ $1 [R]
-RewriteRule ^([^/]*)\.html$ $1 [R]
-RewriteRule ^([^/]*)/$ $1 [R]
-RewriteRule ^([^/]*)$ Display/Layout/indexstyle.php?page=$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 
+RewriteRule ^(.+)$ index.php?url=$1 [L]
