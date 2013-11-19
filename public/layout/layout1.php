@@ -37,13 +37,16 @@
 
 <div id="blogtop_menu">
     <div id="top_menu">
-        <a class="button_navi" href="/mvc.patel/"><div class="button">Main</div></a>
-        <a class="button_navi" href="/mvc.patel/post"><div class="button">Post</div></a>
+        <a class="button_navi" href="<?php echo URL ?>"><div class="button">Main</div></a>
+        <a class="button_navi" href="<?php echo URL."/post" ?>"><div class="button">Post</div></a>
     </div>
 </div>
 
 <div id="midgard">
+
+<!--    Include the layout_lib.inc.php for call the view to display.-->
 <?php require "public/layout/layout_engine/layout_lib.inc.php"; ?>
+
 </div>
 
 </body>
