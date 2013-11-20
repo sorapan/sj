@@ -10,7 +10,7 @@ class post extends Controller{
 
     function index(){
 
-        $this->view->css = array("");
+        $this->view->css = array("post/css/post_style.css");
         $this->view->render("post/index");
 
     }
