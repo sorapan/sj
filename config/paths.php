@@ -1,6 +1,6 @@
 <?php
 
 
-define('URL','http://localhost/patel/');
+define('URL','http://patel/');
 
 define("LIBS","libs/");
