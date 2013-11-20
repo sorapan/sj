@@ -30,8 +30,8 @@ label, input {
 
 }
 
-input[type="text"]{
+input[type="text"], textarea{
 
-    width:150px
+    width:200px
 
 }
