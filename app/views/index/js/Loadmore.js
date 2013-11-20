@@ -11,7 +11,7 @@ $(function(){
     function Loadmore(){
 
         $(window).data('ajaxready', true).scroll(function() {
-
+        	
             if($(window).data('ajaxready') == false) return;
 
             if($(window).scrollTop()+$(window).height()+loadmore.height()+60 > $(document).height()){
@@ -58,7 +58,7 @@ $(function(){
 
                 if(typeof data.msg != 'undefined'){
 
-                    for(i=0 ; i<data.msg.length ; i++){
+                    for(var i=0 ; i<data.msg.length ; i++){
 
                         $.rb_replyElementObject({
 
