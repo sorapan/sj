@@ -1,5 +1,14 @@
 (function($){
 
+    /**
+     *
+     * @param a is a data
+     * @param q method is How to add reply to the board(append,prepend)
+     * @returns {*}
+     *
+     * 
+     */
+
     $.rb_Reply = function(a,q){
 
         var data = $.extend({

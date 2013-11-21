@@ -8,7 +8,7 @@
 
     <script src="<?php echo URL ?>public/js/jquery.js"></script>
     <script src="<?php echo URL ?>public/js/PageControl.js"></script>
-    <script src="<?php echo URL ?>public/js/plugin/Public.js"></script>
+    <script src="<?php echo URL ?>public/js/Plgin_public.js"></script>
 
     <?php
 
