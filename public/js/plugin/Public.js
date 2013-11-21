@@ -1,6 +1,6 @@
 (function($){
 
-    $.rb_replyElementObject = function(a){
+    $.rb_Reply = function(a,q){
 
         var data = $.extend({
 
@@ -10,7 +10,7 @@
 
         },a);
 
-        function template(){
+        function aptemplate(){
 
             var content = $("#content");
 
@@ -25,7 +25,25 @@
 
         }
 
-        return template();
+        function pretemplate(){
+
+            var content = $("#content");
+
+            content.prepend(''+
+                '<div class="reply">'+
+                '<div class="head"><div class="head_msg">'+ data.date +'</div></div>'+
+                '<div class="message">'+
+                '<div class="message_hdr">'+ PreventHtmlTag(data.header) +'</div>'+
+                '<div class="message_msg">'+ PreventHtmlTag(data.message) +'</div>'+
+                '</div>'+
+                '</div>');
+
+        }
+
+        if(q=="ap")return aptemplate();
+        else if(q=="pre")return pretemplate();
+
+        return false;
 
     };
 

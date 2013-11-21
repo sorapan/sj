@@ -60,13 +60,13 @@ $(function(){
 
                     for(var i=0 ; i<data.msg.length ; i++){
 
-                        $.rb_replyElementObject({
+                        $.rb_Reply({
 
                             date : data.date[i],
                             header : data.hdr[i],
                             message : data.msg[i]
 
-                        });
+                        },"ap");
 
                     }
 

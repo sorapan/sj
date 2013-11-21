@@ -22,13 +22,13 @@ $(function(){
 
                 for(i=0 ; i<data.msg.length ; i++){
 
-                    $.rb_replyElementObject({
+                    $.rb_Reply({
 
                         date : data.date[i],
                         header : data.hdr[i],
                         message : data.msg[i]
 
-                    });
+                    },"ap");
 
                 }
 
@@ -63,13 +63,13 @@ $(function(){
             dataType:"JSON",
             success: function(data){
 
-                $.rb_replyElementObject({
+                $.rb_Reply({
 
                     date : data.date,
                     header : data.hdr,
                     message : data.msg
 
-                });
+                },"pre");
 
                 timestamp = parseInt(data.now_time);
                 firsttimeFetch = data.firsttimeFetch;
