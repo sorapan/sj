@@ -1,5 +1,5 @@
 
-div#head, form{
+div#head, div#form{
 
     float: left;
     margin-left: 120px;
@@ -14,7 +14,7 @@ div#head{
 }
 
 
-form {
+div#form {
 
     clear: both;
     margin-top:15px;
@@ -32,6 +32,6 @@ label, input {
 
 input[type="text"], textarea{
 
-    width:200px
+    width:500px
 
 }
