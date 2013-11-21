@@ -17,7 +17,7 @@ $(function(){
             charset: 'UTF-8',
             complete:(function(){
 
-                window.location = "../";
+                //window.location = "../";
 
             })
         });

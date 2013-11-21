@@ -23,7 +23,7 @@ class post extends Controller{
             'content' => $_POST['content']
         );
 
-        self::CallModel()->PushData($data);
+        $this->model->PushData($data);
 
     }
 

@@ -13,13 +13,19 @@ class post_model extends Model{
 
         if(is_array($data)){
 
-            $query = $this->db->prepare(' INSERT INTO post (`user_id`,`header`,`content`,`date`) VALUES ( :user_id, :header, :content, :date) ');
+            $query = $this->db->prepare(" INSERT INTO post (`user_id`, `header`, `content`, `date`) VALUES (:userid, :header, :content, :date) ");
             $query->execute(array(
-                ':user_id' => 1,
+                ':userid' => "1",
                 ':header' => $data['header'],
                 ':content' => $data['content'],
-                ':date' => 'UNIX_TIMESTAMP()'
+                ':date' =>  time()
             ));
+
+
+//            use for check error
+//            echo "\nPDO::errorInfo():\n";
+//            print_r($query->errorInfo());
+
 
         }else{
 
