@@ -6,10 +6,10 @@ class index extends Controller{
 
         parent::__construct();
 
-        Session::start();
-        $logged = Session::get('login');
+        Session::init();
+        $login  = Session::get('login');
 
-        if($logged == false){
+        if($login != true){
 
             Session::destroy();
             header("location: ".URL."login");
@@ -17,18 +17,24 @@ class index extends Controller{
 
         }
 
+
+        $this->view->css = array("index/css/main.css");
+        $this->view->js = array(
+            "index/js/Content.js",
+            "index/js/Loadmore.js",
+            "index/js/PageController.js");
+
     }
 
     function index(){
 
-        $this->view->css = array("index/css/main.css");
-        $this->view->js = array("index/js/Content.js","index/js/Loadmore.js","index/js/PageController.js");
         $this->view->render("index/index");
 
     }
 
     function fetchMessage(){
 
+        session_write_close();
         ini_set('max_execution_time', 31);
         $timeout = 260; //300
 
@@ -57,6 +63,8 @@ class index extends Controller{
             else echo self::CallModel()->fetchMessage_Last();
 
         }
+
+        Session::init();
 
     }
 

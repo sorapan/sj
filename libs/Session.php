@@ -3,9 +3,9 @@
 
 class Session{
 
-    public static function start(){
+    public static function init(){
 
-        session_start();
+        @session_start();
 
     }
 

@@ -10,10 +10,10 @@ class login_model extends Model{
 
     function CheckLogin(){
 
-        $sth = $this->db->prepare("SELECT id FROM user WHERE `username` = :login AND `password` = :password");
+        $sth = $this->db->prepare("SELECT id FROM user WHERE `username` = :user AND `password` = :pass");
         $sth->execute(array(
-            ':login' => $_POST['user'],
-            ':password' => $_POST['pass']
+            ':user' => $_POST['user'],
+            ':pass' => $_POST['pass']
         ));
 
         $data = $sth->fetch();
@@ -21,15 +21,14 @@ class login_model extends Model{
 
         if($count > 0){
 
-            Session::start();
-            Session::set('user_id', $data['id']);
+            Session::init();
+//            Session::set('user_id', $data['id']);
             Session::set('login', true);
-
             header("location: ".URL);
 
         }else{
 
-            header("location: ../login");
+            header("location: ".URL."login");
 
         }
 

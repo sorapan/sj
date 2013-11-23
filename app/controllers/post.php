@@ -6,10 +6,10 @@ class post extends Controller{
 
         parent::__construct();
 
-        Session::start();
-        $logged = Session::get('login');
+        Session::init();
+        $login  = Session::get('login');
 
-        if($logged == false){
+        if($login != true){
 
             Session::destroy();
             header("location: ".URL."login");
@@ -17,12 +17,14 @@ class post extends Controller{
 
         }
 
+
+        $this->view->css = array("post/css/post_style.css");
+        $this->view->js = array("post/js/PushData.js");
+
     }
 
     function index(){
 
-        $this->view->css = array("post/css/post_style.css");
-        $this->view->js = array("post/js/PushData.js");
         $this->view->render("post/index");
 
     }
