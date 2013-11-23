@@ -14,4 +14,10 @@ class login extends Controller{
 
     }
 
+    function CheckLogin(){
+
+
+
+    }
+
 } 
