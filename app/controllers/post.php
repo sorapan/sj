@@ -6,6 +6,17 @@ class post extends Controller{
 
         parent::__construct();
 
+        Session::start();
+        $logged = Session::get('login');
+
+        if($logged == false){
+
+            Session::destroy();
+            header("location: ".URL."login");
+            exit;
+
+        }
+
     }
 
     function index(){
@@ -23,7 +34,7 @@ class post extends Controller{
             'content' => $_POST['content']
         );
 
-        $this->model->PushData($data);
+        self::CallModel()->PushData($data);
 
     }
 

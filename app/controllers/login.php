@@ -16,7 +16,13 @@ class login extends Controller{
 
     function CheckLogin(){
 
+        self::CallModel()->CheckLogin();
 
+    }
+
+    private static function CallModel(){
+
+        return new login_model();
 
     }
 

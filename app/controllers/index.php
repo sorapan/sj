@@ -6,13 +6,21 @@ class index extends Controller{
 
         parent::__construct();
 
+        Session::start();
+        $logged = Session::get('login');
 
+        if($logged == false){
+
+            Session::destroy();
+            header("location: ".URL."login");
+            exit;
+
+        }
 
     }
 
     function index(){
 
-        //echo "inside index index";
         $this->view->css = array("index/css/main.css");
         $this->view->js = array("index/js/Content.js","index/js/Loadmore.js","index/js/PageController.js");
         $this->view->render("index/index");
