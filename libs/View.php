@@ -16,9 +16,6 @@ class View {
         }else{
 
             require "public/layout/layout1.php";
-            //require "public/layout/header.php";
-            //require "app/views/" . $name . ".php";
-            //require "public/layout/footer.php";
 
         }
 

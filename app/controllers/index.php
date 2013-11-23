@@ -6,6 +6,8 @@ class index extends Controller{
 
         parent::__construct();
 
+
+
     }
 
     function index(){
