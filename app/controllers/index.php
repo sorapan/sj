@@ -6,16 +6,16 @@ class index extends Controller{
 
         parent::__construct();
 
-        Session::init();
-        $login  = Session::get('login');
-
-        if($login != true){
-
-            Session::destroy();
-            header("location: ".URL."login");
-            exit;
-
-        }
+//        Session::init();
+//        $login  = Session::get('login');
+//
+//        if($login != true){
+//
+//            Session::destroy();
+//            header("location: ".URL."login");
+//            exit;
+//
+//        }
 
 
         $this->view->css = array("index/css/main.css");

@@ -11,6 +11,20 @@ class Database extends PDO{
 
     }
 
+    public function select($sql, $array = array(), $fetchmode = PDO::FETCH_ASSOC){
+
+        $sth = $this->prepare($sql);
+        foreach($array as $key=>$value){
+
+            $sth->bindValue("$key", $value);
+
+        }
+
+        $sth->execute();
+        return $sth->fetchAll($fetchmode);
+
+    }
+
 
     public function insert($table,$data){
 
@@ -52,6 +66,12 @@ class Database extends PDO{
         }
 
         $sth->execute();
+    }
+
+    public function delete($table, $where, $limit = 1){
+
+        return $this->exec("DELETE FROM $table WHERE $where LIMIT $limit");
+
     }
 
 

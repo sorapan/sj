@@ -8,7 +8,7 @@ class logout extends Controller{
 
     }
 
-    function logout(){
+    function index(){
 
         Session::init();
         Session::destroy();
