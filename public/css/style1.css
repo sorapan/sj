@@ -79,7 +79,7 @@ a.button_navi{
 
 }
 
-div#top_menu div.button{
+div#top_menu a.button_navi{
 
     float: left;
     margin-right:3px;
@@ -95,7 +95,7 @@ div#top_menu div.button{
 
 }
 
-div#top_menu div.button:hover{
+div#top_menu a.button_navi:hover{
 
     background-color: rgb(245,245,245);
     border-bottom:4px solid gold;
