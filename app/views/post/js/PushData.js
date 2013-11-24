@@ -1,26 +1,38 @@
 $(function(){
 
-    $(" input#submit").click(function(){
+    var header = $(" #post_header");
+    var content = $(" #post_content");
 
-        $(this).attr("disabled", "disabled");
 
-        $.ajax({
+    $(" button#submit").click(function(){
 
-            url: 'post/PushData',
-            type: 'POST',
-            data: {
+        if(header.val() !== "" && content.val() !== ""){
 
-                header: $(" #post_header").val(),
-                content: $(" #post_content").val()
+            $(this).attr("disabled", "disabled");
 
-            },
-            charset: 'UTF-8',
-            complete:(function(){
+            $.ajax({
 
-                window.location = "../";
+                url: 'post/PushData',
+                type: 'POST',
+                data: {
 
-            })
-        });
+                    header: header.val(),
+                    content: content.val()
+
+                },
+                charset: 'UTF-8',
+                complete:(function(){
+
+                    window.location = "../";
+
+                })
+            });
+
+        }else{
+
+            alert("textfield is empty");
+
+        }
 
     });
 
