@@ -30,13 +30,26 @@ class users_model extends Model{
 
     }
 
+    function editsave($data){
+
+        $query = $this->db->prepare(" UPDATE user SET `username`=:username, `password`=:password, `class`=:class WHERE `id` = :id");
+        $query->execute(array(
+            ":username" => $data['username'],
+            ":password" => $data['password'],
+            ":class" => $data['class'],
+            ":id" => $data['id'],
+        ));
+
+
+    }
+
     function insert($data){
 
         $query = $this->db->prepare(" INSERT INTO user (`username`,`password`,`class`) VALUES (:username,:password,:class) ");
         $query->execute(array(
             ":username" => $data['username'],
             ":password" => $data['password'],
-            ":class" => $data['class'],
+            ":class" => $data['class']
         ));
 
 //        This is Debug query

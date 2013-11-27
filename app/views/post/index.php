@@ -1,4 +1,4 @@
-<div id="head">Post Something</div>
+<div id="head"><h1>Post Something</h1></div>
 
 <div id="form">
     <label for="post_header">Header </label><input type="text" id="post_header"><br>

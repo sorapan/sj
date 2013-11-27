@@ -27,6 +27,23 @@ class users extends Controller{
 
     }
 
+    function editsave(){
+
+        $data = array(
+
+            "id" => $_POST['id'],
+            "username" => $_POST['username'],
+            "password" => $_POST['password'],
+            "class" => $_POST['class']
+
+        );
+
+        self::CallModel()->editsave($data);
+        header("location:".URL."users");
+
+
+    }
+
 
     function insert(){
 
