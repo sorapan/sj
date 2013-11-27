@@ -9,6 +9,8 @@ class users extends Controller{
 
         $this->view->css = array("users/css/users_style.css");
 
+        $this->view->js = array("users/js/users_pagecontrol.js");
+
     }
 
     function index(){

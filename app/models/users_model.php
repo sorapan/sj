@@ -30,12 +30,6 @@ class users_model extends Model{
 
     }
 
-    function create(){
-
-        
-
-    }
-
     function insert($data){
 
         $query = $this->db->prepare(" INSERT INTO user (`username`,`password`,`class`) VALUES (:username,:password,:class) ");
