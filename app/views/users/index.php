@@ -37,7 +37,7 @@
         echo"<td>".$val['id']."</td>";
         echo"<td>".$val['username']."</td>";
         echo"<td>".$val['class']."</td>";
-        echo"<td><span><a href='".URL."users/edit/".$val['id']."'>EDIT</a> <a href=''>DEL</a></span></td>";
+        echo"<td><span><a href='".URL."users/edit/".$val['id']."'>EDIT</a> <a href='".URL."users/delete/".$val['id']."'>DEL</a></span></td>";
         echo"</tr>";
 
     }

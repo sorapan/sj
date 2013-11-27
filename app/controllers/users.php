@@ -27,11 +27,18 @@ class users extends Controller{
 
     }
 
-    function editsave(){
+    function delete($id){
+
+        self::CallModel()->delete($id);
+        header("location:".URL."users");
+
+    }
+
+    function editsave($id){
 
         $data = array(
 
-            "id" => $_POST['id'],
+            "id" => $id,
             "username" => $_POST['username'],
             "password" => $_POST['password'],
             "class" => $_POST['class']
