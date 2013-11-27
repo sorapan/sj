@@ -1,0 +1,53 @@
+
+div#bigbox{
+
+    width: 1000px;
+    height: auto;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+table{
+
+    border:1px solid black;
+    border-collapse:collapse;
+    margin: auto;
+
+}
+
+th{
+    background-color: rgb(195,195,195);
+}
+
+tr, th, tr{
+
+    text-align: center;
+    border: 1px solid black;
+    width:200px;
+
+}
+
+
+div#form {
+
+    clear: both;
+    margin-top:15px;
+    width: auto;
+
+}
+
+label, input {
+
+    display: inline-block;
+    vertical-align: super;
+    width: 100px;
+
+}
+
+input[type="text"], input[type="password"] , textarea{
+
+    width:200px
+
+}

@@ -39,6 +39,7 @@
     <div id="top_menu">
         <a class="button_navi" href="<?php echo URL?>">Main</a>
         <a class="button_navi" href="<?php echo URL?>post">Post</a>
+        <a class="button_navi" href="<?php echo URL?>users">Users</a>
         <a class="button_navi" href="<?php echo URL?>logout">Logout</a>
     </div>
 </div>
