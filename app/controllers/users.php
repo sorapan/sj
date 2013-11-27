@@ -21,14 +21,21 @@ class users extends Controller{
     function edit($id){
 
         $this->view->target = self::CallModel()->singleRow($id);
-
         $this->view->render("users/edit");
 
     }
 
-    function create(){
 
-        $this->view->render("users/create");
+    function insert(){
+
+        $data = array(
+            "username" => $_POST['username'],
+            "password" => $_POST['password'],
+            "class" => $_POST['class']
+        );
+
+        self::CallModel()->insert($data);
+        header("location:".URL."users");
 
     }
 

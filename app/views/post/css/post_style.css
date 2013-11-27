@@ -29,8 +29,14 @@ label, input {
 
 }
 
-input[type="text"], textarea{
+input[type="text"], input[type="file"], textarea{
 
     width:500px
 
+}
+
+textarea{
+    
+    height: 100px;
+    
 }

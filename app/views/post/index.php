@@ -12,6 +12,6 @@
 
     <a href="" id="add">Add</a> <a href="" id="del">Del</a>
 
-    <br>
+    <br><br>
     <button id="submit">Submit</button>
 </div>
