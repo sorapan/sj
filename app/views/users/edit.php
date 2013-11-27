@@ -1,4 +1,5 @@
 <div id="bigbox">
+    <h1>Edit User Infomation</h1>
 <form>
 
     <label for="username">Username</label><input type="text" id="username" value="<?php echo $this->target['username']; ?>"><br>

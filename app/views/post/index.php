@@ -10,7 +10,8 @@
 
     </div>
 
-    <button id="add">Add</button> <button id="del">Del</button>
+    <a href="" id="add">Add</a> <a href="" id="del">Del</a>
+
     <br>
     <button id="submit">Submit</button>
 </div>

@@ -26,6 +26,12 @@ class users extends Controller{
 
     }
 
+    function create(){
+
+        $this->view->render("users/create");
+
+    }
+
     private static function CallModel(){
 
         return new users_model();

@@ -20,7 +20,7 @@ class users_model extends Model{
 
     function singleRow($id){
 
-        $query = $this->db->prepare(" SELECT * FROM user WHERE id = :id");
+        $query = $this->db->prepare(" SELECT * FROM user WHERE id = :id LIMIT 1");
         $query->execute(array(
             ":id" => $id
         ));
