@@ -5,7 +5,11 @@
 
         <label for="username">Username</label><input type="text" id="username" name="username"><br>
         <label for="password">Password</label><input type="password" id="password" name="password"><br>
-        <label for="class">Class</label><input type="text" id="class" name="class"><br><br>
+        <label for="class">Class</label><select id="class" name="class">
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+            <option value="owner">Owner</option>
+        </select><br><br>
         <input type="submit" value="OK">
 
     </form>

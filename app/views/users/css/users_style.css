@@ -16,7 +16,7 @@ div#bigbox-left{
     height: auto;
     margin-top: 50px;
     margin-left: 50px;
-    padding: 20px;
+    padding: 15px;
     background-color: rgb(160,160,160);
 
 }
@@ -24,7 +24,7 @@ div#bigbox-left{
 div#bigbox-right{
 
     float: right;
-    width: 830px;
+    width: 850px;
     height: auto;
     margin-top: 30px;
     margin-right: 50px;
@@ -61,7 +61,7 @@ div#form {
 
 }
 
-label, input {
+label, input, select {
 
     display: inline-block;
     vertical-align: super;
@@ -69,7 +69,7 @@ label, input {
 
 }
 
-input[type="text"], input[type="password"] , textarea{
+input[type="text"], input[type="password"] , textarea, select{
 
     width:200px
 
