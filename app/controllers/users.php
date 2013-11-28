@@ -6,9 +6,7 @@ class users extends Controller{
 
         parent::__construct();
 
-
         $this->view->css = array("users/css/users_style.css");
-
         $this->view->js = array("users/js/users_pagecontrol.js");
 
     }
@@ -48,9 +46,7 @@ class users extends Controller{
         self::CallModel()->editsave($data);
         header("location:".URL."users");
 
-
     }
-
 
     function insert(){
 
