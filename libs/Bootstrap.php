@@ -29,6 +29,7 @@ class Bootstrap{
         }else{
 
             $this->error();
+            return false;
 
         }
 

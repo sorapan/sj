@@ -7,11 +7,20 @@ $url = explode('/', $url);
 
 if(isset($url[1])){
 
-    require "app/views/".CheckUrlZero($url[0])."/".CheckUrlOne($url[0],$url[1]).".php";
+    $dir = "app/views/".CheckUrlZero($url[0])."/".CheckUrlOne($url[0],$url[1]).".php";
+
+    if(file_exists($dir)){
+
+        require $dir;
+
+    }else{
+
+        require "app/views/error/index.php";
+
+    }
 
 }else{
 
-    //require "app/controllers/".self::CheckUrlZero($url[0]).".php";
     require "app/views/".CheckUrlZero($url[0])."/index.php";
 
 }
@@ -34,13 +43,11 @@ function CheckUrlZero($url){
 
             }else{
 
-                //$this->error();
+                return "error";
 
             }
 
         }
-
-        return false;
 
     }
 
@@ -70,4 +77,4 @@ function CheckUrlOne($url0,$url){
 
 
 
-} 
+}
