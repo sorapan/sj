@@ -5,7 +5,7 @@ $(function(){
     function CheckUrlNButtonValue(){
 
         var str=location.href.toLowerCase();
-        var button = $(" .button_navi ");
+        var button = $(" a.button_navi ");
 
         button.each(function() {
 
@@ -14,7 +14,8 @@ $(function(){
                 $(this).css({
 
                     'color' : 'rgb(85,85,85)',
-                    'border-bottom': '4px solid gold'
+                    'background-color' : 'gold'
+//                    'border-bottom': '4px solid gold'
 
                 });
 
