@@ -14,6 +14,7 @@ class Bootstrap{
 
             require "app/controllers/index.php";
             $controller = new Index();
+            $controller->loadModel("Index");
             $controller->index();
             return false;
 
