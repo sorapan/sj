@@ -19,7 +19,9 @@ class post extends Controller{
 
 
         $this->view->css = array("post/css/post_style.css");
-        $this->view->js = array("post/js/PushData.js","post/js/form_control.js");
+        $this->view->js = array("post/js/PushData.js",
+                                "post/js/form_control.js",
+                                "post/js/upload_img.js");
 
     }
 
@@ -39,6 +41,44 @@ class post extends Controller{
         self::CallModel()->PushData($data);
 
     }
+
+    function uploadImg(){
+
+
+        $topic_id = self::CallModel()->LastTopicId()['id']+1;
+
+        if(!is_dir("file/".$topic_id."/")){
+
+            mkdir("file/".$topic_id);
+
+            if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
+
+                move_uploaded_file( $_FILES["img"]["tmp_name"], "file/".$topic_id."/".$_FILES['img']['name']);
+
+            }
+
+            echo "file/".$topic_id."/".$_FILES['img']['name'];
+
+        }else{
+
+            if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
+
+                move_uploaded_file( $_FILES["img"]["tmp_name"], "file/".$topic_id."/".$_FILES['img']['name']);
+
+            }
+
+            echo "file/".$topic_id."/".$_FILES['img']['name'];
+
+        }
+
+    }
+
+    function delImg(){
+
+        unlink($_POST['del']);
+
+    }
+
 
     private static function CallModel(){
 

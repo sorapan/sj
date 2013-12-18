@@ -15,7 +15,7 @@ div#bigbox-left{
     width: 300px;
     height: auto;
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 30px;
     padding: 15px;
     background-color: rgb(180,180,180);
 
@@ -24,7 +24,7 @@ div#bigbox-left{
 div#bigbox-right{
 
     float: right;
-    width: 680px;
+    width: 720px;
     height: auto;
     margin-top: 30px;
     margin-right: 50px;

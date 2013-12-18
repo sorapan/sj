@@ -6,7 +6,7 @@
 
     <div id="upload_box">
 
-        <label for="post_upload">Upload </label><input type="file" class="0" id="post_upload"><br>
+        <div class="result" id="0"><input type="file" class="file" name="file" id="0"></div>
 
     </div>
 
@@ -14,4 +14,5 @@
 
     <br><br>
     <button id="submit">Submit</button>
+
 </div>

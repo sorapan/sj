@@ -34,4 +34,13 @@ class post_model extends Model{
 
     }
 
+    function LastTopicId(){
+
+        $qry = $this->db->prepare("SELECT id FROM post ORDER BY date LIMIT 1");
+        $qry->execute();
+        return $qry->fetch();
+
+
+    }
+
 } 
