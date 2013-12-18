@@ -38,6 +38,7 @@
 <!--<div id="blogtop_menu">-->
 
     <div id="top_menu">
+        <?php require "public/layout/profile_layout_engine/profile_Layout_bootstrap.php"; ?>
         <a class="button_navi" href="<?php echo URL?>">Main</a>
         <a class="button_navi" href="<?php echo URL?>post">Post</a>
         <a class="button_navi" href="<?php echo URL?>users">Users</a>
