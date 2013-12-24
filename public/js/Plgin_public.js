@@ -15,7 +15,8 @@
 
             date: "",
             header: "",
-            message: ""
+            message: "",
+            url: ""
 
         },a);
 
@@ -24,12 +25,14 @@
             var content = $("#content");
 
             content.append(''+
+                '<a href="'+ data.url +'">'+
                 '<div class="reply">'+
                 '<div class="head"><div class="head_msg">'+ data.date +'</div></div>'+
                 '<div class="message">'+
                 '<div class="message_hdr">'+ PreventHtmlTag(data.header) +'</div>'+
                 '<div class="message_msg">'+ PreventHtmlTag(data.message) +'</div>'+
                 '</div>'+
+                '</a>'+
                 '</div>');
 
         }
@@ -39,12 +42,14 @@
             var content = $("#content");
 
             content.prepend(''+
+                '<a href="'+ data.url +'">'+
                 '<div class="reply">'+
                 '<div class="head"><div class="head_msg">'+ data.date +'</div></div>'+
                 '<div class="message">'+
                 '<div class="message_hdr">'+ PreventHtmlTag(data.header) +'</div>'+
                 '<div class="message_msg">'+ PreventHtmlTag(data.message) +'</div>'+
                 '</div>'+
+                '</a>'+
                 '</div>');
 
         }

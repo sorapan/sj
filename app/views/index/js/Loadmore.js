@@ -64,7 +64,8 @@ $(function(){
 
                             date : data.date[i],
                             header : data.hdr[i],
-                            message : data.msg[i]
+                            message : data.msg[i],
+                            url : "http://patel/topic/id/"+data.topicID[i]
 
                         },"ap");
 

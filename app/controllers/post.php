@@ -45,7 +45,7 @@ class post extends Controller{
     function uploadImg(){
 
 
-        $topic_id = self::CallModel()->LastTopicId()['id']+1;
+        $topic_id = self::CallModel()->GetTopicId();
 
         if(!is_dir("file/".$topic_id."/")){
 

@@ -115,11 +115,13 @@ div#content div.reply div.head div.head_msg{
 
     padding-left: 5px;
 
+
 }
 
 div#content div.reply div.message{
 
     float: left;
+    color: black;
     background-color: white;
     min-height: 150px;
     height: auto;

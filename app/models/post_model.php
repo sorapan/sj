@@ -13,12 +13,13 @@ class post_model extends Model{
 
         if(is_array($data)){
 
-            $query = $this->db->prepare(" INSERT INTO post (`user_id`, `header`, `content`, `date`)".
-                "VALUES (:userid, :header, :content, :date) ");
+            $query = $this->db->prepare(" INSERT INTO post (`topicID`,`user_id`, `header`, `content`, `date`)".
+                "VALUES (:topicID, :userid, :header, :content, :date) ");
             $query->execute(array(
                 ':userid' => "1",
                 ':header' => $data['header'],
                 ':content' => $data['content'],
+                ':topicID' => $this->GetTopicId(),
                 ':date' =>  time()
             ));
 
@@ -34,13 +35,23 @@ class post_model extends Model{
 
     }
 
-    function LastTopicId(){
+    function GetTopicId(){
 
         $qry = $this->db->prepare("SELECT id FROM post ORDER BY id DESC LIMIT 1");
         $qry->execute();
-        return $qry->fetch();
+        $result = $qry->fetch();
+        if($result == null){
 
+            return sprintf("%06s",0);
+
+        }else{
+
+            $int = (int)$result['id']+1;
+            return sprintf("%06s",$int);
+
+        }
 
     }
+
 
 } 

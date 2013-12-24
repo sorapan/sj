@@ -20,6 +20,8 @@ class index_model extends Model{
             $data["date"][$count_array] = date('d/m/Y - h:i A',(int)$row['date']);
             $data["msg"][$count_array] = $row['content'];
             $data["hdr"][$count_array] = $row['header'];
+            $data["id"][$count_array] = $row['id'];
+            $data["topicID"][$count_array] = $row['topicID'];
             $count_array++;
 
         }
@@ -43,6 +45,8 @@ class index_model extends Model{
         $data["hdr"] = $row['header'];
         $data['now_time'] = $this->Timestamp();
         $data['firsttimeFetch'] = 0;
+        $data["id"] = $row['id'];
+        $data["topicID"] = $row['topicID'];
 
         return json_encode($data);
 
@@ -59,6 +63,8 @@ class index_model extends Model{
             $data["date"][$count_array] = date('d/m/Y - h:i A',(int)$row['date']);
             $data["msg"][$count_array] = $row['content'];
             $data["hdr"][$count_array] = $row['header'];
+            $data["id"][$count_array] = $row['id'];
+            $data["topicID"][$count_array] = $row['topicID'];
             $count_array++;
 
         }
