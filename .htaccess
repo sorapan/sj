@@ -1,6 +1,9 @@
 #php_flag display_errors On
 #php_value error_reporting 9999
 
+php_value post_max_size 30M
+php_value upload_max_filesize 30M
+
 RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-f

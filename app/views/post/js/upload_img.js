@@ -12,7 +12,7 @@ $(function(){
 
         formdata = new FormData;
 
-        formdata.append("img",$(this)[0].files[0]);
+        formdata.append("img", $(this)[0].files[0], thisid+".jpg");
 
         if(formdata){
 
@@ -36,7 +36,9 @@ $(function(){
 
                 url: "post/uploadImg",
                 type: "POST",
-                data: formdata,
+                data:
+                    formdata
+                ,
                 processData: false,
                 contentType: false,
                 success:function(data){
