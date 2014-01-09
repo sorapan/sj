@@ -7,18 +7,22 @@ class View {
 
     }
 
-    public function render($name,$noinclude = false){
+    public function render($name){
 
-        if($noinclude){
-
-            require "app/views/" . $name . ".php";
-
-        }else{
-
-            require "public/layout/layout1.php";
-
-        }
+        require "public/layout/layout1.php";
 
     }
 
-} 
+    public function render_2($name){
+
+        require "public/layout/layout2.php";
+
+    }
+
+    public function render_none($name){
+
+        require "app/views/" . $name . ".php";
+
+    }
+
+}

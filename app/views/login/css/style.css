@@ -1,0 +1,32 @@
+
+
+label, input{
+
+    float:left;
+
+}
+
+label{
+
+    display: inline-block;
+    text-align: left;
+    width: 120px;
+
+}
+
+input{
+
+    background-color: lightyellow;
+    border: 1px solid black;
+
+}
+
+button{
+
+    border: 0;
+    background: gold;
+    color: white;
+    padding: 10px;
+
+}
+

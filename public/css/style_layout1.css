@@ -70,7 +70,7 @@ div#top_menu{
     height: 100%;
     width: 13%;
     position: fixed;
-    border-right: 1px solid #2f2f2f;
+    /*border-right: 1px solid gold;*/
     background-color:  #2f2f2f;
     z-index:999;
 

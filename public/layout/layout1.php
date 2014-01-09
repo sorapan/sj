@@ -4,7 +4,7 @@
     <title>Hello</title>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
-    <link rel="stylesheet" href="<?php echo URL ?>public/css/style1.css">
+    <link rel="stylesheet" href="<?php echo URL ?>public/css/style_layout1.css">
 
     <script src="<?php echo URL ?>public/js/jquery.js"></script>
     <script src="<?php echo URL ?>public/js/PageControl.js"></script>

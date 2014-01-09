@@ -7,11 +7,12 @@ class login extends Controller{
         parent::__construct();
         Session::init();
 
+        $this->view->css = array("login/css/style.css");
     }
 
     function index(){
 
-        $this->view->render("login/index",1);
+        $this->view->render_2("login/index");
 
     }
 

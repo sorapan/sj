@@ -52,7 +52,7 @@ class post extends Controller{
 
             if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
 
-                move_uploaded_file( $_FILES["img"]["tmp_name"], "file/".$topic_id."/".$_FILES['img']['name']);
+                move_uploaded_file( $_FILES["img"]["tmp_name"], "temp/".$topic_id."/".$_FILES['img']['name']);
 
             }
 
@@ -62,7 +62,7 @@ class post extends Controller{
 
             if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
 
-                move_uploaded_file( $_FILES["img"]["tmp_name"], "file/".$topic_id."/".$_FILES['img']['name']);
+                move_uploaded_file( $_FILES["img"]["tmp_name"], "temp/".$topic_id."/".$_FILES['img']['name']);
 
             }
 
