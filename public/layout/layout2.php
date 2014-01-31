@@ -2,8 +2,9 @@
 <html>
 <head>
 
-<title></title>
+<title>Login</title>
 
+    <meta charset="utf-8">
     <link rel="stylesheet" href="<?php echo URL ?>public/css/style_layout2.css">
 
 
@@ -25,10 +26,15 @@
 
 </head>
 <body>
+<div id="headerer">สงขลาเจริญการช่าง</div>
 
-<div id="content">
-<?php require "public/layout/layout_engine/Layout_bootstrap.php"; ?>
-</div>
+
+    <div id="contenter">
+        <div id="in_content">
+            <?php require "public/layout/layout_engine/Layout_bootstrap.php"; ?>
+        </div>
+    </div>
+
 
 </body>
 </html>

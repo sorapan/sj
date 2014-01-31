@@ -3,7 +3,7 @@ html, body{
     padding:0;
     margin:0;
     background-color: gold;
-    font-family: sans-serif;
+    font-family: Arial,sans-serif;
 
 }
 
@@ -14,12 +14,32 @@ body{
 
 }
 
-#content{
+#headerer{
 
-    margin: auto;
-    margin-top: 200px;
-    width: 520px;
-    padding: 20px;
-    background-color: white;
+    text-align: left;
+    color:white;
+    margin: 10px;
+    font-weight: bolder;
+    font-size: 40px;
+
+}
+
+
+#contenter{
+
+    width: 1000px;
+    height: auto;
+    margin: 120px auto;
+    padding-left: 40%;
+
+}
+
+#in_content{
+
+    float: left;
+    width: auto;
+    background-color:white;
+    padding: 30px;
+    border:1px solid rgb(150,150,150);
 
 }

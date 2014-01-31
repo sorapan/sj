@@ -2,8 +2,6 @@ $(function(){
 
     var formdata = false;
 
-
-
     $(document).on("change"," .file",function(event){
 
 //        event.preventDefault();

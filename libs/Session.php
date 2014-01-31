@@ -28,4 +28,18 @@ class Session{
 
     }
 
+    public static function checkLogin(){
+
+        $login  = self::get('login');
+
+        if($login != true){
+
+            self::destroy();
+            header("location: ".URL."login");
+            exit;
+
+        }
+
+    }
+
 }

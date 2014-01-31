@@ -70,7 +70,7 @@ div#top_menu{
     height: 100%;
     width: 13%;
     position: fixed;
-    /*border-right: 1px solid gold;*/
+    border-right: 3px solid #2f2f2f;
     background-color:  #2f2f2f;
     z-index:999;
 
@@ -108,5 +108,14 @@ div#midgard{
     float:right;
     height: auto;
     width: 87%;
+
+}
+
+button, input[type="submit"] {
+
+    border: 0;
+    color : white;
+    padding: 5px 10px 5px 10px;
+    background-color: #2f2f2f;
 
 }

@@ -18,7 +18,6 @@
 
 
 <div id="blog_content">
-
     <div id="content"></div>
 
     <div id="loadmore">Loadmore</div>

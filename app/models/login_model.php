@@ -10,7 +10,7 @@ class login_model extends Model{
 
     function CheckLogin(){
 
-        $sth = $this->db->prepare("SELECT id FROM user WHERE `username` = :user AND `password` = :pass");
+        $sth = $this->db->prepare("SELECT * FROM user WHERE `username` = :user AND `password` = :pass");
         $sth->execute(array(
             ':user' => $_POST['user'],
             ':pass' => $_POST['pass']
@@ -24,6 +24,8 @@ class login_model extends Model{
             Session::init();
 //            Session::set('user_id', $data['id']);
             Session::set('login', true);
+            Session::set('sayhi', 0);
+            Session::set('username', $data['username']);
             header("location: ".URL);
 
         }else{
