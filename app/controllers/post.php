@@ -27,7 +27,15 @@ class post extends Controller{
 
         Session::init();
 
-        $topic_id = self::CallModel()->GetTopicId();
+        $data = array(
+            'header' => $_POST['header'],
+            'content' => $_POST['content'],
+            'userid' => Session::get('user_id')
+        );
+
+        self::CallModel()->PushData($data);
+
+        $topic_id = self::CallModel()-> GetTopicId2();
         self::mmove("temp/".Session::get('username'),"file/".$topic_id);
         Session::set('sayhi', 0);
         $files = scandir("file/".$topic_id);
@@ -40,13 +48,6 @@ class post extends Controller{
             }
 
         }
-
-        $data = array(
-            'header' => $_POST['header'],
-            'content' => $_POST['content']
-        );
-
-        self::CallModel()->PushData($data);
 
     }
 

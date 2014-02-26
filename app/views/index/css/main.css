@@ -104,9 +104,10 @@ div#content div.reply{
 div#content div.reply div.head{
 
     float: left;
-    color:white;
-    background-color: rgb(85,85,85);
-    height: 30px;
+    color: rgb(55,55,55);
+    background-color: rgb(240,240,240);
+    min-height: 30px;
+    height: auto;
     width: 100%;
 
 }
@@ -118,11 +119,11 @@ div#content div.reply div.head div.head_msg{
 
 }
 
-div#content div.reply div.message{
+div.message{
 
     float: left;
     color: black;
-    background-color: white;
+    background-color: rgb(240,240,240);
     min-height: 150px;
     height: auto;
     width: 100%;
@@ -133,7 +134,7 @@ div#content div.reply div.message div.message_hdr{
 
     padding: 5px;
     margin: 5px;
-    background-color: rgb(235,235,235);
+    background-color: transparent;
     font-size: large;
 
 }
@@ -144,7 +145,7 @@ div#content div.reply div.message div.message_msg{
 
 }
 
-/* ---------------------End of content--------------------- */
+/* ---------------------MORE--------------------- */
 
 
 div#loadmore {

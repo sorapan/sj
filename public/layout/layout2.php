@@ -5,6 +5,7 @@
 <title>Login</title>
 
     <meta charset="utf-8">
+    <link rel="stylesheet" href="<?php echo URL ?>public/css/fontface.css">
     <link rel="stylesheet" href="<?php echo URL ?>public/css/style_layout2.css">
 
 
@@ -26,7 +27,7 @@
 
 </head>
 <body>
-<div id="headerer">สงขลาเจริญการช่าง</div>
+<div id="headerer"><img src="<?php echo URL ?>public/img/logo.jpg"></div>
 
 
     <div id="contenter">

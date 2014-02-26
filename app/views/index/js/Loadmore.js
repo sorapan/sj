@@ -4,22 +4,20 @@ $(function(){
     var loadmore = $(' #loadmore');
     var content = $(' #content');
 
-
     Loadmore();
-
 
     function Loadmore(){
 
-        $(window).data('ajaxready', true).scroll(function() {
+        $(window).data('ready', true).on('scroll',function() {
         	
-            if($(window).data('ajaxready') == false) return;
+            if($(window).data('ready') == false) return;
 
             if($(window).scrollTop()+$(window).height()+loadmore.height()+60 > $(document).height()){
 
                 // 140 is header + topmenu height
                 //setTimeout(function(){loadmore.html("<h2>Please wait...</h2>");} , 500);
 
-                $(window).data('ajaxready', false);
+                $(window).data('ready', false);
 
                 setTimeout(function(){
 
@@ -31,7 +29,7 @@ $(function(){
 
                     responseData();
                     offset += 5;
-                    $(window).data('ajaxready', true);
+                    $(window).data('ready', true);
                     loadmore.html("Loadmore");
 
                 } , 1000);

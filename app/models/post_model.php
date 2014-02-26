@@ -16,7 +16,7 @@ class post_model extends Model{
             $query = $this->db->prepare(" INSERT INTO post (`topicID`,`user_id`, `header`, `content`, `date`)".
                 "VALUES (:topicID, :userid, :header, :content, :date) ");
             $query->execute(array(
-                ':userid' => "1",
+                ':userid' => $data['userid'],
                 ':header' => $data['header'],
                 ':content' => $data['content'],
                 ':topicID' => $this->GetTopicId(),
@@ -40,16 +40,20 @@ class post_model extends Model{
         $qry = $this->db->prepare("SELECT id FROM post ORDER BY id DESC LIMIT 1");
         $qry->execute();
         $result = $qry->fetch();
-        if($result == null){
-
-            return sprintf("%06s",0);
-
-        }else{
 
             $int = (int)$result['id']+1;
             return sprintf("%06s",$int);
 
-        }
+    }
+
+    function GetTopicId2(){
+
+        $qry = $this->db->prepare("SELECT id FROM post ORDER BY id DESC LIMIT 1");
+        $qry->execute();
+        $result = $qry->fetch();
+
+        $int = (int)$result['id'];
+        return sprintf("%06s",$int);
 
     }
 
