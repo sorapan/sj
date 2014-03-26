@@ -5,6 +5,7 @@
 
         <div id="search_button">Okay</div>
         <input type="text" id="search_input" placeholder="Search...">
+        <a href="">โพสกระทู้</a>
 
     </div>
 

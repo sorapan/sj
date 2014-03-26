@@ -2,21 +2,138 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d9bd4ae-ce5d-43e7-8fbe-d8bfec66eb78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/fontface.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/topic_model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/topic/css/topic_style.css" />
-      <change type="DELETED" beforePath="D:\web\patel\file\000048\0.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/js/Loadmore.js" afterPath="$PROJECT_DIR$/app/views/index/js/Loadmore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/topic/id.php" afterPath="$PROJECT_DIR$/app/views/topic/id.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/layout/layout1.php" afterPath="$PROJECT_DIR$/public/layout/layout1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/layout/layout2.php" afterPath="$PROJECT_DIR$/public/layout/layout2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/login_model.php" afterPath="$PROJECT_DIR$/app/models/login_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/css/main.css" afterPath="$PROJECT_DIR$/app/views/index/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/post.php" afterPath="$PROJECT_DIR$/app/controllers/post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post_model.php" afterPath="$PROJECT_DIR$/app/models/post_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style_layout1.css" afterPath="$PROJECT_DIR$/public/css/style_layout1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style_layout2.css" afterPath="$PROJECT_DIR$/public/css/style_layout2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/topic.php" afterPath="$PROJECT_DIR$/app/controllers/topic.php" />
+      <change type="DELETED" beforePath="D:\web\patel\public\css\fontface.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\css\style_layout1.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\css\style_layout2.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\font\OpenSans-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\Search.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\1st.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\2nd.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\3rd.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\BrandSpankingNew.net.webloc" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_collapse.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_dash_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_dash_left.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_dash_right.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_dash_up.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_expand.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_fat_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_fat_left.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_fat_right.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_fat_up.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_left.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_mini_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_mini_left.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_mini_right.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_mini_up.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_right.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_up.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\basket.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\bell.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\block.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\bookmark.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\bug.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\button.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\calendar.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\calendar_day.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\checkbox.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\clipboard.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\clipboard_full.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\clock.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\comment.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\comment_left.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\contract_horizontal.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\contract_verical.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\copy.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\cross.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\cube.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\cut.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\database.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\document.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\drop_box.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\expand_horizontal.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\expand_vertical.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\field_hidden.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\field_input.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\field_password.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\field_text.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\field_textarea.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\flag.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\folder.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\font_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\font_lowercase.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\font_up.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\font_uppercase.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\globe.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\graph.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\happy.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heading1.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heading2.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heading3.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heading4.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heading5.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heading6.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heart.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heart_broken.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\home.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\ident_in.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\image.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\indent_out.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\index_card.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\key.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\linespace_decrease.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\linespace_increase.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\list_ordered.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\list_unordered.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\lock.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\magnify.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\magnify_minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\magnify_plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\mail.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\mail_back.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\mail_open.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\merge.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\mobile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\paste.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\person.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\plugin.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\printer.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\pulldown.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\quote.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\radio.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\sad.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\save.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\script.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\shield.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\sound.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\sound_on.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\split.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\star.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\table.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\tag.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\tick.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\transmission.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\trash.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\turn_left.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\turn_right.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\wand.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\warning.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\img\logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\js\PageControl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\js\Plgin_public.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\js\custom.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\js\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\layout\layout1.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\layout\layout2.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\layout\layout_engine\Layout_bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\layout\layout_engine\layout_lib.inc.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\web\patel\public\layout\profile_layout_engine\profile_Layout_bootstrap.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/View.php" afterPath="$PROJECT_DIR$/libs/View.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/index.php" afterPath="$PROJECT_DIR$/app/controllers/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/index.php" afterPath="$PROJECT_DIR$/app/views/index/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="patel.iws" />
@@ -40,10 +157,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".htaccess" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
+      <file leaf-file-name="style_layout1.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/asset/a_layout1/css/style_layout1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="0.15806988" vertical-offset="0" max-vertical-offset="601">
+            <state line="33" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="798" max-vertical-offset="2375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/index/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="107" column="38" selection-start="1669" selection-end="1685" vertical-scroll-proportion="-1.2681661" vertical-offset="2766" max-vertical-offset="3515">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fontface.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/asset/css/fontface.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="18" selection-start="31" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/index/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="203" selection-end="203" vertical-scroll-proportion="-7.037037" vertical-offset="0" max-vertical-offset="684">
               <folding />
             </state>
           </provider>
@@ -67,15 +211,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/libs/View.php" />
         <option value="$PROJECT_DIR$/app/controllers/login.php" />
         <option value="$PROJECT_DIR$/app/views/login/css/style.css" />
         <option value="$PROJECT_DIR$/app/views/login/index.php" />
         <option value="$PROJECT_DIR$/app/views/profile/minibox.php" />
-        <option value="$PROJECT_DIR$/app/views/index/index.php" />
         <option value="$PROJECT_DIR$/libs/Session.php" />
-        <option value="$PROJECT_DIR$/app/controllers/index.php" />
-        <option value="$PROJECT_DIR$/app/views/post/js/upload_img.js" />
         <option value="$PROJECT_DIR$/app/views/post/js/PushData.js" />
         <option value="$PROJECT_DIR$/app/views/index/js/PageController.js" />
         <option value="$PROJECT_DIR$/app/controllers/topic.php" />
@@ -84,7 +224,6 @@
         <option value="$PROJECT_DIR$/app/models/post_model.php" />
         <option value="$PROJECT_DIR$/public/css/fontface.css" />
         <option value="$PROJECT_DIR$/app/views/index/css/main.css" />
-        <option value="$PROJECT_DIR$/public/layout/layout2.php" />
         <option value="$PROJECT_DIR$/public/css/style_layout2.css" />
         <option value="$PROJECT_DIR$/app/controllers/logout.php" />
         <option value="$PROJECT_DIR$/app/models/topic_model.php" />
@@ -94,6 +233,14 @@
         <option value="$PROJECT_DIR$/app/views/topic/css/topic_style.css" />
         <option value="$PROJECT_DIR$/app/views/index/js/Loadmore.js" />
         <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/public/layout/layout2.php" />
+        <option value="$PROJECT_DIR$/app/views/post/js/upload_img.js" />
+        <option value="$PROJECT_DIR$/app/controllers/index.php" />
+        <option value="$PROJECT_DIR$/libs/View.php" />
+        <option value="$PROJECT_DIR$/asset/layout/layout2.php" />
+        <option value="$PROJECT_DIR$/asset/layout/layout1.php" />
+        <option value="$PROJECT_DIR$/asset/a_layout1/css/style_layout1.css" />
+        <option value="$PROJECT_DIR$/app/views/index/index.php" />
       </list>
     </option>
   </component>
@@ -101,8 +248,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
-    <option name="height" value="754" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -130,6 +277,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -148,9 +296,120 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a_layout1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,15 +488,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="754" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28863636" sideWeight="0.6705491" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36933535" sideWeight="0.6705491" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39899832" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -272,16 +531,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="29" selection-start="2606" selection-end="2613" vertical-scroll-proportion="0.0" vertical-offset="1852" max-vertical-offset="2660" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/post/js/PushData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="44" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="855" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/post.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="60" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="1662" max-vertical-offset="2964" />
@@ -362,24 +611,9 @@
         <state line="44" column="1" selection-start="594" selection-end="594" vertical-scroll-proportion="0.8613139" vertical-offset="364" max-vertical-offset="950" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/post/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="492" selection-end="492" vertical-scroll-proportion="0.5894161" vertical-offset="0" max-vertical-offset="548" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.62891984" vertical-offset="0" max-vertical-offset="684" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/post/js/PushData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="44" selection-start="582" selection-end="582" vertical-scroll-proportion="0.7903494" vertical-offset="0" max-vertical-offset="855" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/post/js/upload_img.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="0" selection-start="1943" selection-end="1943" vertical-scroll-proportion="0.0" vertical-offset="1109" max-vertical-offset="1710" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/login/css/style.css">
@@ -392,11 +626,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="599" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/PageControl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index/js/PageController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="12" selection-start="351" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1406" />
@@ -407,54 +636,14 @@
         <state line="40" column="20" selection-start="1152" selection-end="1152" vertical-scroll-proportion="-28.148148" vertical-offset="0" max-vertical-offset="1026" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="1347" selection-end="1429" vertical-scroll-proportion="0.5696864" vertical-offset="965" max-vertical-offset="1539" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1916376" vertical-offset="684" max-vertical-offset="1425" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="9" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="2983" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/fontface.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="112" selection-end="112" vertical-scroll-proportion="0.12687813" vertical-offset="0" max-vertical-offset="599" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/layout/layout2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="67" selection-start="647" selection-end="647" vertical-scroll-proportion="0.4353147" vertical-offset="302" max-vertical-offset="874" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style_layout2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="38" selection-start="642" selection-end="642" vertical-scroll-proportion="1.454243" vertical-offset="114" max-vertical-offset="1159" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="5" selection-start="233" selection-end="233" vertical-scroll-proportion="0.5296167" vertical-offset="0" max-vertical-offset="574" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/Plgin_public.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="26" selection-start="905" selection-end="905" vertical-scroll-proportion="-0.0017006802" vertical-offset="666" max-vertical-offset="1539" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.48432055" vertical-offset="64" max-vertical-offset="665" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/profile/minibox.php">
@@ -467,11 +656,6 @@
         <state line="17" column="54" selection-start="368" selection-end="368" vertical-scroll-proportion="-1.4163764" vertical-offset="1136" max-vertical-offset="1710" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/login_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="14" selection-start="788" selection-end="788" vertical-scroll-proportion="0.9322638" vertical-offset="66" max-vertical-offset="855" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/users_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.4224598" vertical-offset="798" max-vertical-offset="1406" />
@@ -482,29 +666,9 @@
         <state line="24" column="9" selection-start="439" selection-end="439" vertical-scroll-proportion="0.7944251" vertical-offset="0" max-vertical-offset="779" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="38" selection-start="1669" selection-end="1685" vertical-scroll-proportion="1.4858569" vertical-offset="1140" max-vertical-offset="3515" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/layout/layout1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.6167247" vertical-offset="615" max-vertical-offset="1216" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style_layout1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="11" selection-start="1584" selection-end="1587" vertical-scroll-proportion="2.434276" vertical-offset="570" max-vertical-offset="2356" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/topic/id.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="71" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="665" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/topic_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="148" selection-start="629" selection-end="629" vertical-scroll-proportion="0.4581105" vertical-offset="237" max-vertical-offset="798" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/topic/css/topic_style.css">
@@ -517,20 +681,115 @@
         <state line="48" column="20" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="1710" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/js/users_pagecontrol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/post/js/PushData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="44" selection-start="582" selection-end="582" vertical-scroll-proportion="0.8037225" vertical-offset="0" max-vertical-offset="855" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/topic_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="31" selection-start="337" selection-end="345" vertical-scroll-proportion="0.49811321" vertical-offset="97" max-vertical-offset="798" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/post_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="42" selection-start="434" selection-end="434" vertical-scroll-proportion="0.39037433" vertical-offset="123" max-vertical-offset="1482">
-          <folding>
-            <marker date="1391602125202" expanded="true" signature="-1:-1" placeholder="SELECT id FR..post..." />
-            <marker date="1391602125202" expanded="true" signature="-1:-1" placeholder="SELECT id FR..post..." />
-            <marker date="1391602125202" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
+        <state line="18" column="42" selection-start="434" selection-end="434" vertical-scroll-proportion="-1.0689656" vertical-offset="931" max-vertical-offset="1482" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/login_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="14" selection-start="788" selection-end="788" vertical-scroll-proportion="0.51724136" vertical-offset="304" max-vertical-offset="855" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/post/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="6" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="437" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="0.15806988" vertical-offset="0" max-vertical-offset="601">
+        <state line="3" column="0" selection-start="61" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="0" selection-start="1995" selection-end="1995" vertical-scroll-proportion="6.3333335" vertical-offset="1805" max-vertical-offset="2983" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="447" selection-end="447" vertical-scroll-proportion="0.5053192" vertical-offset="152" max-vertical-offset="1539" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/post/js/form_control.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="851" selection-end="851" vertical-scroll-proportion="0.7041522" vertical-offset="315" max-vertical-offset="893" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/post/js/upload_img.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="36" selection-start="885" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="397" max-vertical-offset="1710" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="1" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="627" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/layout/layout2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="9" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="874" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/a_layout1/js/PageControl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="223" selection-end="223" vertical-scroll-proportion="0.7074468" vertical-offset="0" max-vertical-offset="564" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/layout/layout1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="853" selection-end="853" vertical-scroll-proportion="1.0780141" vertical-offset="0" max-vertical-offset="1216" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="203" selection-end="203" vertical-scroll-proportion="-7.037037" vertical-offset="0" max-vertical-offset="684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/a_layout1/css/style_layout1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="798" max-vertical-offset="2375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/css/fontface.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="18" selection-start="31" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="38" selection-start="1669" selection-end="1685" vertical-scroll-proportion="-1.2681661" vertical-offset="2766" max-vertical-offset="3515">
           <folding />
         </state>
       </provider>

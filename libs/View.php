@@ -9,13 +9,13 @@ class View {
 
     public function render($name){
 
-        require "public/layout/layout1.php";
+        require "asset/layout/layout1.php";
 
     }
 
     public function render_2($name){
 
-        require "public/layout/layout2.php";
+        require "asset/layout/layout2.php";
 
     }
 
