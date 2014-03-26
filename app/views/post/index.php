@@ -1,4 +1,4 @@
-<div id="head"><h1>Post Something</h1></div>
+<div id="head" style="font-size: 24px">สร้างกระทู้</div>
 
 <div id="form">
     <label for="post_header">Header </label><input type="text" id="post_header"><br>
