@@ -1,7 +1,7 @@
 $(function(){
 
     //FollowThePage(" #top_menu, #menu1");
-    FollowThePage(" #menu1");
+//    FollowThePage(" #menu1");
 
     var divup = $(" #up");
 
@@ -13,7 +13,6 @@ $(function(){
         else divup.slideUp(300);
 
     });
-
 
     divup.click(function(){
 
@@ -27,11 +26,9 @@ $(function(){
 
     });
 
-
     function FollowThePage(targ){
 
         var target = $(targ);
-
         var offset = target.offset();
 
         $(window).scroll(function () {
@@ -50,16 +47,13 @@ $(function(){
 
             }
             else{
-
                 target.css({
 
                     'position' : 'relative'
 
                 });
 
-
             }
-
         });
     }
 

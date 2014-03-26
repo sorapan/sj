@@ -2,138 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d9bd4ae-ce5d-43e7-8fbe-d8bfec66eb78" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\web\patel\public\css\fontface.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\css\style_layout1.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\css\style_layout2.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\font\OpenSans-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\Search.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\1st.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\2nd.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\3rd.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\BrandSpankingNew.net.webloc" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_collapse.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_dash_down.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_dash_left.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_dash_right.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_dash_up.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_down.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_expand.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_fat_down.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_fat_left.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_fat_right.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_fat_up.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_left.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_mini_down.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_mini_left.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_mini_right.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_mini_up.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_right.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\arrow_up.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\basket.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\bell.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\block.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\bookmark.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\bug.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\button.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\calendar.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\calendar_day.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\checkbox.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\clipboard.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\clipboard_full.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\clock.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\comment.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\comment_left.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\contract_horizontal.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\contract_verical.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\copy.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\cross.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\cube.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\cut.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\database.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\document.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\drop_box.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\expand_horizontal.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\expand_vertical.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\field_hidden.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\field_input.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\field_password.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\field_text.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\field_textarea.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\flag.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\folder.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\font_down.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\font_lowercase.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\font_up.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\font_uppercase.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\globe.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\graph.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\happy.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heading1.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heading2.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heading3.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heading4.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heading5.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heading6.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heart.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\heart_broken.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\home.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\ident_in.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\image.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\indent_out.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\index_card.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\key.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\linespace_decrease.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\linespace_increase.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\list_ordered.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\list_unordered.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\lock.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\magnify.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\magnify_minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\magnify_plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\mail.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\mail_back.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\mail_open.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\merge.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\mobile.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\paste.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\person.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\plugin.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\printer.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\pulldown.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\quote.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\radio.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\sad.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\save.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\script.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\shield.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\sound.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\sound_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\split.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\star.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\table.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\tag.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\tick.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\transmission.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\trash.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\turn_left.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\turn_right.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\wand.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\icon\warning.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\img\logo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\js\PageControl.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\js\Plgin_public.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\js\custom.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\js\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\layout\layout1.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\layout\layout2.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\layout\layout_engine\Layout_bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\layout\layout_engine\layout_lib.inc.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\public\layout\profile_layout_engine\profile_Layout_bootstrap.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/View.php" afterPath="$PROJECT_DIR$/libs/View.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/index.php" afterPath="$PROJECT_DIR$/app/controllers/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/index/scss/main.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/index/css/main.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/js/PageController.js" afterPath="$PROJECT_DIR$/app/views/index/js/PageController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/index.php" afterPath="$PROJECT_DIR$/app/views/index/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/patel.iml" afterPath="$PROJECT_DIR$/.idea/patel.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="patel.iws" />
@@ -156,44 +29,7 @@
     <favorites_list name="patel" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="style_layout1.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/asset/a_layout1/css/style_layout1.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="798" max-vertical-offset="2375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/index/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="38" selection-start="1669" selection-end="1685" vertical-scroll-proportion="-1.2681661" vertical-offset="2766" max-vertical-offset="3515">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fontface.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/asset/css/fontface.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="18" selection-start="31" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/index/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="203" selection-end="203" vertical-scroll-proportion="-7.037037" vertical-offset="0" max-vertical-offset="684">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -217,13 +53,11 @@
         <option value="$PROJECT_DIR$/app/views/profile/minibox.php" />
         <option value="$PROJECT_DIR$/libs/Session.php" />
         <option value="$PROJECT_DIR$/app/views/post/js/PushData.js" />
-        <option value="$PROJECT_DIR$/app/views/index/js/PageController.js" />
         <option value="$PROJECT_DIR$/app/controllers/topic.php" />
         <option value="$PROJECT_DIR$/app/models/login_model.php" />
         <option value="$PROJECT_DIR$/app/controllers/post.php" />
         <option value="$PROJECT_DIR$/app/models/post_model.php" />
         <option value="$PROJECT_DIR$/public/css/fontface.css" />
-        <option value="$PROJECT_DIR$/app/views/index/css/main.css" />
         <option value="$PROJECT_DIR$/public/css/style_layout2.css" />
         <option value="$PROJECT_DIR$/app/controllers/logout.php" />
         <option value="$PROJECT_DIR$/app/models/topic_model.php" />
@@ -238,9 +72,12 @@
         <option value="$PROJECT_DIR$/app/controllers/index.php" />
         <option value="$PROJECT_DIR$/libs/View.php" />
         <option value="$PROJECT_DIR$/asset/layout/layout2.php" />
-        <option value="$PROJECT_DIR$/asset/layout/layout1.php" />
         <option value="$PROJECT_DIR$/asset/a_layout1/css/style_layout1.css" />
+        <option value="$PROJECT_DIR$/app/views/index/css/main.css" />
+        <option value="$PROJECT_DIR$/app/views/index/js/PageController.js" />
+        <option value="$PROJECT_DIR$/app/views/index/scss/main.scss" />
         <option value="$PROJECT_DIR$/app/views/index/index.php" />
+        <option value="$PROJECT_DIR$/asset/layout/layout1.php" />
       </list>
     </option>
   </component>
@@ -309,6 +146,10 @@
               <option name="myItemId" value="asset" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -321,76 +162,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a_layout1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -416,7 +187,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="editor" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.SASS/SCSS" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
@@ -485,18 +256,24 @@
       <created>1384931912795</created>
       <updated>1384931912795</updated>
     </task>
+    <task id="LOCAL-00001" summary="new turn">
+      <created>1395829912175</created>
+      <updated>1395829912175</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36933535" sideWeight="0.6705491" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36933535" sideWeight="0.6705491" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39899832" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -524,6 +301,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="new turn" />
+    <option name="LAST_COMMIT_MESSAGE" value="new turn" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -531,11 +310,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="60" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="1662" max-vertical-offset="2964" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/post/js/PushData.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="44" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="855" />
@@ -626,11 +400,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="599" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index/js/PageController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="12" selection-start="351" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1406" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="20" selection-start="1152" selection-end="1152" vertical-scroll-proportion="-28.148148" vertical-offset="0" max-vertical-offset="1026" />
@@ -676,11 +445,6 @@
         <state line="71" column="19" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="1031" max-vertical-offset="1653" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index/js/Loadmore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="20" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="1710" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/js/users_pagecontrol.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950" />
@@ -721,11 +485,6 @@
         <state line="86" column="0" selection-start="1995" selection-end="1995" vertical-scroll-proportion="6.3333335" vertical-offset="1805" max-vertical-offset="2983" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="447" selection-end="447" vertical-scroll-proportion="0.5053192" vertical-offset="152" max-vertical-offset="1539" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/post/js/form_control.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="0" selection-start="851" selection-end="851" vertical-scroll-proportion="0.7041522" vertical-offset="315" max-vertical-offset="893" />
@@ -761,36 +520,68 @@
         <state line="21" column="0" selection-start="223" selection-end="223" vertical-scroll-proportion="0.7074468" vertical-offset="0" max-vertical-offset="564" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/asset/layout/layout1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="853" selection-end="853" vertical-scroll-proportion="1.0780141" vertical-offset="0" max-vertical-offset="1216" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="203" selection-end="203" vertical-scroll-proportion="-7.037037" vertical-offset="0" max-vertical-offset="684">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/asset/a_layout1/css/style_layout1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="798" max-vertical-offset="2375">
+        <state line="19" column="12" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/asset/css/fontface.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="31" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
+        <state line="4" column="1" selection-start="112" selection-end="112" vertical-scroll-proportion="0.12903225" vertical-offset="0" max-vertical-offset="589">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index/css/main.css">
+    <entry file="file://$PROJECT_DIR$/app/views/index/js/Loadmore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="38" selection-start="1669" selection-end="1685" vertical-scroll-proportion="-1.2681661" vertical-offset="2766" max-vertical-offset="3515">
+        <state line="48" column="20" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="1710">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index/js/Content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1824">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="40" selection-start="363" selection-end="363" vertical-scroll-proportion="0.50711745" vertical-offset="0" max-vertical-offset="1539">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index/js/PageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="11" selection-start="844" selection-end="853" vertical-scroll-proportion="-11.259259" vertical-offset="741" max-vertical-offset="3800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/layout/layout1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="67" selection-start="1420" selection-end="1426" vertical-scroll-proportion="0.980427" vertical-offset="285" max-vertical-offset="1197">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="20" selection-start="303" selection-end="303" vertical-scroll-proportion="0.3380783" vertical-offset="0" max-vertical-offset="589">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

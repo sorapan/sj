@@ -1,20 +1,15 @@
 <div id="sub_menu">
 
-
     <div id="search">
-
-        <div id="search_button">Okay</div>
+        <div  class="button_1" style="margin:0;" id="search_button">ค้นหา</div>
         <input type="text" id="search_input" placeholder="Search...">
-        <a href="">โพสกระทู้</a>
-
+        <a class="button_1" href="<?php echo URL?>post">โพสกระทู้</a>
     </div>
-
 
 </div>
 
 <div id="blogmenu1">
-    <div id="menu1">
-</div>
+<!--    <div id="menu1"></div>-->
 </div>
 
 
