@@ -29,6 +29,12 @@ label, input {
 
 }
 
+input[type="file"]{
+
+    display: none;
+
+}
+
 input[type="text"], input[type="file"], textarea{
 
     width:500px
@@ -39,4 +45,24 @@ textarea{
     
     height: 100px;
     
+}
+
+.result{
+
+    background-color: white;
+    width: 500px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color:#4b4b4b;
+    border: 1px dashed #4b4b4b;
+    cursor: pointer;
+    margin: 20px;
+
+}
+
+.result:after{
+
+    content: "คลิกเพื่อดาวน์โหลด";
+
 }

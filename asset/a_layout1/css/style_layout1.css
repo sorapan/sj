@@ -1,7 +1,6 @@
 body{
 
-    font-family: "Open Sans",sans-serif;
-    font-size: 13px;
+    font: 13px/24px 'Open Sans','niramit',sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;

@@ -32,8 +32,8 @@ class index extends Controller{
         $LastTime = $_POST['timestamp'];
         $NewLastTime =  self::CallModel()->TimeStamp();
 
+        //long polling
         while($timeout > 0){
-
             if($NewLastTime <= $LastTime){
 
                 $timeout--;
@@ -47,7 +47,6 @@ class index extends Controller{
                 break;
             }
         }
-
         if($timeout > 0){
 
             if($_POST['firsttimeFetch'] == 1)echo self::CallModel()->fetchMessage();

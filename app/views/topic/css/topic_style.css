@@ -31,7 +31,20 @@
 
     float:left;
     font-size:30px;
-    margin: 5px 5px 5px 0;
+    margin: 5px 5px 20px 0;
+    width: 100%;
+
+
+}
+
+
+#detail{
+
+    float:left;
+    color: grey;
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 20px;
 
 }
 
@@ -70,13 +83,5 @@ a#link{
     margin: 20px;
     font-size: 16px;
     color: #4b4b4b;
-
-}
-
-#detail{
-
-    float:left;
-    color: grey;
-    font-size: 12px;
 
 }

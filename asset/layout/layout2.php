@@ -5,6 +5,7 @@
 <title>Login</title>
 
     <meta charset="utf-8">
+    <link rel="stylesheet" href="<?php echo URL ?>asset/css/reset.css">
     <link rel="stylesheet" href="<?php echo URL ?>asset/css/fontface.css">
     <link rel="stylesheet" href="<?php echo URL ?>asset/css/style_layout2.css">
 

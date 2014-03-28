@@ -8,7 +8,7 @@
 
 <span id="header"><?php echo $this->info['header']?></span><br><br>
 <span id="detail">Author: <a href=""><?php echo $this->info['username']?><a> On: <?php echo date('d/m/Y - h:i A',(int)$this->info['date'])?></span>
-<br><span style="float:left;font-size: 16px"><?php echo $this->info['content']?></span>
+<span style="float:left;font-size: 16px;width: 100%"><?php echo $this->info['content']?></span>
     <br><br>
 <?php
 foreach( $this->img as $arr){
