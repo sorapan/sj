@@ -3,19 +3,31 @@
 <div id="form">
 
     <span style="font-size: 18px">อัพเดตครั้งแรก</span><br>
-    <label for="post_header">หมายเลขทะเบียน : </label><input type="text" id="post_header"><br>
+    <label for="post_header">หมายเลขทะเบียน : </label><input type="text" id="post_header"><br><br>
 
+    <div class="upload_section">
     <span class="label_upload1">กรมธรรม์ : </span><br>
-    <div class="drop_div"></div><input class="ip_upload1" type="file"><br>
+    <div class="drop_div" onclick="$(' #file_gromtun').click();"></div>
+    <input id="file_gromtun" class="ip_upload1" type="file"><br>
+    </div><br>
 
+    <div class="upload_section">
     <span class="label_upload1">ใบเคลม : </span><br>
-    <div class="drop_div"></div><input class="ip_upload1" type="file"><br>
+    <div class="drop_div" onclick="$(' #file_crame').click();"></div>
+    <input id="file_crame" class="ip_upload1" type="file"><br>
+    </div><br>
 
+    <div class="upload_section">
     <span class="label_upload1">สำเนาใบขับขี่ : </span><br>
-    <div class="drop_div"></div><input class="ip_upload1" type="file"><br>
+    <div class="drop_div" onclick="$(' #file_drive').click();"></div>
+    <input id="file_drive" class="ip_upload1" type="file"><br>
+    </div><br>
 
+    <div class="upload_section">
     <span class="label_upload1">เลขคัสซี : </span><br>
-    <div class="drop_div"></div><input class="ip_upload1" type="file"><br>
+    <div class="drop_div" onclick="$(' #file_cussy').click();"></div>
+    <input id="file_cussy" class="ip_upload1" type="file"><br>
+    </div><br>
 
     <div id="upload_box">
     <span style="font-size: 18px">อัพโหลดรูประหว่างซ่อม</span>

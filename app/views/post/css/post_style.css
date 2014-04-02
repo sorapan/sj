@@ -4,25 +4,28 @@
 }
 
 #form {
-  margin: 40px 0 0 100px;
+  margin: 40px 0 100px 100px;
 }
 
 .label_upload1 {
   float: left;
-  width: 100px;
+  width: 100%;
+  background-color: #afafaf;
+  color: black;
 }
 
 .drop_div {
   background-color: white;
   height: 40px;
-  line-height: 40px;
   width: 500px;
   color: dodgerblue;
+  line-height: 60px;
   text-align: center;
+  cursor: pointer;
 }
 
 .drop_div:after {
-  content: "Click/Drop here";
+  content: "Click Or Drop here";
 }
 
 #upload_box {
@@ -30,4 +33,14 @@
   padding: 10px;
   background-color: white;
   border: 1px solid red;
+}
+
+.upload_section {
+  background-color: white;
+  color: grey;
+  width: 500px;
+}
+
+.ip_upload1 {
+  display: none;
 }

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d9bd4ae-ce5d-43e7-8fbe-d8bfec66eb78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/post/scss/post_style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post/js/form_control.js" afterPath="$PROJECT_DIR$/app/views/post/js/form_control.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post/index.php" afterPath="$PROJECT_DIR$/app/views/post/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post/css/post_style.css" afterPath="$PROJECT_DIR$/app/views/post/css/post_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post/scss/post_style.scss" afterPath="$PROJECT_DIR$/app/views/post/scss/post_style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="patel.iws" />
@@ -29,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/post/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="58" selection-start="716" selection-end="716" vertical-scroll-proportion="0.32624114" vertical-offset="139" max-vertical-offset="703">
+            <state line="27" column="50" selection-start="1067" selection-end="1067" vertical-scroll-proportion="-16.88889" vertical-offset="57" max-vertical-offset="931">
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#4;n#div#1;n#!!top" expanded="true" />
@@ -41,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post_style.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="post_style.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/post/scss/post_style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="19" selection-start="262" selection-end="262" vertical-scroll-proportion="-14.074074" vertical-offset="0" max-vertical-offset="817">
+            <state line="31" column="20" selection-start="398" selection-end="398" vertical-scroll-proportion="0.43794325" vertical-offset="342" max-vertical-offset="1159">
               <folding />
             </state>
           </provider>
@@ -53,7 +52,7 @@
       <file leaf-file-name="post_style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/post/css/post_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="0" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="741">
+            <state line="46" column="0" selection-start="0" selection-end="504" vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="988">
               <folding />
             </state>
           </provider>
@@ -115,8 +114,8 @@
         <option value="$PROJECT_DIR$/app/views/index/css/main.css" />
         <option value="$PROJECT_DIR$/app/views/post/js/form_control.js" />
         <option value="$PROJECT_DIR$/app/views/post/css/post_style.css" />
-        <option value="$PROJECT_DIR$/app/views/post/scss/post_style.scss" />
         <option value="$PROJECT_DIR$/app/views/post/index.php" />
+        <option value="$PROJECT_DIR$/app/views/post/scss/post_style.scss" />
       </list>
     </option>
   </component>
@@ -239,58 +238,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="post" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="post" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -381,7 +328,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -699,25 +646,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/post/css/post_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="0" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="741">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/post/scss/post_style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="19" selection-start="262" selection-end="262" vertical-scroll-proportion="-14.074074" vertical-offset="0" max-vertical-offset="817">
+        <state line="46" column="0" selection-start="0" selection-end="504" vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="988">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/post/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="58" selection-start="716" selection-end="716" vertical-scroll-proportion="0.32624114" vertical-offset="139" max-vertical-offset="703">
+        <state line="27" column="50" selection-start="1067" selection-end="1067" vertical-scroll-proportion="-16.88889" vertical-offset="57" max-vertical-offset="931">
           <folding>
             <element signature="n#style#0;n#span#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#4;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/post/scss/post_style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="20" selection-start="398" selection-end="398" vertical-scroll-proportion="0.43794325" vertical-offset="342" max-vertical-offset="1159">
+          <folding />
         </state>
       </provider>
     </entry>
