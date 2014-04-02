@@ -7,7 +7,7 @@
 
     <div id="upload_box">
 
-        <div class="result" id="0" onclick="$(' #0.file').click()"></div><input type="file" class="file" name="file" id="0">
+        <div class="result" id="0"><input type="file" class="file" name="file" id="0"></div>
 
     </div>
 

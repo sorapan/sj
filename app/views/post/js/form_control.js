@@ -6,7 +6,7 @@ $(function(){
     $(" a#add").click(function(e){
 
         e.preventDefault();
-        $(" div#upload_box").append('<div class="result" id="'+count_row+'" ></div><input type="file" class="file" name="file" id="'+count_row+'">');
+        $(" div#upload_box").append('<div class="result" id="'+count_row+'" ><input type="file" class="file" name="file" id="'+count_row+'"></div>');
         count_row++;
 
     });
