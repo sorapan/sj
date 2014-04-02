@@ -14,7 +14,7 @@ $(function(){
                 $(this).css({
 
                     'color' : 'rgb(85,85,85)',
-                    'background-color' : 'gold'
+                    'background-color' : 'rgb(200,200,200)'
 //                    'border-bottom': '4px solid gold'
 
                 });

@@ -1,6 +1,6 @@
 body{
 
-    font: 13px/24px 'Open Sans','niramit',sans-serif;
+    font: 13px/27px 'Open Sans',serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -15,43 +15,46 @@ html{
     height:100%;
 
 }
+/*header*/
 
-div#header {
+/*div#header {*/
 
-    background-color:  rgb(240,240,240);
-    float: right;
-    height: 65px;
-    line-height: 65px;
-    font-size: 22px;
-    width: 87%;
-    color: rgb(85,85,85);
-    border-bottom: 1px solid rgb(200,200,200);
+    /*background-color:  rgb(240,240,240);*/
+    /*float: right;*/
+    /*height: 65px;*/
+    /*line-height: 65px;*/
+    /*font-size: 22px;*/
+    /*width: 87%;*/
+    /*color: rgb(85,85,85);*/
+    /*border-bottom: 1px solid rgb(200,200,200);*/
 
-}
+/*}*/
 
-div#header div#sign{
+/*div#header div#sign{*/
 
-    background-color: transparent;
-    float: left;
-    height: 100%;
-    width: 100px;
+    /*background-color: transparent;*/
+    /*float: left;*/
+    /*height: 100%;*/
+    /*width: 100px;*/
 
-}
+/*}*/
 
-div#header div#sign img{
+/*div#header div#sign img{*/
 
-    height: 100%;
-    width: auto;
+    /*height: 100%;*/
+    /*width: auto;*/
 
-}
+/*}*/
 
-div#header h2 {
+/*div#header h2 {*/
 
-    display: inline;
-    line-height: 60px;
-    padding-left: 20px;
+    /*display: inline;*/
+    /*line-height: 60px;*/
+    /*padding-left: 20px;*/
 
-}
+/*}*/
+
+/*header*/
 
 /*div#blogtop_menu{*/
 
@@ -66,9 +69,9 @@ div#top_menu{
 
     float: left;
     height: 100%;
-    width: 13%;
+    width: 18%;
     position: fixed;
-    border-right: 3px solid #2f2f2f;
+    border-right: 1px solid #2f2f2f;
     background-color:  rgb(35,35,35);
     z-index:999;
 
@@ -105,7 +108,7 @@ div#midgard{
 
     float:right;
     height: auto;
-    width: 87%;
+    width: 82%;
 
 }
 
