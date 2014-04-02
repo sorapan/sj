@@ -11,8 +11,6 @@ $(function(){
 
     });
 
-    $(document).on
-
     $(document).on('click', ' a#del', function(e){
 
         e.preventDefault();

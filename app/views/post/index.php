@@ -1,19 +1,32 @@
-<div id="head" style="float:left;font-size: 20px">สร้างกระทู้</div>
-<br><br>
+<div id="head">สร้างกระทู้</div>
 
 <div id="form">
-    <label for="post_header">Header </label><input type="text" id="post_header"><br>
-    <label for="post_content">Content </label><textarea id="post_content"></textarea><br>
+
+    <span style="font-size: 18px">อัพเดตครั้งแรก</span><br>
+    <label for="post_header">หมายเลขทะเบียน : </label><input type="text" id="post_header"><br>
+
+    <span class="label_upload1">กรมธรรม์ : </span><br>
+    <div class="drop_div"></div><input class="ip_upload1" type="file"><br>
+
+    <span class="label_upload1">ใบเคลม : </span><br>
+    <div class="drop_div"></div><input class="ip_upload1" type="file"><br>
+
+    <span class="label_upload1">สำเนาใบขับขี่ : </span><br>
+    <div class="drop_div"></div><input class="ip_upload1" type="file"><br>
+
+    <span class="label_upload1">เลขคัสซี : </span><br>
+    <div class="drop_div"></div><input class="ip_upload1" type="file"><br>
 
     <div id="upload_box">
+    <span style="font-size: 18px">อัพโหลดรูประหว่างซ่อม</span>
 
-        <div class="result" id="0"><input type="file" class="file" name="file" id="0"></div>
+    <div class="result" id="0"><input type="file" class="file" name="file" id="0"></div>
 
     </div>
 
     <a href="" id="add">Add</a> <a href="" id="del">Del</a>
 
     <br><br>
-    <button id="submit">Submit</button>
+    <button id="submit">โพสกระทู้</button>
 
 </div>
