@@ -13,6 +13,7 @@ class post extends Controller{
         $this->view->css = array("post/css/post_style.css");
         $this->view->js = array("post/js/PushData.js",
                                 "post/js/form_control.js",
+                                "post/js/form_control2.js",
                                 "post/js/upload_img.js");
 
     }
