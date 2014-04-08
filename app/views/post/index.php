@@ -1,5 +1,5 @@
 <div id="head">สร้างกระทู้</div>
-
+<div id="debug"></div>
 <div id="form">
 
     <span style="font-size: 18px">อัพเดตครั้งแรก</span><br>
@@ -7,7 +7,7 @@
 
     <div class="upload_section">
     <span class="label_upload1">กรมธรรม์ : </span><br>
-    <div class="drop_div" onclick="$(' #file_gromtun').click();"></div>
+    <div class="drop_div" id="grom" onclick="$(' #file_gromtun').click();"></div>
     <input id="file_gromtun" class="ip_upload1" type="file"><br>
     </div><br>
 

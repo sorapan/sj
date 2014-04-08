@@ -11,7 +11,7 @@ class topic extends Controller{
 
     function index(){
 
-        header("location:".URL."topic/id");
+        header("location:".URL);
 
     }
 
@@ -22,6 +22,8 @@ class topic extends Controller{
             $this->view->info = self::CallModel()->topic_info($id);
             $this->view->img = self::CallModel()->fetch_img($id);
 
+        }else{
+            @header("location:".URL);
         }
         $this->view->render("topic/id");
 
