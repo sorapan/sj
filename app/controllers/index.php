@@ -6,8 +6,8 @@ class index extends Controller{
 
         parent::__construct();
 
-//        Session::init();
-//        Session::checkLogin();
+        Session::init();
+        Session::checkLogin();
 
         $this->view->css = array("index/css/main.css");
         $this->view->js = array(
