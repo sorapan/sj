@@ -1,11 +1,10 @@
 
 $(document).ready ()->
 
-	$(document).on 'dragenter','.in_drop_div', (e)-> e.preventDefault()
-	$(document).on 'dragover','.in_drop_div', (e)-> e.preventDefault()
+	DragSetting('.in_drop_div')
 	$(document).on 'drop','.in_drop_div', (e)->
 		e.preventDefault()
-		upload(e.originalEvent.dataTransfer,$(this).parent().attr "id")
+		uploadDoc(e.originalEvent.dataTransfer,$(this).parent().attr "id")
 
 	$(document).on 'click','.in_drop_div',(e)->
 		e.preventDefault()
@@ -17,10 +16,15 @@ $(document).ready ()->
 		DelImgInDir($(this).parent().find('img').attr('src'))
 		$(this).hide()
 
+	DragSetting('.wait_car_img')
+	$(document).on 'drop','.wait_car_img', (e)->
+		e.preventDefault()
+		alert 'fuck'
+
 
 #private function
 
-upload = (data,type)->
+uploadDoc = (data,type)->
 	formdata = new FormData()
 	formdata.append "img", data.files[0]
 	$.ajax
@@ -42,6 +46,19 @@ upload = (data,type)->
 			$('#'+type).append ' <img class="show_upload" src="'+d+'">
 				<span class="del_upload_img">X</span> '
 
+uploadImg = (data)->
+	formdata = new FormData()
+	formdata.append "img", data.files[0]
+	$.ajax
+		url : ''
+		type : 'POST'
+		data : formdata
+		processData: false
+		contentType: false
+		success:()->
+
+
+
 DelImgInDir = (url)->
 	$.ajax
 		url:'post/delImg'
@@ -49,7 +66,9 @@ DelImgInDir = (url)->
 		data:
 			'del':url
 
-
+DragSetting = (element)->
+	$(document).on 'dragenter',element, (e)-> e.preventDefault()
+	$(document).on 'dragover',element, (e)-> e.preventDefault()
 
 
 

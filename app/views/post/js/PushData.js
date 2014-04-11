@@ -4,7 +4,7 @@ $(function(){
     var content = $(" #post_content");
 
 
-    $(" button#submit").click(function(){
+    $(" #submit").click(function(){
 
         if(header.val() !== "" && content.val() !== ""){
 
@@ -21,7 +21,7 @@ $(function(){
 
                 },
                 charset: 'UTF-8',
-                complete:(function(){
+                success:(function(){
 
                     window.location = "../";
 

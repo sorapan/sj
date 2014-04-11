@@ -34,14 +34,18 @@
         <span style="font-size: 18px">อัพโหลดรูปรถ</span>
 
         <div class="result" id="0">
-            <div class="wait_car_img">+</div>
-            <input type="file" class="car_file" name="file" id="0">
-            <a href="" id="add">Add</a> <a href="" id="del">Del</a>
+            <div id="add_upload_div">
+                <div id="w0">
+                    <div class="wait_car_img">+</div>
+                    <input type="file" class="car_file" name="file">
+                </div><br>
+            </div>
+            <a href="" class="car_img_upload_btn" id="add">Add</a> <a href="" class="car_img_upload_btn" id="del">Del</a>
         </div>
 
     </div>
 
     <br><br>
-    <button id="submit">โพสกระทู้</button>
+    <a href="" id="submit">โพสกระทู้</a>
 
 </div>
