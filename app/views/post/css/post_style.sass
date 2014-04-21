@@ -26,6 +26,9 @@ $div_drop_width: 500px
 	text-align: center
 	cursor: pointer
 
+#post_note
+	width: $div_drop_width
+
 .in_drop_div:after
 	content: 'คลิก หรือ วางที่นี่'
 
@@ -50,8 +53,10 @@ $div_drop_width: 500px
 .del_upload_img
 	cursor: pointer
 
+$wait_car_img_width : 180px
+
 .wait_car_img
-	width: 180px
+	width: $wait_car_img_width
 	height: 100px
 	line-height: 100px
 	text-align: center
@@ -60,3 +65,9 @@ $div_drop_width: 500px
 	cursor: pointer
 	border: 2px red dashed
 
+.show_car_upload
+	width: $wait_car_img_width
+	height: auto
+
+.del_car_upload
+	cursor: pointer

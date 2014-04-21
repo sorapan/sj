@@ -1,4 +1,6 @@
 
+count = 1
+
 $(document).ready ()->
 
 	DragSetting('.in_drop_div')
@@ -13,14 +15,51 @@ $(document).ready ()->
 	$(document).on 'click','.del_upload_img',(e)->
 		$(this).parent().append '<div class="in_drop_div"></div>'
 		$(this).parent().find('img').hide()
-		DelImgInDir($(this).parent().find('img').attr('src'))
+		DelImgInDir($(this).parent().find('img').attr 'src')
 		$(this).hide()
+
+
+#upload car image section
+
+	#vvvvv form control
+
+	$('.car_img_upload_btn').click (e)->
+		e.preventDefault()
+
+	$('#add').click ()->
+		$('#add_upload_div').append '<div class="wrapall" id="w'+count+'">
+				                    <div class="wait_car_img">+</div>
+				                    <input type="file" class="car_file" name="file">
+				                </div><br>'
+		count++
+
+	$('#del').click ()->
+		if count>1
+			if $('.wrapall').last().find('img.show_car_upload').length < 1
+				count--
+				$('#w'+count).remove()
+				$('#add_upload_div').find('.wait_car_img').last().remove()
+				$('#add_upload_div').find('input').last().remove()
+				$('#add_upload_div').find('br').last().remove()
+			else
+				#do nothing
+
+	#^^^^^ form control
 
 	DragSetting('.wait_car_img')
 	$(document).on 'drop','.wait_car_img', (e)->
 		e.preventDefault()
-		alert 'fuck'
+		uploadImg(e.originalEvent.dataTransfer,$(this).parent().attr 'id')
 
+
+	$(document).on 'click','.del_car_upload', (e)->
+		if $(this).parent().is ':first-child'
+			$(this).parent().html '<div class="wait_car_img">+</div>
+			                    <input type="file" class="car_file" name="file">'
+		else
+			$(this).parent().remove()
+			$('#add_upload_div').find('br').last().remove()
+			count--
 
 #private function
 
@@ -43,21 +82,20 @@ uploadDoc = (data,type)->
 		contentType: false
 		success:(d)->
 			$('#'+type+' .in_drop_div').hide();
-			$('#'+type).append ' <img class="show_upload" src="'+d+'">
+			$('#'+type).html ' <img class="show_upload" src="'+d+'">
 				<span class="del_upload_img">X</span> '
 
-uploadImg = (data)->
+uploadImg = (data,div)->
 	formdata = new FormData()
 	formdata.append "img", data.files[0]
 	$.ajax
-		url : ''
+		url : 'post/uploadImg'
 		type : 'POST'
 		data : formdata
 		processData: false
 		contentType: false
-		success:()->
-
-
+		success:(d)->
+			$('#'+div).html '<img class="show_car_upload" src="'+d+'"><span class="del_car_upload">X</span>'
 
 DelImgInDir = (url)->
 	$.ajax

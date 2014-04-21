@@ -12,7 +12,6 @@ class post extends Controller{
         $this->view->css = array("post/css/post_style.css");
         $this->view->js = array("post/js/PushData.js",
 //                                "post/js/form_control.js",
-                                "post/js/form_control2.js",
                                 "post/js/upload_img2.js"
 //                                "post/js/upload_img.js"
         );
@@ -20,7 +19,6 @@ class post extends Controller{
     }
 
     function index(){
-
         $this->view->render("post/index");
         if(Session::get('sayhi') == 0){
             if(is_dir("temp/".Session::get('user_id')."/")){
@@ -28,7 +26,6 @@ class post extends Controller{
 //                rmdir("temp/".Session::get('user_id'));
             }
         }
-
     }
 
     function PushData(){
@@ -54,29 +51,23 @@ class post extends Controller{
     function uploadImg(){
 
         Session::init();
-        $dir1 = "temp";
-        $dir2 = Session::get('username');
+        $dir = "temp/".Session::get('user_id')."/img";
 
-        if(!is_dir($dir1."/".$dir2)){
+        if(!is_dir($dir)){
 
-            mkdir($dir1."/".$dir2);
+            mkdir($dir,0777, true);
             Session::set('sayhi', 1);
             if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
-                move_uploaded_file( $_FILES["img"]["tmp_name"], $dir1."/".$dir2."/".$_FILES['img']['name']);
+                move_uploaded_file( $_FILES["img"]["tmp_name"], $dir."/".$_FILES['img']['name']);
             }
-            echo $dir1."/".$dir2."/".$_FILES['img']['name'];
+            echo $dir."/".$_FILES['img']['name'];
 
         }else{
 
-            if(Session::get('sayhi') == 0){
-                self::mrmdir($dir1."/".$dir2);
-                mkdir($dir1."/".$dir2);
-                Session::set('sayhi', 1);
-            }
             if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
-                move_uploaded_file( $_FILES["img"]["tmp_name"], $dir1."/".$dir2."/".$_FILES['img']['name']);
+                move_uploaded_file( $_FILES["img"]["tmp_name"], $dir."/".$_FILES['img']['name']);
             }
-            echo $dir1."/".$dir2."/".$_FILES['img']['name'];
+            echo $dir."/".$_FILES['img']['name'];
         }
     }
 
@@ -92,9 +83,7 @@ class post extends Controller{
                 move_uploaded_file( $_FILES["img"]["tmp_name"], $dir."/".$_FILES['img']['name']);
             }
             echo $dir."/".$_FILES['img']['name'];
-
         }else{
-
             if(Session::get('sayhi') == 0){
                 self::mrmdir($dir);
                 mkdir($dir,0777, true);
@@ -109,9 +98,7 @@ class post extends Controller{
     }
 
     function delImg(){
-
         unlink($_POST['del']);
-
     }
 
 

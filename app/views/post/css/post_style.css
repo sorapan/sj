@@ -21,6 +21,9 @@
   text-align: center;
   cursor: pointer; }
 
+#post_note {
+  width: 500px; }
+
 .in_drop_div:after {
   content: "คลิก หรือ วางที่นี่"; }
 
@@ -54,3 +57,10 @@
   color: red;
   cursor: pointer;
   border: 2px red dashed; }
+
+.show_car_upload {
+  width: 180px;
+  height: auto; }
+
+.del_car_upload {
+  cursor: pointer; }

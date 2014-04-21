@@ -4,6 +4,7 @@
 
     <span style="font-size: 18px">อัพเดตครั้งแรก</span><br>
     <label for="post_header">หมายเลขทะเบียน : </label><input type="text" id="post_header"><br><br>
+    <label for="post_note">หมายเหตุ : </label><br><textarea id="post_note"></textarea><br><br>
 
     <div class="upload_section" id="grom">
         <span class="label_upload1">กรมธรรม์ : </span><br>
@@ -35,7 +36,7 @@
 
         <div class="result" id="0">
             <div id="add_upload_div">
-                <div id="w0">
+                <div class="warpall" id="w0">
                     <div class="wait_car_img">+</div>
                     <input type="file" class="car_file" name="file">
                 </div><br>
