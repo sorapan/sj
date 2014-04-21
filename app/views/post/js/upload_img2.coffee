@@ -53,13 +53,15 @@ $(document).ready ()->
 
 
 	$(document).on 'click','.del_car_upload', (e)->
+		count--
+		DelImgInDir($(this).parent().find('img').attr 'src')
 		if $(this).parent().is ':first-child'
 			$(this).parent().html '<div class="wait_car_img">+</div>
 			                    <input type="file" class="car_file" name="file">'
 		else
 			$(this).parent().remove()
 			$('#add_upload_div').find('br').last().remove()
-			count--
+
 
 #private function
 
@@ -82,7 +84,7 @@ uploadDoc = (data,type)->
 		contentType: false
 		success:(d)->
 			$('#'+type+' .in_drop_div').hide();
-			$('#'+type).html ' <img class="show_upload" src="'+d+'">
+			$('#'+type).append ' <img class="show_upload" src="'+d+'">
 				<span class="del_upload_img">X</span> '
 
 uploadImg = (data,div)->

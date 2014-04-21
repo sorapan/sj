@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d9bd4ae-ce5d-43e7-8fbe-d8bfec66eb78" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\web\patel\app\views\post\js\form_control2.coffee" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\app\views\post\js\form_control2.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\web\patel\app\views\post\js\form_control2.map" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post/index.php" afterPath="$PROJECT_DIR$/app/views/post/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/post.php" afterPath="$PROJECT_DIR$/app/controllers/post.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post/css/post_style.css" afterPath="$PROJECT_DIR$/app/views/post/css/post_style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post/css/post_style.sass" afterPath="$PROJECT_DIR$/app/views/post/css/post_style.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post/js/upload_img2.coffee" afterPath="$PROJECT_DIR$/app/views/post/js/upload_img2.coffee" />
@@ -35,22 +31,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="upload_img2.coffee" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="upload_img2.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/post/js/upload_img2.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="23" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.7106599" vertical-offset="302" max-vertical-offset="2242">
+            <state line="68" column="29" selection-start="1876" selection-end="1876" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="2280">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/post/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="59" selection-start="291" selection-end="291" vertical-scroll-proportion="-4.2222223" vertical-offset="0" max-vertical-offset="1083">
+            <state line="4" column="63" selection-start="136" selection-end="136" vertical-scroll-proportion="0.13475177" vertical-offset="0" max-vertical-offset="1083">
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#4;n#div#2;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,7 +54,7 @@
       <file leaf-file-name="post.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="60" selection-start="369" selection-end="369" vertical-scroll-proportion="-9.148149" vertical-offset="0" max-vertical-offset="3192">
+            <state line="13" column="60" selection-start="369" selection-end="369" vertical-scroll-proportion="-0.0" vertical-offset="247" max-vertical-offset="3192">
               <folding />
             </state>
           </provider>
@@ -68,7 +63,7 @@
       <file leaf-file-name="post_style.sass" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/post/css/post_style.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="26" selection-start="488" selection-end="488" vertical-scroll-proportion="-13.851851" vertical-offset="177" max-vertical-offset="1482">
+            <state line="35" column="13" selection-start="564" selection-end="564" vertical-scroll-proportion="-3.5185184" vertical-offset="570" max-vertical-offset="1482">
               <folding />
             </state>
           </provider>
@@ -145,10 +140,10 @@
         <option value="$PROJECT_DIR$/app/views/index/css/main.scss" />
         <option value="$PROJECT_DIR$/app/views/index/css/main.sass" />
         <option value="$PROJECT_DIR$/app/views/post/js/form_control2.coffee" />
-        <option value="$PROJECT_DIR$/app/views/post/index.php" />
-        <option value="$PROJECT_DIR$/app/views/post/css/post_style.sass" />
         <option value="$PROJECT_DIR$/app/controllers/post.php" />
+        <option value="$PROJECT_DIR$/app/views/post/css/post_style.sass" />
         <option value="$PROJECT_DIR$/app/views/post/js/upload_img2.coffee" />
+        <option value="$PROJECT_DIR$/app/views/post/index.php" />
       </list>
     </option>
   </component>
@@ -156,7 +151,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -313,10 +308,6 @@
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="post_style.sass" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -329,24 +320,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -444,7 +417,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -452,7 +425,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23640484" sideWeight="0.6705491" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24015151" sideWeight="0.6705491" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39899832" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -460,13 +433,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -492,6 +465,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/views/post/css/post_style.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="26" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0" vertical-offset="177" max-vertical-offset="1482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/post/js/upload_img.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="7" selection-start="1964" selection-end="1964" vertical-scroll-proportion="0.0" vertical-offset="1558" max-vertical-offset="1710">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/post.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="0" selection-start="2942" selection-end="2942" vertical-scroll-proportion="0.0" vertical-offset="1992" max-vertical-offset="2755" />
@@ -713,46 +700,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/post/js/upload_img2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="255" selection-end="255" vertical-scroll-proportion="-0.5916955" vertical-offset="513" max-vertical-offset="2394">
-          <folding />
-        </state>
+        <state line="9" column="7" selection-start="255" selection-end="255" vertical-scroll-proportion="-0.5916955" vertical-offset="513" max-vertical-offset="2394" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/post/js/form_control.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="28" selection-start="703" selection-end="703" vertical-scroll-proportion="0.7889273" vertical-offset="0" max-vertical-offset="893">
-          <folding />
-        </state>
+        <state line="24" column="28" selection-start="703" selection-end="703" vertical-scroll-proportion="0.7889273" vertical-offset="0" max-vertical-offset="893" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="60" selection-start="369" selection-end="369" vertical-scroll-proportion="-9.148149" vertical-offset="0" max-vertical-offset="3192">
+        <state line="13" column="60" selection-start="369" selection-end="369" vertical-scroll-proportion="-0.0" vertical-offset="247" max-vertical-offset="3192">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/post/css/post_style.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="26" selection-start="488" selection-end="488" vertical-scroll-proportion="-13.851851" vertical-offset="177" max-vertical-offset="1482">
+        <state line="35" column="13" selection-start="564" selection-end="564" vertical-scroll-proportion="-3.5185184" vertical-offset="570" max-vertical-offset="1482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/post/js/upload_img2.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="29" selection-start="1876" selection-end="1876" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="2280">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/post/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="59" selection-start="291" selection-end="291" vertical-scroll-proportion="-4.2222223" vertical-offset="0" max-vertical-offset="1083">
+        <state line="4" column="63" selection-start="136" selection-end="136" vertical-scroll-proportion="0.13475177" vertical-offset="0" max-vertical-offset="1083">
           <folding>
             <element signature="n#style#0;n#span#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#4;n#div#2;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/post/js/upload_img2.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="23" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.7106599" vertical-offset="302" max-vertical-offset="2242">
-          <folding />
         </state>
       </provider>
     </entry>

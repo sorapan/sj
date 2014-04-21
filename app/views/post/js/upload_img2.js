@@ -46,12 +46,13 @@
       return uploadImg(e.originalEvent.dataTransfer, $(this).parent().attr('id'));
     });
     return $(document).on('click', '.del_car_upload', function(e) {
+      count--;
+      DelImgInDir($(this).parent().find('img').attr('src'));
       if ($(this).parent().is(':first-child')) {
         return $(this).parent().html('<div class="wait_car_img">+</div> <input type="file" class="car_file" name="file">');
       } else {
         $(this).parent().remove();
-        $('#add_upload_div').find('br').last().remove();
-        return count--;
+        return $('#add_upload_div').find('br').last().remove();
       }
     });
   });
@@ -80,7 +81,7 @@
       contentType: false,
       success: function(d) {
         $('#' + type + ' .in_drop_div').hide();
-        return $('#' + type).html(' <img class="show_upload" src="' + d + '"> <span class="del_upload_img">X</span> ');
+        return $('#' + type).append(' <img class="show_upload" src="' + d + '"> <span class="del_upload_img">X</span> ');
       }
     });
   };
