@@ -36,7 +36,7 @@
 
         <div class="result" id="0">
             <div id="add_upload_div">
-                <div class="warpall" id="w0">
+                <div class="wrapall" id="w0">
                     <div class="wait_car_img">+</div>
                     <input type="file" class="car_file" name="file">
                 </div><br>

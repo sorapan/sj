@@ -18,7 +18,7 @@ class index_model extends Model{
         while($row = $query->fetch(PDO::FETCH_ASSOC)){
 
             $data["date"][$count_array] = date('d/m/Y - h:i A',(int)$row['date']);
-            $data["msg"][$count_array] = $row['content'];
+            $data["msg"][$count_array] = $row['note'];
             $data["hdr"][$count_array] = $row['header'];
             $data["id"][$count_array] = $row['id'];
             $data["topicID"][$count_array] = $row['topicID'];
@@ -61,7 +61,7 @@ class index_model extends Model{
         while($row = $query->fetch(PDO::FETCH_ASSOC)){
 
             $data["date"][$count_array] = date('d/m/Y - h:i A',(int)$row['date']);
-            $data["msg"][$count_array] = $row['content'];
+            $data["msg"][$count_array] = $row['note'];
             $data["hdr"][$count_array] = $row['header'];
             $data["id"][$count_array] = $row['id'];
             $data["topicID"][$count_array] = $row['topicID'];

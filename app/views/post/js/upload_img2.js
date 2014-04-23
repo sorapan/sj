@@ -27,14 +27,14 @@
       $('#add_upload_div').append('<div class="wrapall" id="w' + count + '"> <div class="wait_car_img">+</div> <input type="file" class="car_file" name="file"> </div><br>');
       return count++;
     });
-    $('#del').click(function() {
+    $(document).on('click', '#del', function() {
       if (count > 1) {
-        if ($('.wrapall').last().find('img.show_car_upload').length < 1) {
-          count--;
-          $('#w' + count).remove();
+        if ($('#add_upload_div').find('.wrapall').last().find('.show_car_upload').length === 0) {
           $('#add_upload_div').find('.wait_car_img').last().remove();
           $('#add_upload_div').find('input').last().remove();
-          return $('#add_upload_div').find('br').last().remove();
+          $('#add_upload_div').find('div').last().remove();
+          $('#add_upload_div').find('br').last().remove();
+          return count--;
         } else {
 
         }
@@ -46,13 +46,14 @@
       return uploadImg(e.originalEvent.dataTransfer, $(this).parent().attr('id'));
     });
     return $(document).on('click', '.del_car_upload', function(e) {
-      count--;
       DelImgInDir($(this).parent().find('img').attr('src'));
       if ($(this).parent().is(':first-child')) {
-        return $(this).parent().html('<div class="wait_car_img">+</div> <input type="file" class="car_file" name="file">');
+        $(this).parent().html('<div class="wait_car_img">+</div> <input type="file" class="car_file" name="file">');
+        return count = 1;
       } else {
         $(this).parent().remove();
-        return $('#add_upload_div').find('br').last().remove();
+        $('#add_upload_div').find('br').last().remove();
+        return count--;
       }
     });
   });
@@ -88,6 +89,7 @@
 
   uploadImg = function(data, div) {
     var formdata;
+    console.log(div);
     formdata = new FormData();
     formdata.append("img", data.files[0]);
     return $.ajax({

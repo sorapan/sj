@@ -11,11 +11,9 @@ class post extends Controller{
 
         $this->view->css = array("post/css/post_style.css");
         $this->view->js = array("post/js/PushData.js",
-//                                "post/js/form_control.js",
                                 "post/js/upload_img2.js"
 //                                "post/js/upload_img.js"
         );
-
     }
 
     function index(){
@@ -29,16 +27,15 @@ class post extends Controller{
     }
 
     function PushData(){
-
         Session::init();
         $data = array(
             'header' => $_POST['header'],
-            'content' => $_POST['content'],
+            'note' => $_POST['note'],
             'userid' => Session::get('user_id')
         );
         self::CallModel()->PushData($data);
         $topic_id = self::CallModel()-> GetTopicId2();
-        self::mmove("temp/".Session::get('username'),"file/".$topic_id);
+        self::mmove("temp/".Session::get('user_id'),"file/".$topic_id);
         Session::set('sayhi', 0);
         $files = scandir("file/".$topic_id);
         foreach($files as $file){
@@ -49,21 +46,16 @@ class post extends Controller{
     }
 
     function uploadImg(){
-
         Session::init();
         $dir = "temp/".Session::get('user_id')."/img";
-
         if(!is_dir($dir)){
-
             mkdir($dir,0777, true);
             Session::set('sayhi', 1);
             if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
                 move_uploaded_file( $_FILES["img"]["tmp_name"], $dir."/".$_FILES['img']['name']);
             }
             echo $dir."/".$_FILES['img']['name'];
-
         }else{
-
             if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
                 move_uploaded_file( $_FILES["img"]["tmp_name"], $dir."/".$_FILES['img']['name']);
             }
@@ -72,7 +64,6 @@ class post extends Controller{
     }
 
     function uploadFile($type){
-
         Session::init();
         $dir = "temp/".Session::get('user_id')."/".$type;
 //        $dir = "temp/qwer/.$type";
@@ -94,7 +85,6 @@ class post extends Controller{
             }
             echo $dir."/".$_FILES['img']['name'];
         }
-
     }
 
     function delImg(){
@@ -105,7 +95,6 @@ class post extends Controller{
 ///////////////// Directory Management's method /////////////////
 
     private static function mrmdir($dir) {
-
         if (is_dir($dir)) {
             $objects = scandir($dir);
             foreach ($objects as $obj) {
@@ -145,19 +134,25 @@ class post extends Controller{
         $god = scandir($source);
         foreach($god as $file){
             if($file != "." || $file != ".."){
-
-                @copy($source."/".$file,$destination."/".$file);
-                @unlink($source."/".$file);
-
+                if(filetype($source."/".$file) == "dir"){
+                    if(!is_dir($destination."/".$file))mkdir($destination."/".$file);
+                    $subsource = scandir($source."/".$file);
+                    foreach($subsource as $ss){
+                        if($ss != "." || $ss != ".."){
+                            @copy($source."/".$file."/".$ss,$destination."/".$file."/".$ss);
+                            @unlink($source."/".$file."/".$ss);
+                        }
+                        rmdir($source."/".$file."/".$ss);
+                    }
+                    rmdir($source."/".$file);
+                }
             }
         }
         rmdir($source);
     }
 
     private static function CallModel(){
-
         return new post_model();
-
     }
 
 } 

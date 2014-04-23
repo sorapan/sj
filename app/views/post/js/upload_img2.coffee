@@ -33,14 +33,14 @@ $(document).ready ()->
 				                </div><br>'
 		count++
 
-	$('#del').click ()->
+	$(document).on 'click','#del',()->
 		if count>1
-			if $('.wrapall').last().find('img.show_car_upload').length < 1
-				count--
-				$('#w'+count).remove()
+			if $('#add_upload_div').find('.wrapall').last().find('.show_car_upload').length == 0
 				$('#add_upload_div').find('.wait_car_img').last().remove()
 				$('#add_upload_div').find('input').last().remove()
+				$('#add_upload_div').find('div').last().remove()
 				$('#add_upload_div').find('br').last().remove()
+				count--
 			else
 				#do nothing
 
@@ -53,14 +53,15 @@ $(document).ready ()->
 
 
 	$(document).on 'click','.del_car_upload', (e)->
-		count--
 		DelImgInDir($(this).parent().find('img').attr 'src')
 		if $(this).parent().is ':first-child'
 			$(this).parent().html '<div class="wait_car_img">+</div>
 			                    <input type="file" class="car_file" name="file">'
+			count=1
 		else
 			$(this).parent().remove()
 			$('#add_upload_div').find('br').last().remove()
+			count--
 
 
 #private function
@@ -88,6 +89,7 @@ uploadDoc = (data,type)->
 				<span class="del_upload_img">X</span> '
 
 uploadImg = (data,div)->
+	console.log div
 	formdata = new FormData()
 	formdata.append "img", data.files[0]
 	$.ajax
