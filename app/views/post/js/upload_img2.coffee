@@ -21,7 +21,7 @@ $(document).ready ()->
 
 #upload car image section
 
-	#vvvvv form control
+	#vvvvv form control vvvvv
 
 	$('.car_img_upload_btn').click (e)->
 		e.preventDefault()
@@ -44,7 +44,7 @@ $(document).ready ()->
 			else
 				#do nothing
 
-	#^^^^^ form control
+	#^^^^^ form control ^^^^^
 
 	DragSetting('.wait_car_img')
 	$(document).on 'drop','.wait_car_img', (e)->

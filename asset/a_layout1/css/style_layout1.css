@@ -71,7 +71,6 @@ div#top_menu{
     height: 100%;
     width: 18%;
     position: fixed;
-    border-right: 1px solid #2f2f2f;
     background-color:  rgb(35,35,35);
     z-index:999;
 

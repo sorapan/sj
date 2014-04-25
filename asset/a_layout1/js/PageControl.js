@@ -13,8 +13,8 @@ $(function(){
 
                 $(this).css({
 
-                    'color' : 'rgb(85,85,85)',
-                    'background-color' : 'rgb(200,200,200)'
+                    'color' : 'white',
+                    'background-color' : 'rgb(150,150,150)'
 //                    'border-bottom': '4px solid gold'
 
                 });

@@ -40,7 +40,10 @@ class post extends Controller{
         $files = scandir("file/".$topic_id);
         foreach($files as $file){
             if($file != "." && $file != ".."){
-                self::CallModel()->storeImg($file,$topic_id);
+                $infile = scandir("file/".$topic_id."/".$file);
+                foreach($infile as $if){
+                    if($if != "." && $if != "..") self::CallModel()->storeImg($if,$topic_id,$file);
+                }
             }
         }
     }

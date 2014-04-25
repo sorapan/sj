@@ -7,7 +7,7 @@
     /*margin: 30px auto 30px auto;*/
     background-color: rgb(240,240,240);
     height: auto;
-    width: 800px;
+    width: 850px;
     margin-top: 50px;
     margin-bottom: 50px;
     left: 50%;
@@ -83,5 +83,15 @@ a#link{
     margin: 20px;
     font-size: 16px;
     color: #4b4b4b;
+
+}
+
+.box_in_content{
+
+    padding: 10px;
+    width: 780px;
+    background-color: rgb(100,100,100);
+    color:white;
+    font-size: 20px;
 
 }

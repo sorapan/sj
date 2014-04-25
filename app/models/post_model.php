@@ -58,13 +58,14 @@ class post_model extends Model{
 
     }
 
-    function storeImg($imgname, $topicid){
+    function storeImg($imgname, $topicid, $type){
 
-        $qry = $this->db->prepare("INSERT INTO img (`img_name`,`topic_id`,`status`) VALUES (:imgname, :topicid, 1)");
+        $qry = $this->db->prepare("INSERT INTO img (`img_name`,`topic_id`,`status`,`type`) VALUES (:imgname, :topicid, 1, :type)");
         $qry->execute(array(
 
             ':imgname' => $imgname,
-            ':topicid' => $topicid
+            ':topicid' => $topicid,
+            ':type' => $type
 
         ));
 
