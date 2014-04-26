@@ -6,6 +6,7 @@ class topic extends Controller{
 
         parent::__construct();
         $this->view->css = array("topic/css/topic_style.css");
+        $this->view->js = array("topic/js/topic_control.js");
 
     }
 

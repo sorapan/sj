@@ -16,7 +16,7 @@ foreach( $this->img as $arr){
 <div class="box_in_content">
     <?php
 
-        echo headername($arr['type']).' : </br>';
+        echo '<span class="box_in_head">'.headername($arr['type']).' : <span class="arrow">▼</span></span><br><br>';
         echo '<img class="doc" src="'.URL.'file/'.$arr['topic_id'].'/'.$arr['type'].'/'.$arr['img_name'].'">';
 
     ?>
@@ -26,7 +26,7 @@ foreach( $this->img as $arr){
 }
 ?>
 <div class="box_in_content">
-    <span>รูปภาพรถ : </span><br>
+    <span class="box_in_head">รูปภาพรถ : <span class="arrow">▼</span></span><br><br>
 <?php
 foreach( $this->carimg as $arr){
 
@@ -40,8 +40,12 @@ foreach( $this->carimg as $arr){
 </div>
     <br>
 </div>
+<?php
 
-<a id="update" href="">อัพเดทรูประหว่างซ่อม</a>
+$a = explode("/",$_SERVER['REQUEST_URI']);
+
+?>
+<a id="update" href="<?php echo URL?>post_update/id/<?php echo $a[3]?>">อัพเดทรูประหว่างซ่อม</a>
 
 </div>
 <?php

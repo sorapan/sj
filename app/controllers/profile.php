@@ -5,6 +5,7 @@ class profile extends Controller{
     function __construct(){
 
         parent::__construct();
+        $this->view->css = array("profile/css/minibox.css");
 
     }
 
@@ -16,7 +17,7 @@ class profile extends Controller{
 
     function id(){
 
-        echo "hello";
+        $this->view->render("profile/id");
 
     }
 

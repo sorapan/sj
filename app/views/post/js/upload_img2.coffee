@@ -12,6 +12,11 @@ $(document).ready ()->
 		e.preventDefault()
 		$(this).parent().find('input').click();
 
+	$(document).on 'change','.ip_upload1',(e)->
+		e.preventDefault()
+		uploadDoc($(this)[0],$(this).parent().attr "id")
+
+
 	$(document).on 'click','.del_upload_img',(e)->
 		$(this).parent().append '<div class="in_drop_div"></div>'
 		$(this).parent().find('img').hide()
@@ -51,12 +56,19 @@ $(document).ready ()->
 		e.preventDefault()
 		uploadImg(e.originalEvent.dataTransfer,$(this).parent().attr 'id')
 
+	$(document).on 'click','.wait_car_img', (e)->
+		e.preventDefault()
+		$(this).parent().find('input').click();
+
+	$(document).on 'change','.car_file',(e)->
+		e.preventDefault()
+		uploadImg($(this)[0],$(this).parent().attr 'id')
 
 	$(document).on 'click','.del_car_upload', (e)->
 		DelImgInDir($(this).parent().find('img').attr 'src')
 		if $(this).parent().is ':first-child'
 			$(this).parent().html '<div class="wait_car_img">+</div>
-			                    <input type="file" class="car_file" name="file">'
+			                    <in put type="file" class="car_file" name="file">'
 			count=1
 		else
 			$(this).parent().remove()

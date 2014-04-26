@@ -74,7 +74,6 @@ img.doc{
     position: relative;
     left: 50%;
     margin-left: -325px;
-
 }
 
 a#link{
@@ -88,10 +87,23 @@ a#link{
 
 .box_in_content{
 
-    padding: 10px;
     width: 780px;
-    background-color: rgb(100,100,100);
-    color:white;
-    font-size: 20px;
+    background-color:  rgb(210,210,210);
 
+}
+
+.box_in_head{
+
+    float: left;
+    width: 100%;
+    color: white;
+    text-indent: 10px;
+    background-color: rgb(100,100,100);
+    cursor: pointer;
+
+}
+
+.arrow{
+    float: right;
+    padding-right: 10px;
 }
