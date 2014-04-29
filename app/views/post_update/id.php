@@ -1,5 +1,6 @@
 <div id="content">
-    <span style="font-size: 22px">อัพเดทครั้งที่ 2</span><br><br
+
+    <span id="update_header" style="font-size: 22px"></span><br><br
     <label for="post_note">หมายเหตุ : </label><br>
     <textarea id="post_note"></textarea><br><br>
     <div id="upload_box">

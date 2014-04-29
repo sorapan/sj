@@ -23,6 +23,7 @@ class topic extends Controller{
             $this->view->info = self::CallModel()->topic_info($id);
             $this->view->img = self::CallModel()->fetch_img($id);
             $this->view->carimg = self::CallModel()->fetch_carimg($id);
+            $this->view->carimg2 = self::CallModel()->fetch_carimg2($id);
 
         }else{
             @header("location:".URL);

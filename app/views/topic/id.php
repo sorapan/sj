@@ -38,8 +38,26 @@ foreach( $this->carimg as $arr){
 }
 ?>
 </div>
+<br>
+
+<?php
+if(!empty($this->carimg2)){
+?>
+    <div class="box_in_content">
+    <span class="box_in_head">รูปภาพรถอัพเดทครั้งที่ 2 : <span class="arrow">▼</span></span><br><br>
+
+    <?php
+    foreach( $this->carimg2 as $arr){
+        echo '<img class="doc" src="'.URL.'file/'.$arr['topic_id'].'/'.$arr['type'].'2/'.$arr['img_name'].'">';
+    ?>
+
     <br>
-</div>
+<?php
+    }
+}
+?>
+    </div>
+    <br>
 <?php
 
 $a = explode("/",$_SERVER['REQUEST_URI']);
@@ -48,6 +66,7 @@ $a = explode("/",$_SERVER['REQUEST_URI']);
 <a id="update" href="<?php echo URL?>post_update/id/<?php echo $a[3]?>">อัพเดทรูประหว่างซ่อม</a>
 
 </div>
+
 <?php
 
 function headername($type){

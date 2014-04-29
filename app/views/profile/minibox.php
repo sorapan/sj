@@ -1,6 +1,6 @@
 <style>
     #mbx_msg{
-        color:white;
+        color:rgb(150,150,150);
         text-indent: 30px;
     }
 </style>

@@ -70,10 +70,10 @@ a#update:hover{
 
 img.doc{
 
-    width: 650px;
+    width: 300px;
     position: relative;
     left: 50%;
-    margin-left: -325px;
+    margin-left: -150px;
 }
 
 a#link{

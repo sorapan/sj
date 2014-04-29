@@ -6,6 +6,7 @@ class post_update extends Controller{
 
         parent::__construct();
         Session::init();
+        Session::set('sayhi', 0);
         $this->view->css = array("post_update/css/post_update.css");
         $this->view->js = array("post_update/js/post_update.js");
 
@@ -20,16 +21,35 @@ class post_update extends Controller{
     function id(){
 
         $this->view->render("post_update/id");
+        if(Session::get('sayhi') == 0){
+            if(is_dir("temp/".Session::get('user_id')."/")){
+                self::mrmdir("temp/".Session::get('user_id'));
+//                rmdir("temp/".Session::get('user_id'));
+            }
+        }
 
     }
-    function PushData($topicid){
+    function PushData(){
 
         Session::init();
         $data = array(
-            'note' => $_POST['note'],
+            'note' => $_POST['postnote'],
+            'topicid' => $_POST['topic_id'],
             'userid' => Session::get('user_id')
         );
+        self::CallModel()->updateTopic($data);
+        $topic_id = $_POST['topic_id'];
+        self::mmove("temp/".Session::get('user_id'),"file/".$topic_id);
+        Session::set('sayhi', 0);
+        $files = scandir("file/".$topic_id."/img2");
+        foreach($files as $file){
+            if($file != "." && $file != "..") self::CallModel()->storeImg($file,$topic_id);
+        }
+    }
 
+    function checkTopicStatus(){
+        $result = self::CallModel()->getTopicStatus($_POST['topic_id']);
+        echo $result;
     }
 
     function uploadImg(){
@@ -49,11 +69,64 @@ class post_update extends Controller{
             }
             echo $dir."/".$_FILES['img']['name'];
         }
-
     }
 
     private static function CallModel(){
         return new post_update_model();
+    }
+
+    // private
+
+    private static function mrmdir($dir) {
+        if (is_dir($dir)) {
+            $objects = scandir($dir);
+            foreach ($objects as $obj) {
+                if($obj != "." && $obj != "..") {
+                    if (filetype($dir."/".$obj) == "dir"){
+//                        rmdir($dir."/".$obj);
+                        $sub_dir = scandir($dir."/".$obj);
+                        foreach($sub_dir as $subobj){
+                            if($subobj != "." && $subobj != ".."){
+                                if(filetype($dir."/".$obj."/".$subobj) == "dir"){
+                                    rmdir($dir."/".$obj."/".$subobj);
+                                }else{
+                                    unlink($dir."/".$obj."/".$subobj);
+                                }
+                            }
+                        }
+                    }else{
+                        unlink($dir."/".$obj);
+                    }
+                }
+            }
+//            reset($objects);
+            $objects = scandir($dir);
+            foreach ($objects as $obj){
+                if($obj != "." && $obj != ".."){
+                    rmdir($dir."/".$obj);
+                }
+            }
+            rmdir($dir);
+        }
+    }
+
+    private static function mmove($source,$destination){
+
+        $god = scandir($source);
+        foreach($god as $file){
+            if($file != "." || $file != ".."){
+                if(filetype($source."/".$file) == "dir"){
+                    if(!is_dir($destination."/".$file))mkdir($destination."/".$file);
+                    $subsource = scandir($source."/".$file);
+                    foreach($subsource as $ss){
+                        if($ss != "." || $ss != ".."){
+                            @copy($source."/".$file."/".$ss,$destination."/".$file."/".$ss);
+                            @unlink($source."/".$file."/".$ss);
+                        }
+                    }
+                }
+            }
+        }
     }
 
 } 

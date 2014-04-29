@@ -1,5 +1,9 @@
 
 count = 1
+url = document.URL
+urlsplt = url.split "/"
+result_url = urlsplt[urlsplt.length-1]
+
 
 $(document).ready ()->
 
@@ -48,17 +52,38 @@ $(document).ready ()->
 			$('#add_upload_div').find('br').last().remove()
 			count--
 
+	CheckTopicStatus()
+
 	#/////	pushdata /////
-	postnote = $('#post_note').val()
-	$(' #submit').click ()->
+	$(' #submit').click (e)->
+
+		postnote = $('#post_note').val()
+		e.preventDefault()
 		$.ajax
-			url:''
+			url:'../PushData'
 			type:'POST'
 			data:
 				postnote : postnote
+				topic_id : result_url
 			success: (d)->
-				alert d
+				window.location = "../../"
 	#/////	pushdata /////
+
+
+
+#private function
+
+CheckTopicStatus = ()->
+	$.ajax
+		url:'../checkTopicStatus',
+		type:'POST',
+		data:
+			topic_id : result_url
+		,
+		success: (d)->
+			if d == '1' then $('#update_header').html 'อัพเดทครั้งที่ 2'
+			else if d == '2' then $('#update_header').html 'อัพเดทครั้งที่ 3'
+
 
 
 DragSetting = (element)->
@@ -76,4 +101,11 @@ uploadImg = (data,div)->
 		processData: false
 		contentType: false
 		success:(d)->
-			$('#'+div).html '<img class="show_car_upload" src="'+d+'"><span class="del_car_upload">X</span>'
+			$('#'+div).html '<img class="show_car_upload" src="'+"../../"+d+'"><span class="del_car_upload">X</span>'
+
+DelImgInDir = (url)->
+	$.ajax
+		url:'../../post/delImg'
+		type:'POST'
+		data:
+			'del':url
