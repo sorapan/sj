@@ -13,6 +13,7 @@ class index extends Controller{
         $this->view->js = array(
             "index/js/Content.js",
             "index/js/Loadmore.js",
+            "index/js/topic_plugin.js",
             "index/js/PageController.js");
 
     }

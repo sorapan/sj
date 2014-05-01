@@ -3,11 +3,13 @@
   $(document).ready(function() {
     return $(' .box_in_head').click(function() {
       $(this).parent().find('img').toggle();
-      $(this).parent().find('br').last().toggle();
+      $(this).parent().find('br').toggle();
       if ($(this).find('.arrow').html() === '▲') {
-        return $(this).find('.arrow').html('▼');
+        $(this).find('.arrow').html('▼');
+        return $(this).parent().find('br').last().remove();
       } else {
-        return $(this).find('.arrow').html('▲');
+        $(this).find('.arrow').html('▲');
+        return $(this).parent().append('<br>');
       }
     });
   });

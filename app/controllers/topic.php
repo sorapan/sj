@@ -24,6 +24,7 @@ class topic extends Controller{
             $this->view->img = self::CallModel()->fetch_img($id);
             $this->view->carimg = self::CallModel()->fetch_carimg($id);
             $this->view->carimg2 = self::CallModel()->fetch_carimg2($id);
+            $this->view->carimg3 = self::CallModel()->fetch_carimg3($id);
 
         }else{
             @header("location:".URL);

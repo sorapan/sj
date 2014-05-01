@@ -8,7 +8,7 @@
 
 <span id="header"><?php echo $this->info['header']?></span><br><br>
 <span id="detail">Author: <a href=""><?php echo $this->info['username']?><a> On: <?php echo date('d/m/Y - h:i A',(int)$this->info['date'])?></span>
-<span style="float:left;font-size: 16px;width: 100%"><?php echo $this->info['note']?></span>
+<?php echo "หมายเหตุ : ".$this->info['note']?>
     <br><br>
 <?php
 foreach( $this->img as $arr){
@@ -26,7 +26,7 @@ foreach( $this->img as $arr){
 }
 ?>
 <div class="box_in_content">
-    <span class="box_in_head">รูปภาพรถ : <span class="arrow">▼</span></span><br><br>
+    <span class="box_in_head">รูปภาพรถอัพเดทครั้งที่ 1 : <span class="arrow">▼</span></span><br><br>
 <?php
 foreach( $this->carimg as $arr){
 
@@ -41,29 +41,55 @@ foreach( $this->carimg as $arr){
 <br>
 
 <?php
-if(!empty($this->carimg2)){
-?>
-    <div class="box_in_content">
-    <span class="box_in_head">รูปภาพรถอัพเดทครั้งที่ 2 : <span class="arrow">▼</span></span><br><br>
 
-    <?php
+if(!empty($this->carimg2)){
+
+    echo 'อัพเดทครั้งที่ 2 <br>';
+    echo "หมายเหตุ : ".$this->info['note2']."<br><br>";
+    echo '<div class="box_in_content">';
+    echo '<span class="box_in_head">รูปภาพรถอัพเดทครั้งที่ 2 : <span class="arrow">▼</span></span><br><br>';
     foreach( $this->carimg2 as $arr){
         echo '<img class="doc" src="'.URL.'file/'.$arr['topic_id'].'/'.$arr['type'].'2/'.$arr['img_name'].'">';
-    ?>
-
-    <br>
-<?php
+        echo '<br>';
     }
+    echo '</div>';
+    echo '<br>';
 }
-?>
-    </div>
-    <br>
-<?php
 
+
+if(!empty($this->carimg3)){
+
+    echo 'อัพเดทครั้งที่ 3 <br>';
+    echo "หมายเหตุ : ".$this->info['note3']."<br><br>";
+    echo '<div class="box_in_content">';
+    echo '<span class="box_in_head">รูปภาพรถอัพเดทครั้งที่ 3 : <span class="arrow">▼</span></span><br><br>';
+    foreach( $this->carimg3 as $arr){
+        echo '<img class="doc" src="'.URL.'file/'.$arr['topic_id'].'/'.$arr['type'].'3/'.$arr['img_name'].'">';
+        echo '<br>';
+    }
+    echo '</div>';
+    echo '<br>';
+}
+
+?>
+
+    </div>
+
+<?php
 $a = explode("/",$_SERVER['REQUEST_URI']);
 
+switch($this->info['status']){
+    case '1':
+        echo '<a id="update" href='.URL.'post_update/id/'.$a[3].'>อัพเดทรูประหว่างซ่อมครั้งที่ 2</a>';
+        break;
+    case '2':
+        echo '<a id="update" href='.URL.'post_update/id/'.$a[3].'>อัพเดทรูประหว่างซ่อมครั้งที่ 3</a>';
+        break;
+    case '3':
+        break;
+
+}
 ?>
-<a id="update" href="<?php echo URL?>post_update/id/<?php echo $a[3]?>">อัพเดทรูประหว่างซ่อม</a>
 
 </div>
 
@@ -90,5 +116,3 @@ function headername($type){
     }
     return false;
 }
-
-?>

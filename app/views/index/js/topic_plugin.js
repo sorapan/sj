@@ -12,18 +12,15 @@
     $.rb_Reply = function(a,q){
 
         var data = $.extend({
-
             date: "",
             header: "",
             message: "",
             url: ""
-
         },a);
 
         function aptemplate(){
 
             var content = $("#content");
-
             content.append(''+
                 '<a href="'+ data.url +'">'+
                 '<div class="reply">'+
@@ -40,7 +37,6 @@
         function pretemplate(){
 
             var content = $("#content");
-
             content.prepend(''+
                 '<a href="'+ data.url +'">'+
                 '<div class="reply">'+
@@ -69,8 +65,5 @@
         return prob.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
     }
-
-
-
 
 })(jQuery);

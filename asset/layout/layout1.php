@@ -10,7 +10,6 @@
 
     <script src="<?php echo URL ?>asset/js/jquery.js"></script>
     <script src="<?php echo URL ?>asset/a_layout1/js/PageControl.js"></script>
-    <script src="<?php echo URL ?>asset/js/Plgin_public.js"></script>
 
     <?php
 
@@ -45,6 +44,7 @@
         <?php require "asset/layout/profile_layout_engine/profile_Layout_bootstrap.php"; ?>
         <a class="button_navi" href="<?php echo URL?>">หน้าหลัก</a>
         <a class="button_navi" href="<?php echo URL?>post">สร้างกระทู้</a>
+        <a class="button_navi" href="<?php echo URL?>memberlist">รายชื่อสมาชิก</a>
         <a class="button_navi" href="<?php echo URL?>users">จัดการสมาชิก</a>
         <a class="button_navi" href="<?php echo URL?>logout">ออกจากระบบ</a>
     </div>
