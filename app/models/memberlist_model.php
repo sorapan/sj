@@ -31,9 +31,49 @@ class memberlist_model extends Model{
 
     }
 
-    function fetchChatMessage(){
+    function fetchChatMessage($p1,$p2){
 
+        $sql = "SELECT * FROM chatmessage WHERE sender=:p1 AND receiver=:p2 OR sender=:p2 AND receiver=:p1 ORDER BY date DESC ";
+        $query = $this->db->prepare($sql);
+        $query->execute(array(
+            ':p1' => $p1,
+            ':p2' => $p2
+        ));
+        return $query->fetchAll();
 
     }
+
+    function fetchChatMessage_last($p1,$p2){
+
+        $sql = "SELECT * FROM chatmessage WHERE sender=:p1 AND receiver=:p2 OR sender=:p2 AND receiver=:p1 ORDER BY date DESC LIMIT 1 ";
+        $query = $this->db->prepare($sql);
+        $query->execute(array(
+            ':p1' => $p1,
+            ':p2' => $p2
+        ));
+        return $query->fetchAll();
+
+    }
+
+    function Num2Name($num){
+
+        $query = $this->db->prepare("SELECT username FROM user WHERE id = :num");
+        $query->execute(array(
+            ':num' => $num
+        ));
+        $result = $query->fetch();
+        return $result['username'];
+
+    }
+
+    function lastTimestamp(){
+
+        $query = $this->db->prepare("SELECT date FROM chatmessage ORDER BY date DESC LIMIT 1");
+        $query->execute();
+        $result =  $query->fetch();
+        return $result['date'];
+
+    }
+
 
 }
