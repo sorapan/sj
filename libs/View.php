@@ -21,8 +21,7 @@ class View {
 
     public function render_none($name){
 
-        require "app/views/" . $name . ".php";
+        require "asset/layout/layout3.php";
 
     }
-
 }

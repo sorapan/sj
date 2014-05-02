@@ -1,68 +1,65 @@
+@charset "UTF-8";
+#head {
+  font-size: 28px;
+  margin: 30px 0 0 220px; }
 
-div#head, div#form{
+#form {
+  margin: 40px 0 100px 220px; }
 
-    float: left;
-    margin-left: 120px;
+.label_upload1 {
+  float: left;
+  width: 100%;
+  background-color: #afafaf;
+  color: black; }
 
-}
+.in_drop_div {
+  background-color: white;
+  height: 100px;
+  width: 500px;
+  color: dodgerblue;
+  line-height: 100px;
+  text-align: center;
+  cursor: pointer; }
 
-div#head{
+#post_note {
+  width: 500px; }
 
-    /*font-size: 22px;*/
-    margin-top:30px;
+.in_drop_div:after {
+  content: "คลิก หรือ วางที่นี่"; }
 
-}
+#upload_box {
+  width: 310px;
+  padding: 10px;
+  background-color: white; }
 
-div#form {
+.upload_section {
+  background-color: white;
+  color: gray;
+  width: 500px; }
 
-    clear: both;
-    margin-top:15px;
-    width: auto;
+.ip_upload1, .car_file {
+  display: none; }
 
-}
+.show_upload {
+  height: 100px;
+  width: auto; }
 
-label, input {
+.del_upload_img {
+  cursor: pointer; }
 
-    display: inline-block;
-    vertical-align: super;
-    width: 100px;
+.wait_car_img {
+  width: 300px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 30px;
+  color: red;
+  cursor: pointer;
+  border: 2px red dashed; }
 
-}
+.show_car_upload {
+  width: 300px;
+  height: auto; }
 
-input[type="file"]{
-
-    display: none;
-
-}
-
-input[type="text"], input[type="file"], textarea{
-
-    width:500px
-
-}
-
-textarea{
-    
-    height: 100px;
-    
-}
-
-.result{
-
-    background-color: white;
-    width: 500px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    color:#4b4b4b;
-    border: 1px dashed #4b4b4b;
-    cursor: pointer;
-    margin: 20px;
-
-}
-
-.result:after{
-
-    content: "คลิกเพื่อดาวน์โหลด";
-
-}
+.del_car_upload {
+  cursor: pointer; }

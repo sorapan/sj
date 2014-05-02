@@ -1,76 +1,28 @@
+#bigbox #menu, #bigbox #content {
+  float: left; }
+#bigbox #menu {
+  padding: 0 20px 0 0; }
 
-div#bigbox{
+#usertable tr, #usertable td, #usertable th {
+  border: 1px solid #5a5a5a;
+  width: 180px; }
+#usertable th {
+  background-color: #5a5a5a;
+  color: white; }
+#usertable td {
+  text-indent: 10px; }
 
-    width: 1000px;
-    height: auto;
-    margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
+.btn_menu1 {
+  background-color: #b4b4b4;
+  color: white;
+  float: left;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  font-size: 15px; }
 
-}
-
-div#bigbox-left{
-
-    float: left;
-    width: 300px;
-    height: auto;
-    margin-top: 50px;
-    margin-left: 30px;
-    padding: 15px;
-    background-color: rgb(180,180,180);
-
-}
-
-div#bigbox-right{
-
-    float: right;
-    width: 720px;
-    height: auto;
-    margin-top: 30px;
-    margin-right: 50px;
-    padding: 20px;
-
-}
-
-table{
-
-    border:1px solid black;
-    border-collapse:collapse;
-    margin: auto;
-
-}
-
-th{
-    background-color: rgb(195,195,195);
-}
-
-tr, th, tr{
-
-    text-align: center;
-    border: 1px solid black;
-    width:200px;
-
-}
-
-
-div#form {
-
-    clear: both;
-    margin-top:15px;
-    width: auto;
-
-}
-
-label, input, select {
-
-    display: inline-block;
-    vertical-align: super;
-    width: 100px;
-
-}
-
-input[type="text"], input[type="password"] , textarea, select{
-
-    width:170px
-
-}
+.btn_menu1:hover {
+  background-color: #5a5a5a;
+  color: white; }

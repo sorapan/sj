@@ -4,88 +4,60 @@ $(function(){
     var firsttimeFetch = 1;
 
     Cycle();
-
     function Cycle(){
 
         $.ajax({
-
             url:"index/fetchMessage",
             type:"POST",
             data:{
-
                 timestamp:timestamp,
                 firsttimeFetch:firsttimeFetch
-
             },
             dataType:"JSON",
             success: function(data){
 
                 for(i=0 ; i<data.msg.length ; i++){
-
                     $.rb_Reply({
-
-                        date : data.date[i],
+                        date : data.last_update[i],
                         header : data.hdr[i],
                         message : data.msg[i],
                         url : "http://patel/topic/id/"+data.topicID[i]
-
                     },"ap");
-
                 }
-
                 timestamp = parseInt(data.now_time);
                 firsttimeFetch = data.firsttimeFetch;
 
-
             },
             complete: function(){
-
                 CycleUpdate();
-
             }
-
         });
-
     }
 
     function CycleUpdate(){
 
-
         $.ajax({
-
             url:"index/fetchMessage",
             type:"POST",
             data:{
-
                 timestamp:timestamp,
                 firsttimeFetch:firsttimeFetch
-
             },
             dataType:"JSON",
             success: function(data){
-
                 $.rb_Reply({
-
                     date : data.date,
                     header : data.hdr,
                     message : data.msg,
                     url : "http://patel/topic/id/"+data.topicID
-
                 },"pre");
-
                 timestamp = parseInt(data.now_time);
                 firsttimeFetch = data.firsttimeFetch;
-
             },
             complete : function(){
-
                 CycleUpdate();
-
             }
-
         });
-
     }
-
 
 });

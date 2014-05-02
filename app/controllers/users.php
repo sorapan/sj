@@ -18,12 +18,19 @@ class users extends Controller{
 
     }
 
+    function backup(){
+
+        $this->view->render_none("users/backup");
+
+    }
+
     function edit($id){
 
         $this->view->target = self::CallModel()->singleRow($id);
         $this->view->render("users/edit");
 
     }
+
 
     function delete($id){
 

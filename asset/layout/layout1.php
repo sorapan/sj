@@ -10,7 +10,6 @@
 
     <script src="<?php echo URL ?>asset/js/jquery.js"></script>
     <script src="<?php echo URL ?>asset/a_layout1/js/PageControl.js"></script>
-    <script src="<?php echo URL ?>asset/js/Plgin_public.js"></script>
 
     <?php
 
@@ -31,19 +30,23 @@
 </head>
 <body>
 
-<div id="header">
-    <div id="sign"><img src="<?php echo URL ?>asset/img/logo.jpg"></div>
-    สงขลาเจริญการช่าง : Insurance System
-</div>
+<!--<div id="header">-->
+<!--    <div id="sign"><img src="--><?php //echo URL ?><!--asset/img/logo.jpg"></div>-->
+<!--</div>-->
 
 <!--<div id="blogtop_menu">-->
 
     <div id="top_menu">
+        <div style="width: 100%;height: 60px;background-color: gold">
+            <img style="float:left;height:100%" src="<?php echo URL ?>asset/img/logo.jpg">
+            <span style="float:left;font-size:16px;height:60px;line-height: 60px;text-align:center;color:white">สงขลาเจริญการช่าง</span>
+        </div>
         <?php require "asset/layout/profile_layout_engine/profile_Layout_bootstrap.php"; ?>
         <a class="button_navi" href="<?php echo URL?>">หน้าหลัก</a>
-        <a class="button_navi" href="<?php echo URL?>post">โพสกระทู้</a>
+        <a class="button_navi" href="<?php echo URL?>post">สร้างกระทู้</a>
+        <a class="button_navi" href="<?php echo URL?>memberlist">ส่งข้อความ</a>
         <a class="button_navi" href="<?php echo URL?>users">จัดการสมาชิก</a>
-        <a class="button_navi" href="<?php echo URL?>logout">Logout</a>
+        <a class="button_navi" href="<?php echo URL?>logout">ออกจากระบบ</a>
     </div>
 
 <!--</div>-->

@@ -13,12 +13,13 @@ class index_model extends Model{
         $count_array = 0;
         $data = array();
 
-        $query = $this->db->prepare("Select * From post Order By date DESC Limit 5 Offset 0");
+        $query = $this->db->prepare("Select * From `post` Order By `last_update` DESC Limit 5 Offset 0");
         $query->execute();
         while($row = $query->fetch(PDO::FETCH_ASSOC)){
 
             $data["date"][$count_array] = date('d/m/Y - h:i A',(int)$row['date']);
-            $data["msg"][$count_array] = $row['content'];
+            $data["last_update"][$count_array] = date('d/m/Y - h:i A',(int)$row['last_update']);
+            $data["msg"][$count_array] = $row['note'];
             $data["hdr"][$count_array] = $row['header'];
             $data["id"][$count_array] = $row['id'];
             $data["topicID"][$count_array] = $row['topicID'];
@@ -28,7 +29,6 @@ class index_model extends Model{
 
         $data['now_time'] = $this->TimeStamp();
         $data['firsttimeFetch'] = 0;
-
         return json_encode($data);
 
     }
@@ -37,10 +37,11 @@ class index_model extends Model{
 
         $data = array();
 
-        $query = $this->db->prepare("Select * From post Order By date DESC");
+        $query = $this->db->prepare("Select * From `post` Order By `last_update` DESC");
         $query->execute();
         $row = $query->fetch(PDO::FETCH_ASSOC);
         $data["date"]= date('d/m/Y - h:i A',(int)$row['date']);
+        $data["last_update"] = date('d/m/Y - h:i A',(int)$row['last_update']);
         $data["msg"] = $row['content'];
         $data["hdr"] = $row['header'];
         $data['now_time'] = $this->Timestamp();
@@ -56,12 +57,13 @@ class index_model extends Model{
 
         $count_array = 0;
         $data = array();
-        $query = $this->db->prepare("Select * From post Order By date DESC Limit 5 Offset $off");
+        $query = $this->db->prepare("Select * From `post` Order By `last_update` DESC Limit 5 Offset $off");
         $query->execute();
         while($row = $query->fetch(PDO::FETCH_ASSOC)){
 
             $data["date"][$count_array] = date('d/m/Y - h:i A',(int)$row['date']);
-            $data["msg"][$count_array] = $row['content'];
+            $data["last_update"][$count_array] = date('d/m/Y - h:i A',(int)$row['last_update']);
+            $data["msg"][$count_array] = $row['note'];
             $data["hdr"][$count_array] = $row['header'];
             $data["id"][$count_array] = $row['id'];
             $data["topicID"][$count_array] = $row['topicID'];

@@ -1,3 +1,16 @@
+<style>
+    #mbx_msg{
+        color:rgb(150,150,150);
+        text-indent: 30px;
+    }
+</style>
 
-<span style="color:white">MiniBox</span><br>
-<a href=<?php URL ?>"logout">Logout</a>
+<div id="mbx_msg">
+    Welcome,
+<?php
+
+Session::init();
+echo Session::get('username')
+
+?>
+</div>

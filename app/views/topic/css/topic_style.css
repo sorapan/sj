@@ -7,7 +7,7 @@
     /*margin: 30px auto 30px auto;*/
     background-color: rgb(240,240,240);
     height: auto;
-    width: 800px;
+    width: 850px;
     margin-top: 50px;
     margin-bottom: 50px;
     left: 50%;
@@ -34,6 +34,14 @@
     margin: 5px 5px 20px 0;
     width: 100%;
 
+
+}
+
+#content .note{
+
+    float:left;
+    font-size: 16px;
+    width: 100%;
 
 }
 
@@ -70,11 +78,10 @@ a#update:hover{
 
 img.doc{
 
-    width: 650px;
+    width: 300px;
     position: relative;
     left: 50%;
-    margin-left: -325px;
-
+    margin-left: -150px;
 }
 
 a#link{
@@ -84,4 +91,27 @@ a#link{
     font-size: 16px;
     color: #4b4b4b;
 
+}
+
+.box_in_content{
+
+    width: 780px;
+    background-color:  rgb(210,210,210);
+
+}
+
+.box_in_head{
+
+    float: left;
+    width: 100%;
+    color: white;
+    text-indent: 10px;
+    background-color: rgb(100,100,100);
+    cursor: pointer;
+
+}
+
+.arrow{
+    float: right;
+    padding-right: 10px;
 }

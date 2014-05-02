@@ -1,0 +1,32 @@
+
+=attrcolor1($color)
+	background-color: rgb($color,$color,$color)
+	color: white
+
+#bigbox
+	#menu, #content
+		float: left
+	#menu
+		padding: 0 20px 0 0
+
+#usertable
+	tr,td,th
+		border: 1px solid rgb(90,90,90)
+		width: 180px
+	th
+		+attrcolor1(90)
+	td
+		text-indent: 10px
+
+.btn_menu1
+	+attrcolor1(180)
+	float: left
+	text-align: center
+	width: 200px
+	height: 60px
+	line-height: 60px
+	text-decoration: none
+	font-size: 15px
+
+.btn_menu1:hover
+	+attrcolor1(90)

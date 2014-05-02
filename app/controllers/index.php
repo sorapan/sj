@@ -6,13 +6,14 @@ class index extends Controller{
 
         parent::__construct();
 
-//        Session::init();
-//        Session::checkLogin();
+        Session::init();
+        Session::checkLogin();
 
         $this->view->css = array("index/css/main.css");
         $this->view->js = array(
             "index/js/Content.js",
             "index/js/Loadmore.js",
+            "index/js/topic_plugin.js",
             "index/js/PageController.js");
 
     }

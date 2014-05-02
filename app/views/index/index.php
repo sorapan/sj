@@ -3,7 +3,7 @@
     <div id="search">
         <div  class="button_1" style="margin:0;" id="search_button">ค้นหา</div>
         <input type="text" id="search_input" placeholder="Search...">
-        <a class="button_1" href="<?php echo URL?>post">โพสกระทู้</a>
+        <a class="button_1" href="<?php echo URL?>post">สร้างกระทู้</a>
     </div>
 
 </div>
@@ -17,7 +17,6 @@
     <div id="content"></div>
 
     <div id="loadmore">Loadmore</div>
-
 
 </div>
 

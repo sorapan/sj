@@ -1,49 +1,33 @@
 
 
-<div id="bigbox-left">
-    <h1>Create New User</h1><br>
-    <form method="POST" action="<?php echo URL;?>users/insert">
+<div id="bigbox">
 
-        <label for="username">Username</label><input type="text" id="username" name="username"><br>
-        <label for="password">Password</label><input type="password" id="password" name="password"><br>
-        <label for="class">Class</label><select id="class" name="class">
-            <option value="user">User</option>
-            <option value="admin">Admin</option>
-            <option value="owner">Owner</option>
-        </select><br><br>
-        <input type="submit" value="OK">
+    <div id="menu">
 
-    </form>
-</div>
+        <a class="btn_menu1" id="backuplink" href="<?php echo URL?>users/backup">ส่งออกฐานข้อมูล</a>
 
+    </div>
 
-<div id="bigbox-right">
-<h1>Users Table</h1>
+    <div id="content">
+        <span style="font-size: 20px">Users Table</span>
+        <table id="usertable">
+            <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Class</th>
+            <th>Tools</th>
+            </tr>
+            <?php
+                foreach($this->data as $key=>$val){
+                    echo"<tr>";
+                    echo"<td>".$val['id']."</td>";
+                    echo"<td>".$val['username']."</td>";
+                    echo"<td>".$val['class']."</td>";
+                    echo"<td><span><a href='".URL."users/edit/".$val['id']."'>EDIT</a> <a href='".URL."users/delete/".$val['id']."'>DEL</a></span></td>";
+                    echo"</tr>";
+                }
+            ?>
+        </table>
+    </div>
 
-<table border="1">
-
-    <tr>
-    <th>ID</th>
-    <th>Username</th>
-    <th>Class</th>
-    <th>Tools</th>
-    </tr>
-
-<?php
-
-    foreach($this->data as $key=>$val){
-
-        echo"<tr>";
-        echo"<td>".$val['id']."</td>";
-        echo"<td>".$val['username']."</td>";
-        echo"<td>".$val['class']."</td>";
-        echo"<td><span><a href='".URL."users/edit/".$val['id']."'>EDIT</a> <a href='".URL."users/delete/".$val['id']."'>DEL</a></span></td>";
-        echo"</tr>";
-
-    }
-
-
-?>
-
-</table>
 </div>
