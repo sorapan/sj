@@ -5,14 +5,10 @@ class memberlist extends Controller{
     function __construct(){
 
         parent::__construct();
-<<<<<<< HEAD
         $this->view->js = array(
             'memberlist/js/memberlist.js',
             'memberlist/js/chat.js',
         );
-=======
-        $this->view->js = array('memberlist/js/chat.js');
->>>>>>> origin/new_layout
         $this->view->css = array(
             'memberlist/css/memberlist.css',
             'memberlist/css/chat.css'
@@ -29,11 +25,7 @@ class memberlist extends Controller{
 
     function chat($userid){
 
-<<<<<<< HEAD
         $this->view->render_none('memberlist/render');
-=======
-        $this->view->render('memberlist/render');
->>>>>>> origin/new_layout
 
     }
 
