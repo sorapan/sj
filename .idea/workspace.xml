@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d9bd4ae-ce5d-43e7-8fbe-d8bfec66eb78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberlist/js/chat.coffee" afterPath="$PROJECT_DIR$/app/views/memberlist/js/chat.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberlist/css/chat.css" afterPath="$PROJECT_DIR$/app/views/memberlist/css/chat.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberlist/js/chat.js" afterPath="$PROJECT_DIR$/app/views/memberlist/js/chat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberlist/js/chat.map" afterPath="$PROJECT_DIR$/app/views/memberlist/js/chat.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/memberlist.php" afterPath="$PROJECT_DIR$/app/controllers/memberlist.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/memberlist_model.php" afterPath="$PROJECT_DIR$/app/models/memberlist_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/css/backup.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/backup.php" afterPath="$PROJECT_DIR$/app/views/users/backup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users.php" afterPath="$PROJECT_DIR$/app/controllers/users.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/users_model.php" afterPath="$PROJECT_DIR$/app/models/users_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.coffee" afterPath="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.js" afterPath="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.map" afterPath="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/css/users_style.css" afterPath="$PROJECT_DIR$/app/views/users/css/users_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/css/users_style.sass" afterPath="$PROJECT_DIR$/app/views/users/css/users_style.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="patel.iws" />
@@ -34,81 +38,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="chat.coffee" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/memberlist/js/chat.coffee">
+      <file leaf-file-name="backup.sass" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/users/css/backup.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="389" selection-end="389" vertical-scroll-proportion="0.7106599" vertical-offset="36" max-vertical-offset="1159">
-              <folding>
-                <marker date="1398987728341" expanded="false" signature="596:606" placeholder="..." />
-                <marker date="1398987728341" expanded="false" signature="906:916" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="memberlist.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/memberlist.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="14" selection-start="2031" selection-end="2031" vertical-scroll-proportion="0.0" vertical-offset="1507" max-vertical-offset="2318">
+            <state line="12" column="14" selection-start="202" selection-end="202" vertical-scroll-proportion="0.42379183" vertical-offset="0" max-vertical-offset="589">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chat.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/memberlist/css/chat.css">
+      <file leaf-file-name="backup.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/backup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="23" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="703">
+            <state line="2" column="28" selection-start="35" selection-end="35" vertical-scroll-proportion="-1.4074074" vertical-offset="0" max-vertical-offset="209">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="memberlist_model.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/memberlist_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="34" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="1596">
-              <folding>
-                <marker date="1398987284053" expanded="true" signature="184:218" placeholder="SELECT * FRO..." />
-                <marker date="1398987284053" expanded="true" signature="389:495" placeholder="INSERT INTO ..." />
-                <marker date="1398987284053" expanded="true" signature="839:948" placeholder="SELECT * FRO..chatmessage..." />
-                <marker date="1398987284053" expanded="true" signature="1194:1311" placeholder="SELECT * FRO..chatmessage..." />
-                <marker date="1398987284053" expanded="true" signature="1562:1603" placeholder="SELECT usern..user..." />
-                <marker date="1398987284053" expanded="true" signature="1824:1879" placeholder="SELECT date ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="24" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="1539">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_model.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/index_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="82" selection-start="1924" selection-end="1964" vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="1748">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="topic_model.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/topic_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="52" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0" vertical-offset="467" max-vertical-offset="1064">
-              <folding>
-                <marker date="1398847769677" expanded="true" signature="176:238" placeholder="SELECT * FRO..." />
-                <marker date="1398847769677" expanded="true" signature="421:501" placeholder="SELECT * FRO..." />
-                <marker date="1398847769677" expanded="true" signature="686:766" placeholder="SELECT * FRO..." />
-                <marker date="1398847769677" expanded="true" signature="951:1031" placeholder="SELECT * FRO..." />
-                <marker date="1398847769677" expanded="true" signature="1306:1402" placeholder="SELECT * FRO..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -131,12 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/post/scss/post_style.scss" />
-        <option value="$PROJECT_DIR$/app/views/post/js/form_control.js" />
-        <option value="$PROJECT_DIR$/app/views/post/scss/post_style.sass" />
-        <option value="$PROJECT_DIR$/app/views/index/css/main.scss" />
-        <option value="$PROJECT_DIR$/app/views/post/js/form_control2.coffee" />
-        <option value="$PROJECT_DIR$/app/views/post/js/PushData.js" />
         <option value="$PROJECT_DIR$/app/controllers/post.php" />
         <option value="$PROJECT_DIR$/app/models/post_model.php" />
         <option value="$PROJECT_DIR$/asset/a_layout1/js/PageControl.js" />
@@ -182,6 +119,12 @@
         <option value="$PROJECT_DIR$/app/views/memberlist/css/chat.css" />
         <option value="$PROJECT_DIR$/app/controllers/memberlist.php" />
         <option value="$PROJECT_DIR$/app/views/memberlist/js/chat.coffee" />
+        <option value="$PROJECT_DIR$/app/views/users/css/users_style.sass" />
+        <option value="$PROJECT_DIR$/app/controllers/users.php" />
+        <option value="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.coffee" />
+        <option value="$PROJECT_DIR$/app/models/users_model.php" />
+        <option value="$PROJECT_DIR$/app/views/users/backup.php" />
+        <option value="$PROJECT_DIR$/app/views/users/css/backup.sass" />
       </list>
     </option>
   </component>
@@ -234,6 +177,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -262,135 +208,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memberlist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memberlist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat.coffee" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memberlist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,9 +231,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
       </pane>
     </panes>
   </component>
@@ -509,15 +328,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2794562" sideWeight="0.6705491" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28625378" sideWeight="0.6705491" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39899832" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -558,46 +377,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/asset/layout/layout_engine/Layout_bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="14" selection-start="833" selection-end="833" vertical-scroll-proportion="1.9946619" vertical-offset="0" max-vertical-offset="1615" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asset/layout/profile_layout_engine/profile_Layout_bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="202" selection-end="239" vertical-scroll-proportion="0.43794325" vertical-offset="0" max-vertical-offset="564" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/error.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="60" selection-start="198" selection-end="198" vertical-scroll-proportion="0.40425533" vertical-offset="0" max-vertical-offset="564" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/error/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/post/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="26" selection-start="1778" selection-end="1789" vertical-scroll-proportion="0.73049647" vertical-offset="519" max-vertical-offset="1083" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/login/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="36" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/asset/css/style_layout2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="14" selection-start="399" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="359" max-vertical-offset="1178" />
@@ -718,11 +497,6 @@
         <state line="155" column="0" selection-start="5396" selection-end="5476" vertical-scroll-proportion="-109.07407" vertical-offset="0" max-vertical-offset="3154" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/asset/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="1" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.8064516" vertical-offset="494" max-vertical-offset="1083" />
@@ -770,15 +544,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/topic_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="52" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0" vertical-offset="467" max-vertical-offset="1064">
-          <folding>
-            <marker date="1398847769677" expanded="true" signature="176:238" placeholder="SELECT * FRO..." />
-            <marker date="1398847769677" expanded="true" signature="421:501" placeholder="SELECT * FRO..." />
-            <marker date="1398847769677" expanded="true" signature="686:766" placeholder="SELECT * FRO..." />
-            <marker date="1398847769677" expanded="true" signature="951:1031" placeholder="SELECT * FRO..." />
-            <marker date="1398847769677" expanded="true" signature="1306:1402" placeholder="SELECT * FRO..." />
-          </folding>
-        </state>
+        <state line="44" column="52" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.66969144" vertical-offset="467" max-vertical-offset="1064" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/memberlist/js/chat.js">
@@ -793,53 +559,96 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/index_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="82" selection-start="1924" selection-end="1964" vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="1748">
-          <folding />
-        </state>
+        <state line="63" column="82" selection-start="1924" selection-end="1964" vertical-scroll-proportion="0.5053192" vertical-offset="912" max-vertical-offset="1748" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="24" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="1539">
-          <folding />
-        </state>
+        <state line="57" column="24" selection-start="1274" selection-end="1274" vertical-scroll-proportion="1.1010638" vertical-offset="462" max-vertical-offset="1539" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/memberlist_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="34" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="1596">
-          <folding>
-            <marker date="1398987284053" expanded="true" signature="184:218" placeholder="SELECT * FRO..." />
-            <marker date="1398987284053" expanded="true" signature="389:495" placeholder="INSERT INTO ..." />
-            <marker date="1398987284053" expanded="true" signature="839:948" placeholder="SELECT * FRO..chatmessage..." />
-            <marker date="1398987284053" expanded="true" signature="1194:1311" placeholder="SELECT * FRO..chatmessage..." />
-            <marker date="1398987284053" expanded="true" signature="1562:1603" placeholder="SELECT usern..user..." />
-            <marker date="1398987284053" expanded="true" signature="1824:1879" placeholder="SELECT date ..." />
-          </folding>
-        </state>
+        <state line="53" column="34" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.86206895" vertical-offset="532" max-vertical-offset="1596" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/memberlist/css/chat.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
+        <state line="6" column="23" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/memberlist/js/chat.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="32" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="568" max-vertical-offset="1159" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/css/backup.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.10344828" vertical-offset="57" max-vertical-offset="1577" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="361">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/memberlist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="14" selection-start="2031" selection-end="2031" vertical-scroll-proportion="0.0" vertical-offset="1507" max-vertical-offset="2318">
+        <state line="83" column="69" selection-start="1935" selection-end="1937" vertical-scroll-proportion="0.27992633" vertical-offset="1425" max-vertical-offset="2375" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="8" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" vertical-offset="589" max-vertical-offset="1729">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/memberlist/js/chat.coffee">
+    <entry file="file://$PROJECT_DIR$/app/views/users/css/users_style.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="389" selection-end="389" vertical-scroll-proportion="0.7106599" vertical-offset="36" max-vertical-offset="1159">
+        <state line="33" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.7641844" vertical-offset="196" max-vertical-offset="760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/js/users_pagecontrol.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="25" selection-start="260" selection-end="260" vertical-scroll-proportion="0.3857868" vertical-offset="0" max-vertical-offset="591">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/users_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="30" selection-start="675" selection-end="675" vertical-scroll-proportion="0.5862069" vertical-offset="285" max-vertical-offset="1577">
           <folding>
-            <marker date="1398987728341" expanded="false" signature="596:606" placeholder="..." />
-            <marker date="1398987728341" expanded="false" signature="906:916" placeholder="..." />
+            <marker date="1399067619389" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1399067619389" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1399067619389" expanded="true" signature="-1:-1" placeholder="UPDATE user ..." />
+            <marker date="1399067619389" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1399067619389" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/backup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="28" selection-start="35" selection-end="35" vertical-scroll-proportion="-1.4074074" vertical-offset="0" max-vertical-offset="209">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/css/backup.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="14" selection-start="202" selection-end="202" vertical-scroll-proportion="0.42379183" vertical-offset="0" max-vertical-offset="589">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -8,6 +8,12 @@
       e.preventDefault();
       return window.open($(this).attr('href'), 'backup', 'scrollbars=1,height=550,width=500');
     });
+    $("#click_backup").click(function() {
+      return $.ajax({
+        url: 'Backupit',
+        success: function(d) {}
+      });
+    });
     return $(' #click_backup').click(function() {
       return $.ajax({
         url: ''

@@ -6,7 +6,10 @@ class users extends Controller{
 
         parent::__construct();
 
-        $this->view->css = array("users/css/users_style.css");
+        $this->view->css = array(
+            "users/css/users_style.css",
+            "users/css/backup.css"
+        );
         $this->view->js = array("users/js/users_pagecontrol.js");
 
     }
@@ -18,16 +21,22 @@ class users extends Controller{
 
     }
 
-    function backup(){
+    function Backup(){
 
         $this->view->render_none("users/backup");
+
+    }
+
+    function Backupit(){
+
+        self::CallModel()->Backup();
 
     }
 
     function edit($id){
 
         $this->view->target = self::CallModel()->singleRow($id);
-        $this->view->render("users/edit");
+        $this->view->render_none("users/edit");
 
     }
 

@@ -18,6 +18,15 @@ class users_model extends Model{
 
     }
 
+    function Backup(){
+
+        $name = date("Y-m-d-H-i-s");
+        $cd = '"C:\Program Files\MySQL\MySQL Server 5.6\bin\mysqldump" -h'.DB_HOST.' -u'.DB_USER.' -p'.DB_PASS.' '.DB_NAME.' > sql_backup/'.$name.'.sql';
+        exec($cd);
+
+    }
+
+
     function singleRow($id){
 
         $query = $this->db->prepare(" SELECT * FROM `user` WHERE `id` = :id LIMIT 1");
