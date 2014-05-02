@@ -13,7 +13,11 @@
 
             echo '<tr>';
             echo '<td>'.$list['username'].'</td>';
+<<<<<<< HEAD
             echo '<td><a class="chatlink" href="'.URL.'memberlist/chat/'.$list['id'].'">click</a></td>';
+=======
+            echo '<td><a href="'.URL.'memberlist/chat/'.$list['id'].'">click</a></td>';
+>>>>>>> origin/new_layout
             echo '</tr>';
 
         }

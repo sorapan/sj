@@ -44,7 +44,11 @@
         <?php require "asset/layout/profile_layout_engine/profile_Layout_bootstrap.php"; ?>
         <a class="button_navi" href="<?php echo URL?>">หน้าหลัก</a>
         <a class="button_navi" href="<?php echo URL?>post">สร้างกระทู้</a>
+<<<<<<< HEAD
         <a class="button_navi" href="<?php echo URL?>memberlist">ส่งข้อความ</a>
+=======
+        <a class="button_navi" href="<?php echo URL?>memberlist">รายชื่อสมาชิก</a>
+>>>>>>> origin/new_layout
         <a class="button_navi" href="<?php echo URL?>users">จัดการสมาชิก</a>
         <a class="button_navi" href="<?php echo URL?>logout">ออกจากระบบ</a>
     </div>
