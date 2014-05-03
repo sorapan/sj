@@ -26,6 +26,7 @@ class index_model extends Model{
             $data["id"][$k] = $v['id'];
             $data["topicID"][$k] = $v['topicID'];
             $data["status"][$k] = $v['status'];
+            $data["verify"][$k] = $v['verify'];
 
         }
 
@@ -52,6 +53,7 @@ class index_model extends Model{
         $data["id"] = $row[0]['id'];
         $data["topicID"] = $row[0]['topicID'];
         $data["status"] = $row[0]['status'];
+        $data["verify"] = $row[0]['verify'];
 
         return json_encode($data);
 
@@ -75,6 +77,7 @@ class index_model extends Model{
             $data["id"][$k] = $v['id'];
             $data["topicID"][$k] = $v['topicID'];
             $data["status"][$k] = $v['status'];
+            $data["verify"][$k] = $v['verify'];
 
         }
         return json_encode($data);

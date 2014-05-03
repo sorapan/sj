@@ -3,16 +3,29 @@
   (function($) {
     var PreventHtmlTag;
     $.rb_Reply = function(a, q) {
-      var aptemplate, data, pretemplate, topic;
+      var aptemplate, color, data, pretemplate, topic, vrfy;
       data = $.extend({
         status: "",
         header: "",
         user: "",
         date: "",
         last_update: "",
+        verify: "",
         url: ""
       }, a);
-      topic = '<a href="' + data.url + '"><div class="reply">' + '<span class="rep_status">' + data.status + '</span>' + '<span class="head">' + data.header + '</span><br>' + '<span class="descrip">สร้างโดย : </span>' + data.user + '<br>' + '<span class="descrip">อัพเดท : </span>' + data.last_update + '<br>' + '<span class="descrip">วันที่สร้าง : </span>' + data.date + '<br><br>' + '</div></a>';
+      if (data.status === "1") {
+        color = 'green';
+      } else if (data.status === "2") {
+        color = 'blue';
+      } else if (data.status === "3") {
+        color = 'red';
+      }
+      if (data.verify === "Y") {
+        vrfy = '<span style="color:green">ยืนยันแล้ว</span>';
+      } else if (data.verify === "N") {
+        vrfy = '<span style="color:red">ยังไม่ได้ยืนยัน</span>';
+      }
+      topic = '<a href="' + data.url + '"><div class="reply">' + '<span style="background-color:' + color + '" class="rep_status">' + data.status + '</span>' + '<span class="head">' + data.header + '</span><br>' + '<span class="descrip">สร้างโดย : </span>' + data.user + '<br>' + '<span class="descrip">อัพเดทล่าสุด : </span>' + data.last_update + '' + '<span class="descrip2">การยืนยัน : ' + vrfy + '</span><br>' + '<span class="descrip">วันที่สร้าง : </span>' + data.date + '<br><br>' + '</div></a>';
       aptemplate = function() {
         return $("#content").append(topic);
       };

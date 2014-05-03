@@ -100,6 +100,10 @@
       float: left;
       text-indent: 10px;
       width: 90px; }
+    #content .reply .descrip2 {
+      float: right;
+      margin-right: 210px;
+      width: 200px; }
     #content .reply img.tumb {
       width: 100px;
       height: auto; }

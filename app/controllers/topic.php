@@ -33,6 +33,12 @@ class topic extends Controller{
 
     }
 
+    function verify(){
+
+        self::CallModel()->Verify($_POST['id']);
+
+    }
+
     private static function CallModel(){
 
         return new topic_model();

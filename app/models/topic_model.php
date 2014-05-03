@@ -48,4 +48,14 @@ class topic_model extends Model{
         ));
         return $query->fetch();
     }
+
+    function Verify($id){
+
+        $query = $this->db->prepare("UPDATE post SET `verify` = :verify WHERE `topicID` = :id");
+        $query->execute(array(
+            ':verify' => 'Y',
+            ':id' => $id
+        ));
+
+    }
 }

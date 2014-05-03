@@ -48,7 +48,7 @@
         <?php
 
             if(Session::get('role') == 'admin' || Session::get('role') == "owner"){
-                echo '<a class="button_navi" href="'.URL.'users">แอดมิน</a>';
+                echo '<a style="color:gold" class="button_navi" href="'.URL.'users">แอดมิน</a>';
             }
 
         ?>

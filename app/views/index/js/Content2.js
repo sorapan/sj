@@ -30,8 +30,8 @@ $(function(){
                         '<span class="descrip">สร้างโดย : </span>'+data.user[i]+'<br>'+
                         '<span class="descrip">อัพเดท : </span>'+data.last_update[i]+'<br>'+
                         '<span class="descrip">วันที่สร้าง : </span>'+data.date[i]+'<br><br>'+
-                        '<div>'
-                    '</div>'
+                        '<div>'+
+                    '</div>'+
                     '</div>');
 
                 }
