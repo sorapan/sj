@@ -2,9 +2,9 @@
   float: left;
   background-color: #cdcdcd;
   height: 450px;
-  width: 250px;
-  /*border-bottom:  solid rgb(175,175,175); */ }
+  width: 250px; }
 
+/*border-bottom:  solid rgb(175,175,175); */
 /* ---------------------Sub menu--------------------- */
 #sub_menu {
   float: left;
@@ -73,30 +73,28 @@
     width: 100%;
     cursor: pointer;
     margin-bottom: 10px; }
+    #content .reply .rep_status {
+      position: absolute;
+      margin: 0;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      font-size: 18px;
+      color: white;
+      background-color: red; }
     #content .reply .head {
-      float: left;
+      padding-left: 40px;
       color: #373737;
-      background-color: #f0f0f0;
       min-height: 30px;
-      height: 30px;
-      line-height: 30px;
-      width: 100%; }
-      #content .reply .head .head_msg {
-        padding-left: 5px; }
-    #content .reply .message {
+      height: 40px;
+      line-height: 40px;
+      width: 100%;
+      font-size: 24px; }
+    #content .reply .descrip {
       float: left;
-      color: black;
-      background-color: #f0f0f0;
-      min-height: 150px;
-      height: auto;
-      width: 100%; }
-      #content .reply .message .message_hdr {
-        padding: 5px;
-        margin: 5px;
-        background-color: transparent;
-        font-size: 24px; }
-      #content .reply .message .message_msg {
-        padding: 10px; }
+      text-indent: 10px;
+      width: 90px; }
 
 /* ---------------------MORE--------------------- */
 #loadmore {

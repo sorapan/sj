@@ -1,5 +1,1 @@
-<?php
-
-echo $this->msg;
-
-?>
+<span>ERROR : This page dosen't exists</span>

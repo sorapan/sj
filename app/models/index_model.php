@@ -10,20 +10,23 @@ class index_model extends Model{
 
     function fetchMessage(){
 
-        $count_array = 0;
         $data = array();
 
         $query = $this->db->prepare("Select * From `post` Order By `last_update` DESC Limit 5 Offset 0");
         $query->execute();
-        while($row = $query->fetch(PDO::FETCH_ASSOC)){
+        $row = $query->fetchAll();
 
-            $data["date"][$count_array] = date('d/m/Y - h:i A',(int)$row['date']);
-            $data["last_update"][$count_array] = date('d/m/Y - h:i A',(int)$row['last_update']);
-            $data["msg"][$count_array] = $row['note'];
-            $data["hdr"][$count_array] = $row['header'];
-            $data["id"][$count_array] = $row['id'];
-            $data["topicID"][$count_array] = $row['topicID'];
-            $count_array++;
+        foreach($row as $k=>$v){
+
+            $data["date"][$k] = date('d/m/Y - h:i A',(int)$v['date']);
+            $data["last_update"][$k] = date('d/m/Y - h:i A',(int)$v['last_update']);
+            $data["msg"][$k] = $v['note'];
+            $data["hdr"][$k] = $v['header'];
+            $data["user"][$k] = $this->CheckUserFromID($v['user_id']);
+            $data["id"][$k] = $v['id'];
+            $data["topicID"][$k] = $v['topicID'];
+            $data["status"][$k] = $v['status'];
+            $data["img"][$k] = $this->GetImg($v['topicID'],$v['status']);
 
         }
 
@@ -39,7 +42,7 @@ class index_model extends Model{
 
         $query = $this->db->prepare("Select * From `post` Order By `last_update` DESC");
         $query->execute();
-        $row = $query->fetch(PDO::FETCH_ASSOC);
+        $row = $query->fetchAll();
         $data["date"]= date('d/m/Y - h:i A',(int)$row['date']);
         $data["last_update"] = date('d/m/Y - h:i A',(int)$row['last_update']);
         $data["msg"] = $row['content'];
@@ -55,19 +58,20 @@ class index_model extends Model{
 
     function Loadmore($off){
 
-        $count_array = 0;
+
         $data = array();
         $query = $this->db->prepare("Select * From `post` Order By `last_update` DESC Limit 5 Offset $off");
         $query->execute();
-        while($row = $query->fetch(PDO::FETCH_ASSOC)){
+        $row = $query->fetchAll();
 
-            $data["date"][$count_array] = date('d/m/Y - h:i A',(int)$row['date']);
-            $data["last_update"][$count_array] = date('d/m/Y - h:i A',(int)$row['last_update']);
-            $data["msg"][$count_array] = $row['note'];
-            $data["hdr"][$count_array] = $row['header'];
-            $data["id"][$count_array] = $row['id'];
-            $data["topicID"][$count_array] = $row['topicID'];
-            $count_array++;
+        foreach($row as $k=>$v){
+
+            $data["date"][$k] = date('d/m/Y - h:i A',(int)$v['date']);
+            $data["last_update"][$k] = date('d/m/Y - h:i A',(int)$v['last_update']);
+            $data["msg"][$k] = $v['note'];
+            $data["hdr"][$k] = $v['header'];
+            $data["id"][$k] = $v['id'];
+            $data["topicID"][$k] = $v['topicID'];
 
         }
         return json_encode($data);
@@ -81,6 +85,29 @@ class index_model extends Model{
         $row = $query->fetch(PDO::FETCH_ASSOC);
 
         return $row['date'];
+
+    }
+
+    function CheckUserFromID($id){
+
+        $query = $this->db->prepare("SELECT username,class FROM user WHERE id = :id");
+        $query->execute(array(
+            ':id' => $id
+        ));
+        $result = $query->fetchAll();
+        return $result[0]['username'];
+
+    }
+
+    function GetImg($topicid,$status){
+
+        $query = $this->db->prepare("SELECT img_name FROM img WHERE topic_id = :topicid AND staus = :status AND type = 'img' LIMIT 4");
+        $query->execute(array(
+            ':topicid' => $topicid,
+            ':status' => $status
+        ));
+        $result = $query->fetchAll();
+        return $result;
 
     }
 
