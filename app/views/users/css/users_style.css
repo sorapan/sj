@@ -1,8 +1,13 @@
-#bigbox #menu, #bigbox #content {
-  float: left; }
-#bigbox #menu {
-  padding: 0 20px 0 0;
+#bigbox {
   height: 100%; }
+  #bigbox #menu, #bigbox #content {
+    float: left; }
+  #bigbox #menu {
+    position: fixed;
+    height: 100%;
+    background-color: #b4b4b4; }
+  #bigbox #content {
+    margin: 20px 0 0 250px; }
 
 #usertable tr, #usertable td, #usertable th {
   border: 1px solid #5a5a5a;
@@ -14,7 +19,7 @@
   text-indent: 10px; }
 
 .btn_menu1 {
-  background-color: #b4b4b4;
+  background-color: #8c8c8c;
   color: white;
   float: left;
   text-align: center;

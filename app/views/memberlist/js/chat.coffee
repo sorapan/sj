@@ -31,8 +31,9 @@ fetchmessage = ()->
 			p : result_url
 			timestamp : timestamp
 		success: (d)->
-			for i of d
-				$('#op').append d[i].sender+" : "+d[i].msg+" <span style=\"color:grey\">"+d[i].date+"</span><br>"
+			if d.length > 0
+				for i of d
+					$('#op').append d[i].sender+" : "+d[i].msg+" <span style=\"color:grey\">"+d[i].date+"</span><br>"
 			timestamp = d[0].timestamp
 			fetchmessage_update()
 

@@ -4,11 +4,15 @@
 	color: white
 
 #bigbox
-	#menu, #content
+	height: 100%
+	#menu,#content
 		float: left
 	#menu
-		padding: 0 20px 0 0
+		position: fixed
 		height: 100%
+		background-color: rgb(180,180,180)
+	#content
+		margin: 20px 0 0 250px
 
 #usertable
 	tr,td,th
@@ -20,7 +24,7 @@
 		text-indent: 10px
 
 .btn_menu1
-	+attrcolor1(180)
+	+attrcolor1(140)
 	float: left
 	text-align: center
 	width: 200px

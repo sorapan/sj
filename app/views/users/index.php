@@ -3,13 +3,12 @@
 <div id="bigbox">
 
     <div id="menu">
-
-        <a class="btn_menu1" id="backuplink" href="<?php echo URL?>users/backup">ส่งออกฐานข้อมูล</a>
-
+        <a id="" class="btn_menu1" href="<?php echo URL?>users">จัดการสมาชิก</a><br><br>
+        <a id="createlink" class="btn_menu1" href="<?php echo URL?>users/createuser">สร้างบัญชีสมาชิก</a><br><br>
+        <a id="backuplink" class="btn_menu1" href="<?php echo URL?>users/backup">ส่งออกฐานข้อมูล</a>
     </div>
-
     <div id="content">
-        <span style="font-size: 20px">Users Table</span>
+        <span style="font-size: 20px">ตารางจัดการบัญชีสมาชิก</span>
         <table id="usertable">
             <tr>
             <th>ID</th>
@@ -23,7 +22,8 @@
                     echo"<td>".$val['id']."</td>";
                     echo"<td>".$val['username']."</td>";
                     echo"<td>".$val['class']."</td>";
-                    echo"<td><span><a href='".URL."users/edit/".$val['id']."'>EDIT</a> <a href='".URL."users/delete/".$val['id']."'>DEL</a></span></td>";
+                    echo"<td><span><a class='edit' href='".URL."users/edit/".$val['id']."'>แก้ไข</a> | ";
+                    echo"<a class='del' href='".URL."users/delete/".$val['id']."'>ลบ</a></span></td>";
                     echo"</tr>";
                 }
             ?>

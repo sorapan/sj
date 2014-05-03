@@ -42,8 +42,10 @@
       },
       success: function(d) {
         var i;
-        for (i in d) {
-          $('#op').append(d[i].sender + " : " + d[i].msg + " <span style=\"color:grey\">" + d[i].date + "</span><br>");
+        if (d.length > 0) {
+          for (i in d) {
+            $('#op').append(d[i].sender + " : " + d[i].msg + " <span style=\"color:grey\">" + d[i].date + "</span><br>");
+          }
         }
         timestamp = d[0].timestamp;
         return fetchmessage_update();

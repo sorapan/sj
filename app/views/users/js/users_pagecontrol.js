@@ -4,19 +4,50 @@
     $(" #main").click(function(e) {
       return e.preventDefault();
     });
-    $("#backuplink").click(function(e) {
-      e.preventDefault();
-      return window.open($(this).attr('href'), 'backup', 'scrollbars=1,height=550,width=500');
-    });
     $("#click_backup").click(function() {
       return $.ajax({
         url: 'Backupit',
         success: function(d) {}
       });
     });
-    return $(' #click_backup').click(function() {
+    $(' #click_backup').click(function() {
       return $.ajax({
         url: ''
+      });
+    });
+    $(' .edit').click(function(e) {
+      e.preventDefault();
+      return window.open($(this).attr('href'), 'backup', 'scrollbars=1,height=450,width=500');
+    });
+    $(' .del').click(function() {
+      if (confirm('คุณต้องการที่จะลบ?')) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+    $(" #backuplink").click(function(e) {
+      e.preventDefault();
+      return window.open($(this).attr('href'), 'backup', 'scrollbars=1,height=550,width=500');
+    });
+    $(" #createlink").click(function(e) {
+      e.preventDefault();
+      $(' #content').html('');
+      return $(' #content').load($(this).attr('href'));
+    });
+    return $('#create_submit').click(function(e) {
+      e.preventDefault();
+      return $.ajax({
+        url: 'users/insert',
+        type: 'POST',
+        data: {
+          username: $("#user").val(),
+          password: $('#pass').val(),
+          "class": $('#role').val()
+        },
+        success: function(d) {
+          return location.reload();
+        }
       });
     });
   });

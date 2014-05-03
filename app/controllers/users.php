@@ -8,9 +8,12 @@ class users extends Controller{
 
         $this->view->css = array(
             "users/css/users_style.css",
+            "users/css/create.css",
             "users/css/backup.css"
         );
-        $this->view->js = array("users/js/users_pagecontrol.js");
+        $this->view->js = array(
+            "users/js/users_pagecontrol.js"
+        );
 
     }
 
@@ -18,6 +21,12 @@ class users extends Controller{
 
         $this->view->data = self::CallModel()->index();
         $this->view->render("users/index");
+
+    }
+
+    function createuser(){
+
+        $this->view->render_none('users/createuser');
 
     }
 

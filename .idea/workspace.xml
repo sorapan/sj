@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d9bd4ae-ce5d-43e7-8fbe-d8bfec66eb78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/css/backup.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/backup.php" afterPath="$PROJECT_DIR$/app/views/users/backup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/css/create.sass" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/createuser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/css/backup.css" afterPath="$PROJECT_DIR$/app/views/users/css/backup.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/css/backup.sass" afterPath="$PROJECT_DIR$/app/views/users/css/backup.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberlist/js/chat.coffee" afterPath="$PROJECT_DIR$/app/views/memberlist/js/chat.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberlist/css/chat.css" afterPath="$PROJECT_DIR$/app/views/memberlist/css/chat.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberlist/js/chat.js" afterPath="$PROJECT_DIR$/app/views/memberlist/js/chat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberlist/js/chat.map" afterPath="$PROJECT_DIR$/app/views/memberlist/js/chat.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/edit.php" afterPath="$PROJECT_DIR$/app/views/users/edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/index.php" afterPath="$PROJECT_DIR$/app/views/index/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/index.php" afterPath="$PROJECT_DIR$/app/views/users/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asset/layout/layout1.php" afterPath="$PROJECT_DIR$/asset/layout/layout1.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users.php" afterPath="$PROJECT_DIR$/app/controllers/users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/users_model.php" afterPath="$PROJECT_DIR$/app/models/users_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.coffee" afterPath="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.js" afterPath="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.map" afterPath="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.map" />
@@ -38,19 +46,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="backup.sass" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/users/css/backup.sass">
+      <file leaf-file-name="chat.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/memberlist/css/chat.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="14" selection-start="202" selection-end="202" vertical-scroll-proportion="0.42379183" vertical-offset="0" max-vertical-offset="589">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="backup.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/backup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="28" selection-start="35" selection-end="35" vertical-scroll-proportion="-1.4074074" vertical-offset="0" max-vertical-offset="209">
+            <state line="24" column="14" selection-start="301" selection-end="301" vertical-scroll-proportion="0.7715736" vertical-offset="0" max-vertical-offset="703">
               <folding />
             </state>
           </provider>
@@ -74,14 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/post.php" />
-        <option value="$PROJECT_DIR$/app/models/post_model.php" />
-        <option value="$PROJECT_DIR$/asset/a_layout1/js/PageControl.js" />
-        <option value="$PROJECT_DIR$/app/views/index/css/main.sass" />
-        <option value="$PROJECT_DIR$/app/views/index/index.php" />
-        <option value="$PROJECT_DIR$/app/views/profile/minibox.sass" />
-        <option value="$PROJECT_DIR$/app/controllers/profile.php" />
-        <option value="$PROJECT_DIR$/app/views/post_update/index.php" />
         <option value="$PROJECT_DIR$/app/views/post/index.php" />
         <option value="$PROJECT_DIR$/app/controllers/error.php" />
         <option value="$PROJECT_DIR$/app/views/post/js/upload_img2.coffee" />
@@ -109,22 +100,30 @@
         <option value="$PROJECT_DIR$/app/views/index/js/Loadmore.js" />
         <option value="$PROJECT_DIR$/app/views/index/js/Content.js" />
         <option value="$PROJECT_DIR$/app/models/index_model.php" />
-        <option value="$PROJECT_DIR$/asset/layout/layout1.php" />
         <option value="$PROJECT_DIR$/app/views/memberlist/css/memberlist.css" />
         <option value="$PROJECT_DIR$/app/views/memberlist/index.php" />
         <option value="$PROJECT_DIR$/asset/css/reset.css" />
         <option value="$PROJECT_DIR$/app/views/memberlist/chat.php" />
         <option value="$PROJECT_DIR$/app/views/memberlist/js/chat.js" />
         <option value="$PROJECT_DIR$/app/models/memberlist_model.php" />
-        <option value="$PROJECT_DIR$/app/views/memberlist/css/chat.css" />
         <option value="$PROJECT_DIR$/app/controllers/memberlist.php" />
-        <option value="$PROJECT_DIR$/app/views/memberlist/js/chat.coffee" />
-        <option value="$PROJECT_DIR$/app/views/users/css/users_style.sass" />
-        <option value="$PROJECT_DIR$/app/controllers/users.php" />
-        <option value="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.coffee" />
         <option value="$PROJECT_DIR$/app/models/users_model.php" />
+        <option value="$PROJECT_DIR$/app/views/index/index.php" />
+        <option value="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.js" />
         <option value="$PROJECT_DIR$/app/views/users/backup.php" />
+        <option value="$PROJECT_DIR$/asset/a_layout1/js/PageControl.js" />
+        <option value="$PROJECT_DIR$/asset/layout/layout1.php" />
+        <option value="$PROJECT_DIR$/app/views/users/css/users_style.sass" />
+        <option value="$PROJECT_DIR$/app/views/users/create.php" />
+        <option value="$PROJECT_DIR$/app/views/users/index.php" />
+        <option value="$PROJECT_DIR$/app/controllers/users.php" />
         <option value="$PROJECT_DIR$/app/views/users/css/backup.sass" />
+        <option value="$PROJECT_DIR$/app/views/users/createuser.php" />
+        <option value="$PROJECT_DIR$/app/views/users/css/create.sass" />
+        <option value="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.coffee" />
+        <option value="$PROJECT_DIR$/app/views/users/edit.php" />
+        <option value="$PROJECT_DIR$/app/views/memberlist/js/chat.coffee" />
+        <option value="$PROJECT_DIR$/app/views/memberlist/css/chat.css" />
       </list>
     </option>
   </component>
@@ -177,9 +176,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -198,39 +194,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files" />
       </pane>
     </panes>
   </component>
@@ -238,7 +205,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="last_opened_file_path" value="C:/Ruby200-x64/bin/sass.bat" />
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
@@ -250,6 +217,7 @@
       <recent name="C:\patel\app\views\post\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\web\patel\app\views\users\css" />
       <recent name="D:\web\patel\app\views\index\js" />
       <recent name="D:\web\patel\app\views\profile\css" />
       <recent name="C:\patel\public\js" />
@@ -336,7 +304,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28625378" sideWeight="0.6705491" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29833838" sideWeight="0.6705491" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39899832" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -344,14 +312,14 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -377,46 +345,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/asset/css/style_layout2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="14" selection-start="399" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="359" max-vertical-offset="1178" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asset/layout/layout2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="319" selection-end="319" vertical-scroll-proportion="0.03368794" vertical-offset="228" max-vertical-offset="893" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/topic/js/topic_control.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/post_update/css/post_update.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="27" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1083" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profile/minibox.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="193" selection-end="193" vertical-scroll-proportion="0.5053192" vertical-offset="0" max-vertical-offset="564" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/post/js/upload_img2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="255" selection-end="255" vertical-scroll-proportion="-0.7055655" vertical-offset="564" max-vertical-offset="2774" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/post_update/js/post_update.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.1490126" vertical-offset="1197" max-vertical-offset="2603" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/post_update/id.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="157" selection-end="166" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="532" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/post/js/upload_img2.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="126" column="0" selection-start="3439" selection-end="3439" vertical-scroll-proportion="3.0862944" vertical-offset="570" max-vertical-offset="2546" />
@@ -467,11 +395,6 @@
         <state line="15" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="-0.5109983" vertical-offset="587" max-vertical-offset="1178" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="570" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index/js/topic_plugin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="0" selection-start="1860" selection-end="1860" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1406" />
@@ -480,11 +403,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="237" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="456" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asset/layout/layout1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="78" selection-start="1666" selection-end="1666" vertical-scroll-proportion="-7.037037" vertical-offset="684" max-vertical-offset="1273" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/asset/a_layout1/css/style_layout1.css">
@@ -572,16 +490,6 @@
         <state line="53" column="34" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.86206895" vertical-offset="532" max-vertical-offset="1596" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/memberlist/css/chat.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/memberlist/js/chat.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="32" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="568" max-vertical-offset="1159" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/css/backup.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
@@ -604,50 +512,121 @@
         <state line="83" column="69" selection-start="1935" selection-end="1937" vertical-scroll-proportion="0.27992633" vertical-offset="1425" max-vertical-offset="2375" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users.php">
+    <entry file="file://$PROJECT_DIR$/app/views/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="8" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" vertical-offset="589" max-vertical-offset="1729">
-          <folding />
-        </state>
+        <state line="3" column="79" selection-start="122" selection-end="122" vertical-scroll-proportion="-2.1111112" vertical-offset="0" max-vertical-offset="551" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/users_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="22" selection-start="307" selection-end="307" vertical-scroll-proportion="0.6896552" vertical-offset="0" max-vertical-offset="1577" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/a_layout1/js/PageControl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="5" selection-start="548" selection-end="548" vertical-scroll-proportion="0.7428088" vertical-offset="36" max-vertical-offset="627" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/backup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="44" selection-start="51" selection-end="54" vertical-scroll-proportion="0.06737588" vertical-offset="0" max-vertical-offset="564" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/layout/layout1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="53" selection-start="1792" selection-end="1792" vertical-scroll-proportion="-15.555555" vertical-offset="492" max-vertical-offset="1273" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/css/users_style.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.7641844" vertical-offset="196" max-vertical-offset="760">
+        <state line="12" column="41" selection-start="208" selection-end="208" vertical-scroll-proportion="0.40425533" vertical-offset="0" max-vertical-offset="836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/js/users_pagecontrol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="7" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.61421317" vertical-offset="321" max-vertical-offset="912" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/error/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="67" selection-start="311" selection-end="311" vertical-scroll-proportion="0.2358156" vertical-offset="0" max-vertical-offset="722">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="21" selection-start="1319" selection-end="1327" vertical-scroll-proportion="0.30319148" vertical-offset="1254" max-vertical-offset="1900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/createuser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="25" selection-start="428" selection-end="441" vertical-scroll-proportion="-7.740741" vertical-offset="0" max-vertical-offset="342">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/css/backup.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="28" selection-start="269" selection-end="269" vertical-scroll-proportion="0.53900707" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/css/create.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="16" selection-start="131" selection-end="131" vertical-scroll-proportion="0.30319148" vertical-offset="0" max-vertical-offset="564">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/js/users_pagecontrol.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="25" selection-start="260" selection-end="260" vertical-scroll-proportion="0.3857868" vertical-offset="0" max-vertical-offset="591">
+        <state line="30" column="43" selection-start="663" selection-end="663" vertical-scroll-proportion="0.38917089" vertical-offset="340" max-vertical-offset="931">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/users_model.php">
+    <entry file="file://$PROJECT_DIR$/app/views/users/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="30" selection-start="675" selection-end="675" vertical-scroll-proportion="0.5862069" vertical-offset="285" max-vertical-offset="1577">
+        <state line="5" column="87" selection-start="315" selection-end="315" vertical-scroll-proportion="0.1724138" vertical-offset="0" max-vertical-offset="551">
           <folding>
-            <marker date="1399067619389" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1399067619389" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1399067619389" expanded="true" signature="-1:-1" placeholder="UPDATE user ..." />
-            <marker date="1399067619389" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1399067619389" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/backup.php">
+    <entry file="file://$PROJECT_DIR$/app/views/memberlist/js/chat.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="28" selection-start="35" selection-end="35" vertical-scroll-proportion="-1.4074074" vertical-offset="0" max-vertical-offset="209">
-          <folding />
+        <state line="33" column="27" selection-start="537" selection-end="537" vertical-scroll-proportion="0.39446366" vertical-offset="399" max-vertical-offset="1178">
+          <folding>
+            <marker date="1399117872677" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1399117872677" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/css/backup.sass">
+    <entry file="file://$PROJECT_DIR$/app/views/memberlist/css/chat.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="202" selection-end="202" vertical-scroll-proportion="0.42379183" vertical-offset="0" max-vertical-offset="589">
+        <state line="24" column="14" selection-start="301" selection-end="301" vertical-scroll-proportion="0.7715736" vertical-offset="0" max-vertical-offset="703">
           <folding />
         </state>
       </provider>

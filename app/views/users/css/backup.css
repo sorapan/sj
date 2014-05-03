@@ -13,6 +13,9 @@ body {
   margin: 150px;
   cursor: pointer; }
 
+#click_backup:hover {
+  background-color: #6e6e6e; }
+
 #descrip {
   position: absolute;
   bottom: 0;
