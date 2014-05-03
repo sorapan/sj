@@ -11,15 +11,24 @@ class post_update_model extends Model{
     function updateTopic($arr){
 
         $status = $this->getTopicStatus($arr['topicid']);
-        if($status == "1") $note = 'note2';
-        else if($status == "2") $note = 'note3';
-        $sql = "UPDATE post SET `".$note."`=:note, `user_id2`=:userid, `status`='2', `last_update`=:now WHERE `topicID`= :topicid";
+        if($status == "1") {
+            $user_id = 'user_id2';
+            $note = 'note2';
+            $stat = '2';
+        }
+        else if($status == "2") {
+            $user_id = 'user_id3';
+            $note = 'note3';
+            $stat = '3';
+        }
+        $sql = "UPDATE post SET `".$note."`=:note, `".$user_id."`=:userid, `status`=:status, `last_update`=:now WHERE `topicID`= :topicid";
         $query = $this->db->prepare($sql);
         $query->execute(array(
             ':note' => $arr['note'],
             ':userid' => $arr['userid'],
             ':now' => time(),
-            ':topicid' => $arr['topicid']
+            ':topicid' => $arr['topicid'],
+            ':status' => $stat
         ));
 
     }
@@ -37,12 +46,20 @@ class post_update_model extends Model{
 
     function storeImg($imgname, $topicid){
 
-        $qry = $this->db->prepare("INSERT INTO img (`img_name`,`topic_id`,`status`,`type`) VALUES (:imgname, :topicid, 2, :type)");
+        $status = $this->getTopicStatus($topicid);
+        if($status == "1") {
+            $stat = '2';
+        }
+        else if($status == "2") {
+            $stat = '3';
+        }
+        $qry = $this->db->prepare("INSERT INTO img (`img_name`,`topic_id`,`status`,`type`) VALUES (:imgname, :topicid, :status, :type)");
         $qry->execute(array(
 
             ':imgname' => $imgname,
             ':topicid' => $topicid,
-            ':type' => 'img'
+            ':type' => 'img',
+            ':status' => $stat
 
         ));
 

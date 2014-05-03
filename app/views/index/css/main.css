@@ -66,6 +66,8 @@
   height: auto;
   margin-top: 15px;
   background-color: transparent; }
+  #content a {
+    color: black; }
   #content .reply {
     float: left;
     background-color: white;
@@ -83,6 +85,9 @@
       font-size: 18px;
       color: white;
       background-color: red; }
+    #content .reply .gal {
+      float: right;
+      position: relative; }
     #content .reply .head {
       padding-left: 40px;
       color: #373737;
@@ -95,6 +100,9 @@
       float: left;
       text-indent: 10px;
       width: 90px; }
+    #content .reply img.tumb {
+      width: 100px;
+      height: auto; }
 
 /* ---------------------MORE--------------------- */
 #loadmore {

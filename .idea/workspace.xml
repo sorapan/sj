@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7e23b36-afe9-473e-8c20-a94935a5bae9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/index/js/tp_plugin.coffee" />
+    <list default="true" id="3788f8be-4301-4941-9488-076f8e9555c9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/js/Content.js" afterPath="$PROJECT_DIR$/app/views/index/js/Content.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/index.php" afterPath="$PROJECT_DIR$/app/controllers/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/error/index.php" afterPath="$PROJECT_DIR$/app/views/error/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/js/Loadmore.js" afterPath="$PROJECT_DIR$/app/views/index/js/Loadmore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/topic/id.php" afterPath="$PROJECT_DIR$/app/views/topic/id.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/index_model.php" afterPath="$PROJECT_DIR$/app/models/index_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asset/layout/layout1.php" afterPath="$PROJECT_DIR$/asset/layout/layout1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/login_model.php" afterPath="$PROJECT_DIR$/app/models/login_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/css/main.css" afterPath="$PROJECT_DIR$/app/views/index/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/css/main.sass" afterPath="$PROJECT_DIR$/app/views/index/css/main.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post_update/js/post_update.coffee" afterPath="$PROJECT_DIR$/app/views/post_update/js/post_update.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post_update/js/post_update.js" afterPath="$PROJECT_DIR$/app/views/post_update/js/post_update.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post_update/js/post_update.map" afterPath="$PROJECT_DIR$/app/views/post_update/js/post_update.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/post_update.php" afterPath="$PROJECT_DIR$/app/controllers/post_update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post_update_model.php" afterPath="$PROJECT_DIR$/app/models/post_update_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/topic/css/topic_style.css" afterPath="$PROJECT_DIR$/app/views/topic/css/topic_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/js/tp_plugin.coffee" afterPath="$PROJECT_DIR$/app/views/index/js/tp_plugin.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/js/tp_plugin.js" afterPath="$PROJECT_DIR$/app/views/index/js/tp_plugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/js/tp_plugin.map" afterPath="$PROJECT_DIR$/app/views/index/js/tp_plugin.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post/js/upload_img2.coffee" afterPath="$PROJECT_DIR$/app/views/post/js/upload_img2.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post/js/upload_img2.js" afterPath="$PROJECT_DIR$/app/views/post/js/upload_img2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post/js/upload_img2.map" afterPath="$PROJECT_DIR$/app/views/post/js/upload_img2.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="patel.iws" />
@@ -33,20 +45,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tp_plugin.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/index/js/tp_plugin.coffee">
+      <file leaf-file-name="layout1.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/asset/layout/layout1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="760">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Content.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/index/js/Content.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.4822335" vertical-offset="342" max-vertical-offset="1672">
-              <folding />
+            <state line="50" column="16" selection-start="1783" selection-end="1783" vertical-scroll-proportion="0.82758623" vertical-offset="494" max-vertical-offset="1387">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,8 +71,19 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/index/js/Content2.js" />
+        <option value="$PROJECT_DIR$/app/views/index/js/tp_plugin.coffee" />
+        <option value="$PROJECT_DIR$/app/views/index/css/main.sass" />
         <option value="$PROJECT_DIR$/app/views/index/js/Content.js" />
+        <option value="$PROJECT_DIR$/app/views/post/js/upload_img2.coffee" />
+        <option value="$PROJECT_DIR$/app/views/index/js/Loadmore.js" />
+        <option value="$PROJECT_DIR$/app/models/index_model.php" />
+        <option value="$PROJECT_DIR$/app/models/login_model.php" />
+        <option value="$PROJECT_DIR$/app/views/topic/id.php" />
+        <option value="$PROJECT_DIR$/app/views/topic/css/topic_style.css" />
+        <option value="$PROJECT_DIR$/app/models/post_update_model.php" />
+        <option value="$PROJECT_DIR$/app/controllers/post_update.php" />
+        <option value="$PROJECT_DIR$/app/views/post_update/js/post_update.coffee" />
+        <option value="$PROJECT_DIR$/asset/layout/layout1.php" />
       </list>
     </option>
   </component>
@@ -131,33 +149,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="asset" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -171,33 +167,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="asset" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -228,14 +198,14 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e7e23b36-afe9-473e-8c20-a94935a5bae9" name="Default" comment="" />
-      <created>1399130676497</created>
-      <updated>1399130676497</updated>
+      <changelist id="3788f8be-4301-4941-9488-076f8e9555c9" name="Default" comment="" />
+      <created>1399139421942</created>
+      <updated>1399139421942</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -243,11 +213,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2613293" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25755286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -275,52 +245,235 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/index/js/tp_plugin.coffee">
+    <entry file="file://$PROJECT_DIR$/app/views/index/js/Content.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="760">
+        <state line="28" column="77" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1767">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/index_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="47" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="2261">
+          <folding>
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="Select last_..post..." />
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="SELECT usern..user..." />
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="SELECT img_n..img..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index/css/main.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="23" selection-start="1914" selection-end="1914" vertical-scroll-proportion="0.0" vertical-offset="1596" max-vertical-offset="3021">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/post/js/upload_img2.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="28" selection-start="2921" selection-end="2921" vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="2565">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index/js/Content.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1672">
+        <state line="76" column="13" selection-start="2974" selection-end="2974" vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="1881">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index/js/tp_plugin.coffee">
+    <entry file="file://$PROJECT_DIR$/app/models/index_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="760">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index/js/Content.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="33" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1653">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index/js/tp_plugin.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="760">
-          <folding />
+        <state line="36" column="0" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="2280">
+          <folding>
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="Select last_..post..." />
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="SELECT usern..user..." />
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="SELECT img_n..img..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index/js/Content2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="20" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.5820643" vertical-offset="283" max-vertical-offset="1653">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.7969543" vertical-offset="1062" max-vertical-offset="1653">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7074468" vertical-offset="399" max-vertical-offset="3154" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/post/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1083">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index/js/PageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7180851" vertical-offset="405" max-vertical-offset="1539">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index/js/tp_plugin.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="817">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/post/js/upload_img2.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="24" selection-start="2894" selection-end="2894" vertical-scroll-proportion="0.7394247" vertical-offset="1501" max-vertical-offset="2527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index/css/main.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="5" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.572695" vertical-offset="1102" max-vertical-offset="3059">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index/js/Content.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.4822335" vertical-offset="342" max-vertical-offset="1672">
+        <state line="27" column="4" selection-start="738" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1824">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index/js/Loadmore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="32" selection-start="1692" selection-end="1692" vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="1216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/index_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="32" selection-start="2696" selection-end="2696" vertical-scroll-proportion="0.79310346" vertical-offset="1254" max-vertical-offset="2318">
+          <folding>
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="Select * Fro..." />
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="Select last_..post..." />
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="SELECT usern..user..." />
+            <marker date="1399154596281" expanded="true" signature="-1:-1" placeholder="SELECT img_n..img..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/topic_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7241379" vertical-offset="399" max-vertical-offset="1064">
+          <folding>
+            <marker date="1398847769677" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1398847769677" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1398847769677" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1398847769677" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1398847769677" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/login_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="45" selection-start="716" selection-end="716" vertical-scroll-proportion="-13.37037" vertical-offset="171" max-vertical-offset="874">
+          <folding>
+            <marker date="1399155499080" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..user..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/topic/css/topic_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="36" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.0" vertical-offset="2392" max-vertical-offset="2983">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/topic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5053192" vertical-offset="285" max-vertical-offset="893">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/topic/id.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="29" selection-start="2654" selection-end="2654" vertical-scroll-proportion="1.4827586" vertical-offset="1007" max-vertical-offset="2489">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/topic/js/topic_control.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/post_update_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="84" selection-start="552" selection-end="552" vertical-scroll-proportion="-11.259259" vertical-offset="133" max-vertical-offset="1387">
+          <folding>
+            <marker date="1399156561185" expanded="true" signature="-1:-1" placeholder="SELECT `stat..." />
+            <marker date="1399156561185" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/post_update/id.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="36" selection-start="56" selection-end="56" vertical-scroll-proportion="0.06737588" vertical-offset="0" max-vertical-offset="564">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/post_update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="53" selection-start="2225" selection-end="2225" vertical-scroll-proportion="0.8652482" vertical-offset="956" max-vertical-offset="2964">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/post_update/js/post_update.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="33" selection-start="2492" selection-end="2492" vertical-scroll-proportion="0.9079646" vertical-offset="1406" max-vertical-offset="2280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/layout/layout1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="16" selection-start="1783" selection-end="1783" vertical-scroll-proportion="0.82758623" vertical-offset="494" max-vertical-offset="1387">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

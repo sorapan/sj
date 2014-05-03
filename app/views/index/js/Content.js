@@ -1,5 +1,6 @@
 $(function(){
 
+    var carimg = [];
     var timestamp = null;
     var firsttimeFetch = 1;
 
@@ -24,16 +25,14 @@ $(function(){
 //                        url : "http://patel/topic/id/"+data.topicID[i]
 //                    },"ap");
 
-                    $("#content").append('<div class="reply">'+
-                        '<span class="rep_status">'+data.status[i]+'</span>'+
-                        '<span class="head">'+data.hdr[i]+'</span><br>'+
-                        '<span class="descrip">สร้างโดย : </span>'+data.user[i]+'<br>'+
-                        '<span class="descrip">อัพเดท : </span>'+data.last_update[i]+'<br>'+
-                        '<span class="descrip">วันที่สร้าง : </span>'+data.date[i]+'<br><br>'+
-                        '<div>'+
-
-                        '</div>'+
-                        '</div>');
+                    $.rb_Reply({
+                        status: data.status[i],
+                        header: data.hdr[i],
+                        user: data.user[i],
+                        date: data.date[i],
+                        last_update: data.last_update[i],
+                        url: "topic/id/"+data.topicID[i]
+                    },"ap");
 
                 }
                 timestamp = parseInt(data.now_time);
@@ -57,12 +56,16 @@ $(function(){
             },
             dataType:"JSON",
             success: function(data){
+
                 $.rb_Reply({
-                    date : data.date,
-                    header : data.hdr,
-                    message : data.msg,
-                    url : "http://patel/topic/id/"+data.topicID
+                    status: data.status,
+                    header: data.hdr,
+                    user: data.user,
+                    date: data.date,
+                    last_update: data.last_update,
+                    url: "topic/id/"+data.topicID
                 },"pre");
+
                 timestamp = parseInt(data.now_time);
                 firsttimeFetch = data.firsttimeFetch;
             },
@@ -72,12 +75,17 @@ $(function(){
         });
     }
 
-    function fetchIMG(arr){
-        for(var i in arr){
+    function ifimg(){
 
+        return $(this).remove();
 
+    }
 
-        }
+    function ifOne($num){
+
+        if($num != "1") return $num;
+        else return "";
+
     }
 
 });

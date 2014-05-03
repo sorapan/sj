@@ -3,18 +3,21 @@
   (function($) {
     var PreventHtmlTag;
     $.rb_Reply = function(a, q) {
-      var aptemplate, data, pretemplate;
+      var aptemplate, data, pretemplate, topic;
       data = $.extend({
-        date: "",
+        status: "",
         header: "",
-        message: "",
+        user: "",
+        date: "",
+        last_update: "",
         url: ""
       }, a);
+      topic = '<a href="' + data.url + '"><div class="reply">' + '<span class="rep_status">' + data.status + '</span>' + '<span class="head">' + data.header + '</span><br>' + '<span class="descrip">สร้างโดย : </span>' + data.user + '<br>' + '<span class="descrip">อัพเดท : </span>' + data.last_update + '<br>' + '<span class="descrip">วันที่สร้าง : </span>' + data.date + '<br><br>' + '</div></a>';
       aptemplate = function() {
-        return $("#content").append("<a href='" + data.url + "'><div class='reply'> <div class='head'><div class='head_msg'>" + data.date + "</div></div> <div class='message'><div class='message_hdr'>" + PreventHtmlTag(data.header) + "</div> <div class='message_msg'>" + PreventHtmlTag(data.message) + "</div></div></a>");
+        return $("#content").append(topic);
       };
       pretemplate = function() {
-        return $("#content").prepend("<a href='" + data.url + "'><div class='reply'> <div class='head'><div class='head_msg'>" + data.date + "</div></div> <div class='message'><div class='message_hdr'>" + PreventHtmlTag(data.header) + "</div> <div class='message_msg'>" + PreventHtmlTag(data.message) + "</div></div></a>");
+        return $("#content").prepend(topic);
       };
       if (q === "ap") {
         return aptemplate();

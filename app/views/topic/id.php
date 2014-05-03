@@ -77,16 +77,24 @@ if(!empty($this->carimg3)){
 
 <?php
 $a = explode("/",$_SERVER['REQUEST_URI']);
+if($this->info['verify'] == "Y"){
 
-switch($this->info['status']){
-    case '1':
-        echo '<a id="update" href='.URL.'post_update/id/'.$a[3].'>อัพเดทรูประหว่างซ่อมครั้งที่ 2</a>';
-        break;
-    case '2':
-        echo '<a id="update" href='.URL.'post_update/id/'.$a[3].'>อัพเดทรูประหว่างซ่อมครั้งที่ 3</a>';
-        break;
-    case '3':
-        break;
+    switch($this->info['status']){
+        case '1':
+            echo '<a id="update" href='.URL.'post_update/id/'.$a[3].'>อัพเดทรูประหว่างซ่อมครั้งที่ 2</a>';
+            break;
+        case '2':
+            echo '<a id="update" href='.URL.'post_update/id/'.$a[3].'>อัพเดทรูประหว่างซ่อมครั้งที่ 3</a>';
+            break;
+        case '3':
+            break;
+
+    }
+
+}else{
+
+    if(Session::get('role')=="admin"||Session::get('role')=="owner")echo '<a id="verify" href="" >ยืนยันข้อมูล</a>';
+    else echo '<a id="verify2" href="" onclick="event.preventDefault();">รอการยืนยันข้อมูล</a>';
 
 }
 ?>

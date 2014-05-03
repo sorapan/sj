@@ -3,7 +3,7 @@ count = 1
 url = document.URL
 urlsplt = url.split "/"
 result_url = urlsplt[urlsplt.length-1]
-
+stat = 2;
 
 $(document).ready ()->
 
@@ -81,8 +81,12 @@ CheckTopicStatus = ()->
 			topic_id : result_url
 		,
 		success: (d)->
-			if d == '1' then $('#update_header').html 'อัพเดทครั้งที่ 2'
-			else if d == '2' then $('#update_header').html 'อัพเดทครั้งที่ 3'
+			if d == '1'
+				$('#update_header').html 'อัพเดทครั้งที่ 2'
+				stat = 2
+			else if d == '2'
+				$('#update_header').html 'อัพเดทครั้งที่ 3'
+				stat = 3
 
 
 
@@ -95,7 +99,7 @@ uploadImg = (data,div)->
 	formdata = new FormData()
 	formdata.append "img", data.files[0]
 	$.ajax
-		url : '../uploadImg'
+		url : '../uploadImg'+stat
 		type : 'POST'
 		data : formdata
 		processData: false

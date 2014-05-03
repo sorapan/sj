@@ -41,10 +41,12 @@ $(function(){
                 if(typeof data.msg != 'undefined'){
                     for(var i=0 ; i<data.msg.length ; i++){
                         $.rb_Reply({
-                            date : data.date[i],
-                            header : data.hdr[i],
-                            message : data.msg[i],
-                            url : "http://patel/topic/id/"+data.topicID[i]
+                            status: data.status[i],
+                            header: data.hdr[i],
+                            user: data.user[i],
+                            date: data.date[i],
+                            last_update: data.last_update[i],
+                            url: "topic/id/"+data.topicID[i]
                         },"ap");
                     }
                 }else{

@@ -101,7 +101,6 @@ uploadDoc = (data,type)->
 				<span class="del_upload_img">X</span> '
 
 uploadImg = (data,div)->
-	console.log div
 	formdata = new FormData()
 	formdata.append "img", data.files[0]
 	$.ajax

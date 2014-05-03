@@ -45,7 +45,13 @@
         <a class="button_navi" href="<?php echo URL?>">หน้าหลัก</a>
         <a class="button_navi" href="<?php echo URL?>post">สร้างกระทู้</a>
         <a class="button_navi" href="<?php echo URL?>memberlist">ส่งข้อความ</a>
-        <a class="button_navi" href="<?php echo URL?>users">แอดมิน</a>
+        <?php
+
+            if(Session::get('role') == 'admin' || Session::get('role') == "owner"){
+                echo '<a class="button_navi" href="'.URL.'users">แอดมิน</a>';
+            }
+
+        ?>
         <a class="button_navi" href="<?php echo URL?>logout">ออกจากระบบ</a>
     </div>
 

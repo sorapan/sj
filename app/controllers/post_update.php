@@ -52,10 +52,29 @@ class post_update extends Controller{
         echo $result;
     }
 
-    function uploadImg(){
+    function uploadImg2(){
 
         Session::init();
         $dir = "temp/".Session::get('user_id')."/img2";
+        if(!is_dir($dir)){
+            mkdir($dir,0777, true);
+            Session::set('sayhi', 1);
+            if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
+                move_uploaded_file( $_FILES["img"]["tmp_name"], $dir."/".$_FILES['img']['name']);
+            }
+            echo $dir."/".$_FILES['img']['name'];
+        }else{
+            if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
+                move_uploaded_file( $_FILES["img"]["tmp_name"], $dir."/".$_FILES['img']['name']);
+            }
+            echo $dir."/".$_FILES['img']['name'];
+        }
+    }
+
+    function uploadImg3(){
+
+        Session::init();
+        $dir = "temp/".Session::get('user_id')."/img3";
         if(!is_dir($dir)){
             mkdir($dir,0777, true);
             Session::set('sayhi', 1);

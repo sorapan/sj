@@ -101,7 +101,6 @@
 
   uploadImg = function(data, div) {
     var formdata;
-    console.log(div);
     formdata = new FormData();
     formdata.append("img", data.files[0]);
     return $.ajax({
