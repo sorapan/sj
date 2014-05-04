@@ -87,6 +87,7 @@ class tpmanage extends Controller{
 
     function Pushdata(){
 
+        $status = "1";
         $data = array(
             'header' => $_POST['header'],
             'note' => $_POST['note'],
@@ -94,9 +95,22 @@ class tpmanage extends Controller{
             'note3' => $_POST['note3'],
         );
         self::CallModel()->UpdateData($data,$_POST['topicid']);
-
-        $a = scandir("temp");
-        print_r($a);
+        Session::set('sayhi', 0);
+        $a = scandir("temp/".Session::get('user_id'));
+        foreach($a as $aa){
+            if($aa != "." && $aa != ".."){
+                $q = scandir("temp/".Session::get('user_id')."/".$aa);
+                foreach($q as $qq){
+                    if($a == "img2" || $a == "img3"){
+                        $a = "img";
+                        if($a == "img2") $status = "2";
+                        else if($a == "img3") $status = "3";
+                    }
+                    if($qq != "." && $qq != "..") self::CallModel()->gotImg($qq,$_POST['topicid'],$status,$a);
+                }
+            }
+        }
+        self::mmove("temp/".Session::get('user_id'),"file/".$_POST['topicid']);
 
 
     }
@@ -212,13 +226,10 @@ class tpmanage extends Controller{
                             @copy($source."/".$file."/".$ss,$destination."/".$file."/".$ss);
                             @unlink($source."/".$file."/".$ss);
                         }
-                        rmdir($source."/".$file."/".$ss);
                     }
-                    rmdir($source."/".$file);
                 }
             }
         }
-        rmdir($source);
     }
 
 }

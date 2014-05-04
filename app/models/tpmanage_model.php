@@ -39,8 +39,21 @@ class tpmanage_model extends Model{
             ':note' => $data['note'],
             ':note2' => $data['note2'],
             ':note3' => $data['note3'],
-            ':topicid' => $topicid,
+            ':topicid' => $topicid
         ));
+
+    }
+
+    function gotImg($imgname, $topicid,$status, $type){
+
+        $query = $this->db->prepare("INSERT INTO img (`img_name`,`topic_id`,`status`,`type`) VALUES (:imgname, :topicid, :status, :type)");
+        $query->execute(array(
+            ':imgname' => $imgname,
+            ':topicid' => $topicid,
+            ':type' => $type,
+            ':status' => $status
+        ));
+        $query->fetchAll();
 
     }
 
@@ -53,20 +66,6 @@ class tpmanage_model extends Model{
         $int = (int)$result['id'];
         return sprintf("%06s",$int);
 
-    }
-
-    function ClearAndStore($imgname,$topicid,$status){
-
-        $query1 = $this->db->prepare("DELETE FROM img WHERE topic_id = :topicid");
-        $query1->execute(array(
-            ':topicid' => $topicid
-        ));
-        $query2 = $this->db->prepare("INSERT INTO img (img_name,topic_id,status) VALUES (:imgname,:topicid,:status)");
-        $query2->execute(array(
-            ':imgname' => $imgname,
-            ':topicid' => $topicid,
-            ':status' => $status
-        ));
     }
 
     function DelImg($img){
