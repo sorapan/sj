@@ -80,8 +80,25 @@ $button-color: rgb(85, 85, 85)
 		background-color: white
 		height: auto
 		width: 100%
-		cursor: pointer
 		margin-bottom: 10px
+		position: relative
+		.tp_edit,.tp_del
+			color: indianred
+			padding: 0 5px 0 5px
+			z-index: 3
+		.tp_edit:hover,.tp_del:hover
+			color: white
+			background-color: red
+			cursor: pointer
+		.tp_edit
+			position: absolute
+			right: 30px
+		.tp_del
+			position: absolute
+			padding: 0
+			width: 25px
+			text-align: center
+			right: 0
 		.rep_status
 			position: absolute
 			margin: 0
@@ -92,17 +109,20 @@ $button-color: rgb(85, 85, 85)
 			font-size: 18px
 			color: white
 			background-color: red
+			z-index: 3
 		.gal
 			float: right
 			position: relative
 		.head
-			padding-left: 40px
+			text-indent: 40px
 			color: rgb(55, 55, 55)
-			min-height: 30px
-			height: 40px
-			line-height: 40px
+			background-color: rgb(240,240,255)
+			position: absolute
+			//height: 40px
+			//line-height: 40px
 			width: 100%
-			font-size: 24px
+			font-size: 22px
+			z-index: 2
 		.descrip
 			float: left
 			text-indent: 10px

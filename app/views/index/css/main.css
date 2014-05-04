@@ -73,8 +73,25 @@
     background-color: white;
     height: auto;
     width: 100%;
-    cursor: pointer;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    position: relative; }
+    #content .reply .tp_edit, #content .reply .tp_del {
+      color: indianred;
+      padding: 0 5px 0 5px;
+      z-index: 3; }
+    #content .reply .tp_edit:hover, #content .reply .tp_del:hover {
+      color: white;
+      background-color: red;
+      cursor: pointer; }
+    #content .reply .tp_edit {
+      position: absolute;
+      right: 30px; }
+    #content .reply .tp_del {
+      position: absolute;
+      padding: 0;
+      width: 25px;
+      text-align: center;
+      right: 0; }
     #content .reply .rep_status {
       position: absolute;
       margin: 0;
@@ -84,18 +101,19 @@
       text-align: center;
       font-size: 18px;
       color: white;
-      background-color: red; }
+      background-color: red;
+      z-index: 3; }
     #content .reply .gal {
       float: right;
       position: relative; }
     #content .reply .head {
-      padding-left: 40px;
+      text-indent: 40px;
       color: #373737;
-      min-height: 30px;
-      height: 40px;
-      line-height: 40px;
+      background-color: #f0f0ff;
+      position: absolute;
       width: 100%;
-      font-size: 24px; }
+      font-size: 22px;
+      z-index: 2; }
     #content .reply .descrip {
       float: left;
       text-indent: 10px;

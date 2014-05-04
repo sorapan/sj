@@ -25,7 +25,7 @@
       } else if (data.verify === "N") {
         vrfy = '<span style="color:red">ยังไม่ได้ยืนยัน</span>';
       }
-      topic = '<a href="' + data.url + '"><div class="reply">' + '<span style="background-color:' + color + '" class="rep_status">' + data.status + '</span>' + '<span class="head">' + data.header + '</span><br>' + '<span class="descrip">สร้างโดย : </span>' + data.user + '<br>' + '<span class="descrip">อัพเดทล่าสุด : </span>' + data.last_update + '' + '<span class="descrip2">การยืนยัน : ' + vrfy + '</span><br>' + '<span class="descrip">วันที่สร้าง : </span>' + data.date + '<br><br>' + '</div></a>';
+      topic = '<div class="reply">' + '<a href="" class="tp_edit">แก้ไข</a><a href="" class="tp_del">ลบ</a>' + '<span style="background-color:' + color + '" class="rep_status">' + data.status + '</span>' + '<span class="head">' + data.header + '</span><br><br>' + '<a href="' + data.url + '"><div>' + '<span class="descrip">สร้างโดย : </span>' + data.user + '<br>' + '<span class="descrip">อัพเดทล่าสุด : </span>' + data.last_update + '' + '<span class="descrip2">การยืนยัน : ' + vrfy + '</span><br>' + '<span class="descrip">วันที่สร้าง : </span>' + data.date + '<br><br>' + '</div></a></div>';
       aptemplate = function() {
         return $("#content").append(topic);
       };

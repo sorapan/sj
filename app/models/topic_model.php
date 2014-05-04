@@ -51,9 +51,10 @@ class topic_model extends Model{
 
     function Verify($id){
 
-        $query = $this->db->prepare("UPDATE post SET `verify` = :verify WHERE `topicID` = :id");
+        $query = $this->db->prepare("UPDATE post SET `verify` = :verify, `last_update` = :ld WHERE `topicID` = :id");
         $query->execute(array(
             ':verify' => 'Y',
+            ':ld' => time(),
             ':id' => $id
         ));
 
