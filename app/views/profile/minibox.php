@@ -1,8 +1,8 @@
 <style>
     #mbx_msg{
-        color:white;
+        color:black;
         padding-left: 30px;
-        background-color: rgb(100,100,100);
+        background-color: rgb(130,130,150);
     }
 </style>
 

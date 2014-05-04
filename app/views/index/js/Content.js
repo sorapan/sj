@@ -31,7 +31,7 @@ $(function(){
                         user: data.user[i],
                         date: data.date[i],
                         last_update: data.last_update[i],
-                        url: "topic/id/"+data.topicID[i],
+                        topicid: data.topicID[i],
                         verify: data.verify[i]
                     },"ap");
 
@@ -64,7 +64,7 @@ $(function(){
                     user: data.user,
                     date: data.date,
                     last_update: data.last_update,
-                    url: "topic/id/"+data.topicID,
+                    topicid: data.topicID,
                     verify: data.verify
                 },"pre");
 
