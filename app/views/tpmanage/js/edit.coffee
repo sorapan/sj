@@ -2,9 +2,9 @@
 url = document.URL
 urlsplt = url.split "/"
 tpid = urlsplt[urlsplt.length-1]
-count = 1
-count2 = 1
-count3 = 1
+count = 0
+count2 = 0
+count3 = 0
 
 $(document).ready ()->
 
@@ -37,18 +37,32 @@ $(document).ready ()->
 		DelImgInDir($(this).parent().find('img').attr 'src')
 		$(this).hide()
 
+#	///////////car img////////////////
+
+	ManageCarImg("")
+	ManageCarImg("2")
+	ManageCarImg("3")
+
+#	//////////////////////////////////
+#	////////////PUSH DATA/////////////
+#	//////////////////////////////////
+
 	$("#submit").click (e)->
 		e.preventDefault()
 		$.ajax
-			url:''
-			type:''
-			data:{
-
-
-			}
+			url:'../Pushdata'
+			type:'POST'
+			data:
+				header:$("#post_header").val()
+				note:$("#post_note").val()
+				note2:$("#post_note2").val()
+				note3:$("#post_note3").val()
+				topicid:tpid
 			success:(d)->
 
-
+#	//////////////////////////////////
+#	////////////PUSH DATA/////////////
+#	//////////////////////////////////
 
 fetchImg = ()->
 
@@ -129,7 +143,11 @@ formControl = (num)->
 		else if num =="2" then c= count2
 		else if num =="3" then c=count3
 
-		$('#add_upload_div'+num).append '<div class="wrapall'+num+'" id="w'+c+'">
+		if num == "" then w =""
+		else if num =="2" then w= "w"
+		else if num =="3" then w="ww"
+
+		$('#add_upload_div'+num).append '<div class="wrapall'+num+'" id="w'+w+c+'">
 						                    <div class="wait_car_img'+num+'">+</div>
 						                    <input type="file" class="car_file'+num+'" name="file">
 						                </div><br>'
@@ -143,7 +161,7 @@ formControl = (num)->
 		else if num =="2" then cc = count2
 		else if num =="3" then cc = count3
 
-		if cc > 1
+		if cc > 0
 			if $('#add_upload_div'+num).find('.wrapall'+num).last().find('.show_car_upload'+num).length == 0
 				$('#add_upload_div'+num).find('.wait_car_img'+num).last().remove()
 				$('#add_upload_div'+num).find('input').last().remove()
@@ -177,6 +195,30 @@ uploadDoc = (data,type)->
 			$('#'+type).append ' <img class="show_upload" src="../../'+d+'">
 							<span class="del_upload_img">X</span> '
 
+uploadImg = (data,div,num)->
+
+	if num == ""
+		w=""
+		url = '../uploadImg'
+	else if num == "2"
+		w="w"
+		url = '../uploadImg2'
+	else if num == "3"
+		w="ww"
+		url = '../uploadImg3'
+
+
+	formdata = new FormData()
+	formdata.append "img", data.files[0]
+	$.ajax
+		url : url
+		type : 'POST'
+		data : formdata
+		processData: false
+		contentType: false
+		success:(d)->
+			$('#'+div).html '<img class="show_car_upload'+num+'" src="../../'+d+'"><span class="del_car_upload'+num+'">X</span>'
+
 DelCarUpload = (num)->
 	$(document).on 'click','.del_car_upload'+num, (e)->
 		DelImgInDir($(this).parent().find('img').attr 'src')
@@ -202,6 +244,36 @@ DelImgInDir = (url)->
 		type:'POST'
 		data:
 			'del':aa[aa.length-1]
+
+ManageCarImg = (num)->
+
+	DragSetting('.wait_car_img'+num)
+	$(document).on 'drop','.wait_car_img'+num, (e)->
+		e.preventDefault()
+		uploadImg(e.originalEvent.dataTransfer,$(this).parent().attr('id'),num)
+
+	$(document).on 'click','.wait_car_img'+num, (e)->
+		e.preventDefault()
+		$(this).parent().find('input').click();
+
+	$(document).on 'change','.car_file'+num,(e)->
+		e.preventDefault()
+		uploadImg($(this)[0],$(this).parent().attr('id'),num)
+
+	$(document).on 'click','.del_car_upload'+num, (e)->
+		DelImgInDir($(this).parent().find('img').attr 'src')
+		if $(this).parent().is ':first-child'
+			$(this).parent().html '<div class="wait_car_img'+num+'">+</div>
+											<in put type="file" class="car_file'+num+'" name="file">'
+			if num == "" then count=1
+			else if num =="2" then count2=1
+			else if num =="3" then count3=1
+		else
+			$(this).parent().remove()
+			$('#add_upload_div'+num).find('br').last().remove()
+			if num == "" then count--
+			else if num =="2" then count2--
+			else if num =="3" then count3--
 
 DragSetting = (element)->
 	$(document).on 'dragenter',element, (e)-> e.preventDefault()

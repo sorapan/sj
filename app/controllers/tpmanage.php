@@ -85,6 +85,82 @@ class tpmanage extends Controller{
 
     }
 
+    function Pushdata(){
+
+        $data = array(
+            'header' => $_POST['header'],
+            'note' => $_POST['note'],
+            'note2' => $_POST['note2'],
+            'note3' => $_POST['note3'],
+        );
+        self::CallModel()->UpdateData($data,$_POST['topicid']);
+
+        $a = scandir("temp");
+        print_r($a);
+
+
+    }
+
+    function uploadImg(){
+
+        Session::init();
+        $dir = "temp/".Session::get('user_id')."/img";
+        if(!is_dir($dir)){
+            mkdir($dir,0777, true);
+            Session::set('sayhi', 1);
+            if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
+                move_uploaded_file( $_FILES["img"]["tmp_name"], $dir."/".$_FILES['img']['name']);
+            }
+            echo $dir."/".$_FILES['img']['name'];
+        }else{
+            if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
+                move_uploaded_file( $_FILES["img"]["tmp_name"], $dir."/".$_FILES['img']['name']);
+            }
+            echo $dir."/".$_FILES['img']['name'];
+        }
+
+    }
+
+    function uploadImg2(){
+
+        Session::init();
+        $dir = "temp/".Session::get('user_id')."/img2";
+        if(!is_dir($dir)){
+            mkdir($dir,0777, true);
+            Session::set('sayhi', 1);
+            if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
+                move_uploaded_file( $_FILES["img"]["tmp_name"], $dir."/".$_FILES['img']['name']);
+            }
+            echo $dir."/".$_FILES['img']['name'];
+        }else{
+            if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
+                move_uploaded_file( $_FILES["img"]["tmp_name"], $dir."/".$_FILES['img']['name']);
+            }
+            echo $dir."/".$_FILES['img']['name'];
+        }
+
+    }
+
+    function uploadImg3(){
+
+        Session::init();
+        $dir = "temp/".Session::get('user_id')."/img3";
+        if(!is_dir($dir)){
+            mkdir($dir,0777, true);
+            Session::set('sayhi', 1);
+            if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
+                move_uploaded_file( $_FILES["img"]["tmp_name"], $dir."/".$_FILES['img']['name']);
+            }
+            echo $dir."/".$_FILES['img']['name'];
+        }else{
+            if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
+                move_uploaded_file( $_FILES["img"]["tmp_name"], $dir."/".$_FILES['img']['name']);
+            }
+            echo $dir."/".$_FILES['img']['name'];
+        }
+
+    }
+
     private static function CallModel(){
         return new tpmanage_model();
     }
@@ -121,6 +197,28 @@ class tpmanage extends Controller{
             rmdir($dir);
         }
 
+    }
+
+    private static function mmove($source,$destination){
+
+        $god = scandir($source);
+        foreach($god as $file){
+            if($file != "." || $file != ".."){
+                if(filetype($source."/".$file) == "dir"){
+                    if(!is_dir($destination."/".$file))mkdir($destination."/".$file);
+                    $subsource = scandir($source."/".$file);
+                    foreach($subsource as $ss){
+                        if($ss != "." || $ss != ".."){
+                            @copy($source."/".$file."/".$ss,$destination."/".$file."/".$ss);
+                            @unlink($source."/".$file."/".$ss);
+                        }
+                        rmdir($source."/".$file."/".$ss);
+                    }
+                    rmdir($source."/".$file);
+                }
+            }
+        }
+        rmdir($source);
     }
 
 }
