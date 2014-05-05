@@ -34,6 +34,7 @@ class tpmanage_model extends Model{
     function UpdateData($data,$topicid){
 
         $query = $this->db->prepare("UPDATE post SET header=:header,note=:note,note2=:note2,note3=:note3 WHERE topicID = :topicid");
+
         $query->execute(array(
             ':header' => $data['header'],
             ':note' => $data['note'],
@@ -41,6 +42,7 @@ class tpmanage_model extends Model{
             ':note3' => $data['note3'],
             ':topicid' => $topicid
         ));
+
 
     }
 

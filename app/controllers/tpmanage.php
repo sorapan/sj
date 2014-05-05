@@ -91,9 +91,12 @@ class tpmanage extends Controller{
         $data = array(
             'header' => $_POST['header'],
             'note' => $_POST['note'],
-            'note2' => $_POST['note2'],
-            'note3' => $_POST['note3'],
         );
+        if(isset( $_POST['note2'])&& $_POST['note2']!= "") $data['note2'] = $_POST['note2'];
+        else $data['note2'] = "";
+        if(isset( $_POST['note3'])&& $_POST['note3']!= "") $data['note3'] = $_POST['note3'];
+        else $data['note3'] = "";
+
         self::CallModel()->UpdateData($data,$_POST['topicid']);
         Session::set('sayhi', 0);
         $a = scandir("temp/".Session::get('user_id'));
@@ -101,12 +104,12 @@ class tpmanage extends Controller{
             if($aa != "." && $aa != ".."){
                 $q = scandir("temp/".Session::get('user_id')."/".$aa);
                 foreach($q as $qq){
-                    if($a == "img2" || $a == "img3"){
-                        $a = "img";
-                        if($a == "img2") $status = "2";
-                        else if($a == "img3") $status = "3";
+                    if($aa == "img2" || $aa == "img3"){
+                        if($aa == "img2") $status = "2";
+                        else if($aa == "img3") $status = "3";
+                        $aa = "img";
                     }
-                    if($qq != "." && $qq != "..") self::CallModel()->gotImg($qq,$_POST['topicid'],$status,$a);
+                    if($qq != "." && $qq != "..") self::CallModel()->gotImg($qq,$_POST['topicid'],$status,$aa);
                 }
             }
         }

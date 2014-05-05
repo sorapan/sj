@@ -56,7 +56,6 @@ if(!empty($this->carimg2)){
     echo '<br>';
 }
 
-
 if(!empty($this->carimg3)){
 
     echo 'อัพเดทครั้งที่ 3 <br>';

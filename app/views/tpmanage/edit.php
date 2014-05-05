@@ -43,7 +43,7 @@
 
 <?php
 
-    if($this->info['status'] == "2" || $this->info['status'] == "3"){
+    if($this->info['status'] == "2" or $this->info['status'] == "3"){
         echo 'อัพเดทครั้งที่ 2<br>';
         echo '<label for="post_note2">หมายเหตุ : </label><br>';
         echo '<textarea id="post_note2">'.$this->info['note2'].'</textarea><br><br><br>';
