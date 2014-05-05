@@ -8,6 +8,39 @@ class tpmanage_model extends Model{
 
     }
 
+    function delAll($topicid){
+
+        $query1 = $this->db->prepare('DELETE FROM post WHERE topicID = :topicid');
+        $query1->execute(array(
+            ':topicid' => $topicid
+        ));
+        $query2 = $this->db->prepare('DELETE FROM img WHERE topic_id = :topicid');
+        $query2->execute(array(
+            ':topicid' => $topicid
+        ));
+
+    }
+
+    function TopicCreator($topicid){
+
+        $query = $this->db->prepare('SELECT user.username FROM user JOIN post ON user.id = post.user_id WHERE post.topicID = :topicid');
+        $query->execute(array(
+            ':topicid' => $topicid
+        ));
+        $res = $query->fetch();
+        return $res['username'];
+
+    }
+
+    function TopicId($topicid){
+
+        $query = $this->db->prepare("SELECT * FROM post WHERE topicID = :topicid LIMIT 1");
+        $query->execute(array(
+            ":topicid" => $topicid
+        ));
+
+    }
+
     function fetchAllPost($topicid){
 
         $query = $this->db->prepare("SELECT * FROM post WHERE topicID = :topicid LIMIT 1");

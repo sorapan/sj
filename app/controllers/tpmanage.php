@@ -24,15 +24,45 @@ class tpmanage extends Controller{
 
     function edit($topicid){
 
-        if(Session::get('sayhi') == 0){
-            if(is_dir("temp/".Session::get('user_id')."/")){
-                self::mrmdir("temp/".Session::get('user_id'));
+        $a = $this->TopicCreator($topicid);
+        if(Session::get('role')=="admin"||Session::get('role')=="owner"||Session::get('username')==$a){
+
+            if(Session::get('sayhi') == 0){
+                if(is_dir("temp/".Session::get('user_id')."/")){
+                    self::mrmdir("temp/".Session::get('user_id'));
 //                rmdir("temp/".Session::get('user_id'));
+                }
             }
+            $this->view->topicid = $topicid;
+            $this->view->info = self::CallModel()->fetchAllPost($topicid);
+            $this->view->render('tpmanage/edit');
+
+        }else{
+
+            header('location:'.URL."error/d9");
+
         }
-        $this->view->topicid = $topicid;
-        $this->view->info = self::CallModel()->fetchAllPost($topicid);
-        $this->view->render('tpmanage/edit');
+
+    }
+
+    function del($topicid){
+
+        if(Session::get('role')=="admin"||Session::get('role')=="owner"){
+
+            self::CallModel()->delAll($topicid);
+            self::mrmdir("file/".$topicid);
+            header('location:'.URL);
+
+        }else{
+
+            header('location:'.URL."error/d9");
+        }
+
+    }
+
+    function TopicCreator($topicid){
+
+        return self::CallModel()->TopicCreator($topicid);
 
     }
 

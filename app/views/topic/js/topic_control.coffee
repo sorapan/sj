@@ -1,6 +1,13 @@
 
 $(document).ready ()->
 
+	$(' .tpmg').click ()->
+
+		a = confirm('คุณแน่ใจที่จะเปลี่ยนแปลงกระทู้ใช่หรือไม่');
+		if a then true
+		else false
+
+
 	$(' .box_in_head').click ()->
 		$(this).parent().find('img').toggle()
 		$(this).parent().find('br').toggle()

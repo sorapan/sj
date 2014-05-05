@@ -11,7 +11,13 @@ class error extends Controller{
     public function index(){
 
         $this->view->msg = "ERROR : This page dosen't exists";
-        $this->view->render('error/index');
+        $this->view->render_none('error/index');
+
+    }
+
+    function d9(){
+
+        $this->view->render_none('error/d9');
 
     }
 

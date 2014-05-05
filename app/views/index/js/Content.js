@@ -4,6 +4,23 @@ $(function(){
     var timestamp = null;
     var firsttimeFetch = 1;
 
+
+    $(document).on('click',".tp_del",function(){
+
+        var a = confirm('คุณแน่ใจที่จะลบกระทู้ใช่หรือไม่');
+        if(a) return true;
+        else return false;
+
+    });
+
+    $(document).on('click',".tp_edit",function(){
+
+        var a = confirm('คุณแน่ใจที่จะแก้ไขกระทู้ใช่หรือไม่');
+        if(a) return true;
+        else return false;
+
+    });
+
     Cycle();
     function Cycle(){
 
