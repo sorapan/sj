@@ -4,8 +4,10 @@
 
     <label for="post_header">หมายเลขทะเบียน : </label>
     <input type="text" id="post_header" value="<?php echo $this->info['header']?>"><br>
+    <label for="post_detail">รายละเอียด : </label><br>
+    <textarea id="post_detail"><?php echo $this->info['detail']?></textarea><br>
     <label for="post_note">หมายเหตุ : </label><br>
-    <textarea id="post_note"><?php echo $this->info['header']?></textarea><br><br><br>
+    <textarea id="post_note"><?php echo $this->info['note']?></textarea><br><br><br>
 
     <div class="upload_section" id="grom">
         <span class="label_upload1">กรมธรรม์ : </span><br>

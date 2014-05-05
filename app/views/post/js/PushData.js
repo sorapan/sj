@@ -2,6 +2,7 @@ $(function(){
 
     var header = $(" #post_header");
     var note = $(" #post_note");
+    var detail = $(" #post_detail");
 
     $(" #submit").click(function(e){
         e.preventDefault();
@@ -12,10 +13,11 @@ $(function(){
                 type: 'POST',
                 data: {
                     header: header.val(),
-                    note: note.val()
+                    note: note.val(),
+                    detail: detail.val()
                 },
                 charset: 'UTF-8',
-                success:(function(){
+                success:(function(d){
                     window.location = "../";
                 })
             });

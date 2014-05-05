@@ -21,7 +21,7 @@
   text-align: center;
   cursor: pointer; }
 
-#post_note, #post_note2, #post_note3 {
+#post_note, #post_note2, #post_note3, #post_detail {
   width: 500px; }
 
 .in_drop_div:after {

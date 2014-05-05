@@ -41,7 +41,8 @@ class post_update extends Controller{
         $topic_id = $_POST['topic_id'];
         self::mmove("temp/".Session::get('user_id'),"file/".$topic_id);
         Session::set('sayhi', 0);
-        $files = scandir("file/".$topic_id."/img2");
+        $status = $this->checkTopicStatus2();
+        $files = scandir("file/".$topic_id."/img".$status);
         foreach($files as $file){
             if($file != "." && $file != "..") self::CallModel()->storeImg($file,$topic_id);
         }
@@ -50,6 +51,11 @@ class post_update extends Controller{
     function checkTopicStatus(){
         $result = self::CallModel()->getTopicStatus($_POST['topic_id']);
         echo $result;
+    }
+
+    function checkTopicStatus2(){
+        $result = self::CallModel()->getTopicStatus($_POST['topic_id']);
+        return $result;
     }
 
     function uploadImg2(){

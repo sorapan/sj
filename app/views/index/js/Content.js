@@ -32,7 +32,8 @@ $(function(){
                         date: data.date[i],
                         last_update: data.last_update[i],
                         topicid: data.topicID[i],
-                        verify: data.verify[i]
+                        verify: data.verify[i],
+                        detail: data.detail[i]
                     },"ap");
 
                 }
@@ -63,6 +64,7 @@ $(function(){
                     header: data.hdr,
                     user: data.user,
                     date: data.date,
+                    detail: data.detail,
                     last_update: data.last_update,
                     topicid: data.topicID,
                     verify: data.verify

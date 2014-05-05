@@ -4,6 +4,7 @@
 
     <span style="font-size: 18px">อัพเดตครั้งแรก</span><br><br>
     <label for="post_header">หมายเลขทะเบียน : </label><input type="text" id="post_header"><br>
+    <label for="post_detail">รายละเอียด : </label><br><textarea id="post_detail"></textarea><br>
     <label for="post_note">หมายเหตุ : </label><br><textarea id="post_note"></textarea><br><br><br>
 
     <div class="upload_section" id="grom">

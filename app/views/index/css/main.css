@@ -11,7 +11,7 @@
   width: 100%;
   height: 40px;
   font-size: 14px;
-  background-color: #c3c3c3;
+  background-color: #555555;
   overflow: hidden; }
 
 #search {
@@ -34,6 +34,7 @@
     cursor: pointer; }
   #search .button_1 {
     float: right;
+    border-left: 1px solid #c3c3c3;
     background-color: #555555;
     color: white;
     padding: 0 20px 0 20px;

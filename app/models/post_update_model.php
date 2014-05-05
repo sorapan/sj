@@ -10,6 +10,9 @@ class post_update_model extends Model{
 
     function updateTopic($arr){
 
+//        $user_id = 'user_id';
+//        $note = 'note';
+//        $stat = '1';
         $status = $this->getTopicStatus($arr['topicid']);
         if($status == "1") {
             $user_id = 'user_id2';
@@ -47,19 +50,13 @@ class post_update_model extends Model{
     function storeImg($imgname, $topicid){
 
         $status = $this->getTopicStatus($topicid);
-        if($status == "1") {
-            $stat = '2';
-        }
-        else if($status == "2") {
-            $stat = '3';
-        }
         $qry = $this->db->prepare("INSERT INTO img (`img_name`,`topic_id`,`status`,`type`) VALUES (:imgname, :topicid, :status, :type)");
         $qry->execute(array(
 
             ':imgname' => $imgname,
             ':topicid' => $topicid,
             ':type' => 'img',
-            ':status' => $stat
+            ':status' => $status
 
         ));
 

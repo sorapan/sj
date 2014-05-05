@@ -13,6 +13,7 @@
     left: 50%;
     margin-left: -400px;
     overflow: hidden;
+    z-index: 1;
 
 
 }
@@ -23,6 +24,8 @@
     width: 100%;
     background-color: rgb(240,240,240);
     padding: 30px;
+    position: relative;
+    z-index: 2;
 
 
 }
@@ -98,7 +101,7 @@ a#verify2{
     line-height: 100px;
     text-align: center;
     font-size: 28px;
-    background-color: darkred;
+    background-color: green;
     color: white;
     text-decoration: none;
     cursor: no-drop;
@@ -149,4 +152,26 @@ a#link{
 .arrow{
     float: right;
     padding-right: 10px;
+}
+
+.tpmg{
+
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    right: 60px;
+    width: 90px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    background-color: indianred;
+    z-index: 3;
+
+}
+
+.tpmg:hover{
+
+    background-color: red;
+
 }

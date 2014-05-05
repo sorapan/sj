@@ -55,11 +55,12 @@ $(document).ready ()->
 			data:
 				header:$("#post_header").val()
 				note:$("#post_note").val()
+				detail:$("#post_detail").val()
 				note2:$("#post_note2").val()
 				note3:$("#post_note3").val()
 				topicid:tpid
 			success:(d)->
-
+				window.location = "../../"
 #	//////////////////////////////////
 #	////////////PUSH DATA/////////////
 #	//////////////////////////////////

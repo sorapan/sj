@@ -1,4 +1,9 @@
 
+<?php
+
+$a = explode("/",$_SERVER['REQUEST_URI']); //explode URL
+
+?>
 
 <a style="margin: 20px" id="link" href="<?php echo URL ?>">Back</a><br>
 
@@ -6,6 +11,7 @@
 
 <div id="content">
 
+<a class="tpmg" style="right: 155px" href="../../tpmanage/edit/<?php echo $a[3]?>">แก้ไขกระทู้</a><a class="tpmg" href="../../tpmanage/del/<?php echo $a[3]?>">ลบกระทู้</a>
 <span id="header"><?php echo $this->info['header']?></span><br><br>
 <span id="detail">Author: <a href=""><?php echo $this->info['username']?><a> On: <?php echo date('d/m/Y - h:i A',(int)$this->info['date'])?></span>
 <?php echo "หมายเหตุ : ".$this->info['note']?>
@@ -75,25 +81,22 @@ if(!empty($this->carimg3)){
     </div>
 
 <?php
-$a = explode("/",$_SERVER['REQUEST_URI']);
-if($this->info['verify'] == "Y"){
 
-    switch($this->info['status']){
-        case '1':
-            echo '<a id="update" href='.URL.'post_update/id/'.$a[3].'>อัพเดทรูประหว่างซ่อมครั้งที่ 2</a>';
+switch($this->info['status']){
+    case '1':
+        echo '<a id="update" href='.URL.'post_update/id/'.$a[3].'>อัพเดทรูประหว่างซ่อมครั้งที่ 2</a>';
+        break;
+    case '2':
+        echo '<a id="update" href='.URL.'post_update/id/'.$a[3].'>อัพเดทรูประหว่างซ่อมครั้งที่ 3</a>';
+        break;
+    case '3':
+        if($this->info['verify'] == "N"){
+            echo '<a id="verify" href="">ยืนยันเสร็จสิ้นการดำเนินงาน</a>';
             break;
-        case '2':
-            echo '<a id="update" href='.URL.'post_update/id/'.$a[3].'>อัพเดทรูประหว่างซ่อมครั้งที่ 3</a>';
+        }else{
+            echo '<a id="verify2" onclick="event.preventDefault()" href="">เสร็จสิ้นการดำเนินงานแล้ว</a>';
             break;
-        case '3':
-            break;
-
-    }
-
-}else{
-
-    if(Session::get('role')=="admin"||Session::get('role')=="owner")echo '<a id="verify" href="" >ยืนยันข้อมูล</a>';
-    else echo '<a id="verify2" href="" onclick="event.preventDefault();">รอการยืนยันข้อมูล</a>';
+        }
 
 }
 ?>

@@ -90,7 +90,8 @@ class tpmanage extends Controller{
         $status = "1";
         $data = array(
             'header' => $_POST['header'],
-            'note' => $_POST['note'],
+            'detail' => $_POST['detail'],
+            'note' => $_POST['note']
         );
         if(isset( $_POST['note2'])&& $_POST['note2']!= "") $data['note2'] = $_POST['note2'];
         else $data['note2'] = "";

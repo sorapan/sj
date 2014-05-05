@@ -47,7 +47,8 @@ $(function(){
                             date: data.date[i],
                             last_update: data.last_update[i],
                             topicid: data.topicID[i],
-                            verify: data.verify[i]
+                            verify: data.verify[i],
+                            detail: data.detail[i]
                         },"ap");
                     }
                 }else{

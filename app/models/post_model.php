@@ -13,12 +13,13 @@ class post_model extends Model{
 
         if(is_array($data)){
 
-            $query = $this->db->prepare(" INSERT INTO post (`topicID`,`user_id`, `header`, `note`, `date`, `last_update`)".
-                "VALUES (:topicID, :userid, :header, :note, :date, :last_update) ");
+            $query = $this->db->prepare(" INSERT INTO post (`topicID`,`user_id`, `header`, `note`,`detail`, `date`, `last_update`)".
+                "VALUES (:topicID, :userid, :header, :note, :detail, :date, :last_update) ");
             $query->execute(array(
                 ':userid' => $data['userid'],
                 ':header' => $data['header'],
                 ':note' => $data['note'],
+                ':detail' => $data['detail'],
                 ':topicID' => $this->GetTopicId(),
                 ':date' =>  time(),
                 ':last_update' => time()

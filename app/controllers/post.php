@@ -30,6 +30,7 @@ class post extends Controller{
         Session::init();
         $data = array(
             'header' => $_POST['header'],
+            'detail' => $_POST['detail'],
             'note' => $_POST['note'],
             'userid' => Session::get('user_id')
         );
