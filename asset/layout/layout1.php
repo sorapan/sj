@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello</title>
+    <title>สงขลาเจริญการช่าง</title>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
     <link rel="stylesheet" href="<?php echo URL ?>asset/css/reset.css">
@@ -45,6 +45,7 @@
         <a class="button_navi" href="<?php echo URL?>">หน้าหลัก</a>
         <a class="button_navi" href="<?php echo URL?>post">สร้างกระทู้</a>
         <a class="button_navi" href="<?php echo URL?>memberlist">ส่งข้อความ</a>
+        <a class="button_navi" href="<?php echo URL?>search">ค้นหา</a>
         <?php
 
             if(Session::get('role') == 'admin' || Session::get('role') == "owner"){

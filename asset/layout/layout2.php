@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>Login</title>
+<title>สงขลาเจริญการช่าง</title>
 
     <meta charset="utf-8">
     <link rel="stylesheet" href="<?php echo URL ?>asset/css/reset.css">

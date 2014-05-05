@@ -1,0 +1,35 @@
+#nav {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  background-color: #5a5a5a; }
+
+#search_ip {
+  line-height: 60px;
+  margin-left: 200px;
+  color: white;
+  font-size: 16px; }
+  #search_ip input {
+    border: 0;
+    width: 240px;
+    height: 20px; }
+
+#choice {
+  color: white;
+  margin-left: 90px; }
+
+#result a {
+  text-decoration: none;
+  width: 300px;
+  margin: 20px auto; }
+#result .tp {
+  float: left;
+  margin: 10px;
+  width: 300px;
+  padding-left: 10px;
+  color: black;
+  background-color: #c8c8c8; }
+  #result .tp .header {
+    font-size: 18px; }
+#result .tp:hover {
+  background-color: white; }
