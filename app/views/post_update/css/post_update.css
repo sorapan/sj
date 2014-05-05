@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #post_note {
   width: 300px; }
 
@@ -41,3 +42,26 @@
 
 .del_car_upload {
   cursor: pointer; }
+
+.label_upload1 {
+  float: left;
+  width: 100%;
+  background-color: #afafaf;
+  color: black; }
+
+.in_drop_div {
+  background-color: white;
+  height: 100px;
+  width: 500px;
+  color: dodgerblue;
+  line-height: 100px;
+  text-align: center;
+  cursor: pointer; }
+
+.in_drop_div:after {
+  content: "คลิก หรือ วางที่นี่"; }
+
+.upload_section {
+  background-color: white;
+  color: gray;
+  width: 500px; }

@@ -18,8 +18,9 @@ class post_update extends Controller{
 
     }
 
-    function id(){
+    function id($topicid){
 
+        $this->view->status = $this->checkTopicStatus2($topicid);
         $this->view->render("post_update/id");
         if(Session::get('sayhi') == 0){
             if(is_dir("temp/".Session::get('user_id')."/")){
@@ -41,10 +42,43 @@ class post_update extends Controller{
         $topic_id = $_POST['topic_id'];
         self::mmove("temp/".Session::get('user_id'),"file/".$topic_id);
         Session::set('sayhi', 0);
-        $status = $this->checkTopicStatus2();
-        $files = scandir("file/".$topic_id."/img".$status);
-        foreach($files as $file){
-            if($file != "." && $file != "..") self::CallModel()->storeImg($file,$topic_id);
+        $status = $this->checkTopicStatus2($_POST['topic_id']);
+
+        $imgs = scandir("file/".$topic_id."/img".$status);
+        foreach($imgs as $img){
+            if($img != "." && $img != "..") self::CallModel()->storeImg($img,$topic_id,'img');
+        }
+        if(is_dir("file/".$topic_id."/fin")){
+
+            $fins = scandir("file/".$topic_id."/fin");
+            foreach($fins as $fin){
+                if($fin != "." && $fin != "..") self::CallModel()->storeImg($fin,$topic_id,'fin');
+            }
+
+        }
+    }
+
+    function uploadFile($type){
+        Session::init();
+        $dir = "temp/".Session::get('user_id')."/".$type;
+//        $dir = "temp/qwer/.$type";
+        if(!is_dir($dir)){
+            mkdir($dir,0777, true);
+            Session::set('sayhi', 1);
+            if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
+                move_uploaded_file( $_FILES["img"]["tmp_name"], $dir."/".$_FILES['img']['name']);
+            }
+            echo $dir."/".$_FILES['img']['name'];
+        }else{
+            if(Session::get('sayhi') == 0){
+                self::mrmdir($dir);
+                mkdir($dir,0777, true);
+                Session::set('sayhi', 1);
+            }
+            if($_FILES["img"]["error"] == UPLOAD_ERR_OK){
+                move_uploaded_file( $_FILES["img"]["tmp_name"], $dir."/".$_FILES['img']['name']);
+            }
+            echo $dir."/".$_FILES['img']['name'];
         }
     }
 
@@ -53,8 +87,8 @@ class post_update extends Controller{
         echo $result;
     }
 
-    function checkTopicStatus2(){
-        $result = self::CallModel()->getTopicStatus($_POST['topic_id']);
+    function checkTopicStatus2($topicid){
+        $result = self::CallModel()->getTopicStatus($topicid);
         return $result;
     }
 

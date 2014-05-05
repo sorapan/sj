@@ -11,7 +11,7 @@ class post extends Controller{
 
         $this->view->css = array("post/css/post_style.css");
         $this->view->js = array("post/js/PushData.js",
-                                "post/js/upload_img2.js"
+            "post/js/upload_img2.js"
 //                                "post/js/upload_img.js"
         );
     }
@@ -30,7 +30,6 @@ class post extends Controller{
         Session::init();
         $data = array(
             'header' => $_POST['header'],
-            'detail' => $_POST['detail'],
             'note' => $_POST['note'],
             'userid' => Session::get('user_id')
         );
@@ -159,4 +158,4 @@ class post extends Controller{
         return new post_model();
     }
 
-} 
+}

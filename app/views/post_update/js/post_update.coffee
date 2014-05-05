@@ -7,6 +7,27 @@ stat = 2;
 
 $(document).ready ()->
 
+
+	DragSetting('.in_drop_div')
+	$(document).on 'drop','.in_drop_div', (e)->
+		e.preventDefault()
+		uploadDoc(e.originalEvent.dataTransfer,$(this).parent().attr "id")
+
+	$(document).on 'click','.in_drop_div',(e)->
+		e.preventDefault()
+		$(this).parent().find('input').click();
+
+	$(document).on 'change','.ip_upload1',(e)->
+		e.preventDefault()
+		uploadDoc($(this)[0],$(this).parent().attr "id")
+
+
+	$(document).on 'click','.del_upload_img',(e)->
+		$(this).parent().append '<div class="in_drop_div"></div>'
+		$(this).parent().find('img').hide()
+		DelImgInDir($(this).parent().find('img').attr 'src')
+		$(this).hide()
+
 	$('.car_img_upload_btn').click (e)->
 		e.preventDefault()
 
@@ -88,7 +109,27 @@ CheckTopicStatus = ()->
 				$('#update_header').html 'อัพเดทครั้งที่ 3'
 				stat = 3
 
-
+uploadDoc = (data,type)->
+	formdata = new FormData()
+	formdata.append "img", data.files[0]
+	$.ajax
+		xhr:()->
+			xhr = new window.XMLHttpRequest()
+			xhr.upload.addEventListener "progress", (e)->
+				if e.lengthComputable
+					percentComplete = e.loaded / e.total;
+					$('#'+type+' .in_drop_div').html percentComplete*100;
+			, false
+			return xhr;
+		url:'../uploadFile/'+type
+		type:'POST'
+		data:formdata
+		processData: false
+		contentType: false
+		success:(d)->
+			$('#'+type+' .in_drop_div').hide();
+			$('#'+type).append ' <img class="show_upload" src="../../'+d+'">
+							<span class="del_upload_img">X</span> '
 
 DragSetting = (element)->
 	$(document).on 'dragenter',element, (e)-> e.preventDefault()
@@ -105,7 +146,7 @@ uploadImg = (data,div)->
 		processData: false
 		contentType: false
 		success:(d)->
-			$('#'+div).html '<img class="show_car_upload" src="'+"../../"+d+'"><span class="del_car_upload">X</span>'
+			$('#'+div).html '<img class="show_car_upload" src="../../'+d+'"><span class="del_car_upload">X</span>'
 
 DelImgInDir = (url)->
 	$.ajax

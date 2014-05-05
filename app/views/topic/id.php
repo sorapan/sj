@@ -1,6 +1,6 @@
 
 <?php
-
+Session::init();
 $a = explode("/",$_SERVER['REQUEST_URI']); //explode URL
 
 ?>
@@ -90,12 +90,27 @@ switch($this->info['status']){
         echo '<a id="update" href='.URL.'post_update/id/'.$a[3].'>อัพเดทรูประหว่างซ่อมครั้งที่ 3</a>';
         break;
     case '3':
-        if($this->info['verify'] == "N"){
-            echo '<a id="verify" href="">ยืนยันเสร็จสิ้นการดำเนินงาน</a>';
-            break;
+        if(Session::get('role')=="admin"||Session::get('role')=="owner"){
+
+            if($this->info['verify'] == "N"){
+                echo '<a id="verify" href="">ยืนยันเสร็จสิ้นการดำเนินงาน</a>';
+                break;
+            }else{
+                echo '<a id="verify2" onclick="event.preventDefault()" href="">เสร็จสิ้นการดำเนินงานแล้ว</a>';
+                break;
+            }
+
         }else{
-            echo '<a id="verify2" onclick="event.preventDefault()" href="">เสร็จสิ้นการดำเนินงานแล้ว</a>';
-            break;
+
+            if($this->info['verify'] == "N"){
+
+                echo '<a id="verify2" onclick="event.preventDefault()" href="">รอการยืนยันเสร็จสิ้นการดำเนินงาน</a>';
+                break;
+            }else{
+                echo '<a id="verify2" onclick="event.preventDefault()" href="">เสร็จสิ้นการดำเนินงานแล้ว</a>';
+                break;
+            }
+
         }
 
 }
@@ -119,6 +134,9 @@ function headername($type){
             break;
         case "grom":
             return "กรมธรรม์";
+            break;
+        case "fin":
+            return "ใบรับรถ";
             break;
         case "img":
             return "รูปภาพรถ";
