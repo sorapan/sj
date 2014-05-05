@@ -66,15 +66,12 @@ class tpmanage extends Controller{
         }
 
         foreach($doc2 as $k=>$v){
-            if($v['type']=="img"){
-                array_push($img2,$v['img_name']);
-            }
+            if($v['type']=="img") array_push($img2,$v['img_name']);
         }
 
         foreach($doc3 as $k=>$v){
-            if($v['type']=="img"){
-                array_push($img3,$v['img_name']);
-            }
+            if($v['type']=="img") array_push($img3,$v['img_name']);
+            if($v['type']=="fin") $arr['fin'] = $v['img_name'];
         }
 
         $arr['img'] = $img;
@@ -109,6 +106,9 @@ class tpmanage extends Controller{
                         if($aa == "img2") $status = "2";
                         else if($aa == "img3") $status = "3";
                         $aa = "img";
+                    }else if($aa == "fin"){
+                        $status = "3";
+                        $aa = "fin";
                     }
                     if($qq != "." && $qq != "..") self::CallModel()->gotImg($qq,$_POST['topicid'],$status,$aa);
                 }

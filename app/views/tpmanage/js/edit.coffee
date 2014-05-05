@@ -91,6 +91,10 @@ fetchImg = ()->
 				$('#cussy .in_drop_div').hide()
 				$('#cussy').append ' <img class="show_upload" src="../../file/'+tpid+"/cussy/"+d.cussy+'"><span class="del_upload_img">X</span> '
 
+			if typeof d.fin != 'undefined'
+				$('#fin .in_drop_div').hide()
+				$('#fin').append ' <img class="show_upload" src="../../file/'+tpid+"/fin/"+d.fin+'"><span class="del_upload_img">X</span> '
+
 			for i of d.img
 				AddCarUploadDiv()
 				$('#w'+count).html '<img class="show_car_upload" src="../../file/'+tpid+"/img/"+d.img[i]+'"><span class="del_car_upload">X</span>'

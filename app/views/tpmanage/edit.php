@@ -63,6 +63,11 @@
     if($this->info['status'] == "3"){
 
         echo 'อัพเดทครั้งที่ 3<br>';
+        echo '<div class="upload_section" id="fin">';
+        echo '<span class="label_upload1">ใบรับรถ : </span><br>';
+        echo '<div class="in_drop_div"></div>';
+        echo '<input id="file_fin" class="ip_upload1" type="file">';
+        echo '</div><br>';
         echo '<label for="post_note3">หมายเหตุ : </label><br>';
         echo '<textarea id="post_note3" >'.$this->info['note3'].'</textarea><br><br><br>';
         echo '<div id="upload_box3">';

@@ -22,7 +22,54 @@
     <favorites_list name="patel" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="edit.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/tpmanage/edit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="49" selection-start="2546" selection-end="2546" vertical-scroll-proportion="-24.407408" vertical-offset="576" max-vertical-offset="1767">
+              <folding>
+                <marker date="1399292031537" expanded="false" signature="2076:2091" placeholder="..." />
+                <marker date="1399292031537" expanded="true" signature="2982:2997" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.coffee" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/tpmanage/js/edit.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="38" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.7889273" vertical-offset="741" max-vertical-offset="5510">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tpmanage.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/tpmanage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="110" column="34" selection-start="3289" selection-end="3289" vertical-scroll-proportion="-13.037037" vertical-offset="1738" max-vertical-offset="4636">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tpmanage_model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/tpmanage_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="19" selection-start="1500" selection-end="1500" vertical-scroll-proportion="-19.0" vertical-offset="551" max-vertical-offset="1672">
+              <folding>
+                <marker date="1399283076262" expanded="true" signature="188:239" placeholder="SELECT * FRO..post..." />
+                <marker date="1399283076262" expanded="true" signature="444:508" placeholder="SELECT * FRO..img..." />
+                <marker date="1399283076262" expanded="true" signature="750:857" placeholder="UPDATE post ..." />
+                <marker date="1399283076262" expanded="true" signature="1245:1344" placeholder="INSERT INTO ..." />
+                <marker date="1399283076262" expanded="true" signature="1626:1670" placeholder="SELECT id FR..post..." />
+                <marker date="1399283076262" expanded="true" signature="1878:1915" placeholder="DELETE FROM ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -41,6 +88,9 @@
         <option value="$PROJECT_DIR$/app/controllers/post_update.php" />
         <option value="$PROJECT_DIR$/app/views/post_update/js/post_update.coffee" />
         <option value="$PROJECT_DIR$/app/views/topic/id.php" />
+        <option value="$PROJECT_DIR$/app/views/tpmanage/edit.php" />
+        <option value="$PROJECT_DIR$/app/controllers/tpmanage.php" />
+        <option value="$PROJECT_DIR$/app/views/tpmanage/js/edit.coffee" />
       </list>
     </option>
   </component>
@@ -132,7 +182,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="topic" />
+              <option name="myItemId" value="tpmanage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpmanage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -165,6 +241,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -217,15 +297,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -282,23 +362,6 @@
             <marker date="1399289208475" expanded="true" signature="-1:-1" placeholder="SELECT `stat..." />
             <marker date="1399289208475" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tpmanage/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1672">
-          <folding>
-            <marker date="1399283486084" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1399283486084" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tpmanage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.42021278" vertical-offset="237" max-vertical-offset="4636">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -372,6 +435,44 @@
     <entry file="file://$PROJECT_DIR$/app/views/topic/id.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="16" selection-start="23" selection-end="23" vertical-scroll-proportion="0.06896552" vertical-offset="0" max-vertical-offset="2869">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tpmanage/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="49" selection-start="2546" selection-end="2546" vertical-scroll-proportion="-24.407408" vertical-offset="576" max-vertical-offset="1767">
+          <folding>
+            <marker date="1399292031537" expanded="false" signature="2076:2091" placeholder="..." />
+            <marker date="1399292031537" expanded="true" signature="2982:2997" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/tpmanage_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="19" selection-start="1500" selection-end="1500" vertical-scroll-proportion="-19.0" vertical-offset="551" max-vertical-offset="1672">
+          <folding>
+            <marker date="1399283076262" expanded="true" signature="188:239" placeholder="SELECT * FRO..post..." />
+            <marker date="1399283076262" expanded="true" signature="444:508" placeholder="SELECT * FRO..img..." />
+            <marker date="1399283076262" expanded="true" signature="750:857" placeholder="UPDATE post ..." />
+            <marker date="1399283076262" expanded="true" signature="1245:1344" placeholder="INSERT INTO ..." />
+            <marker date="1399283076262" expanded="true" signature="1626:1670" placeholder="SELECT id FR..post..." />
+            <marker date="1399283076262" expanded="true" signature="1878:1915" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tpmanage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="34" selection-start="3289" selection-end="3289" vertical-scroll-proportion="-13.037037" vertical-offset="1738" max-vertical-offset="4636">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tpmanage/js/edit.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="38" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.7889273" vertical-offset="741" max-vertical-offset="5510">
           <folding />
         </state>
       </provider>
