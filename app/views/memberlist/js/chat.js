@@ -12,7 +12,9 @@
 
   $(document).ready(function() {
     fetchmessage();
-    ViewAll();
+    window.focus(function() {
+      return ViewAll();
+    });
     return $("#sendmes").click(function(e) {
       var msg;
       e.preventDefault();
@@ -49,6 +51,7 @@
           }
         }
         timestamp = d[0].timestamp;
+        ViewAll();
         return fetchmessage_update();
       }
     });

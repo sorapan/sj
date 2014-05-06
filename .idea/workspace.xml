@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdce0fef-25ce-48ce-be90-b6d40ba1d997" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberlist/js/chat.coffee" afterPath="$PROJECT_DIR$/app/views/memberlist/js/chat.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberlist/js/chat.js" afterPath="$PROJECT_DIR$/app/views/memberlist/js/chat.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberlist/js/chat.map" afterPath="$PROJECT_DIR$/app/views/memberlist/js/chat.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberlist/index.php" afterPath="$PROJECT_DIR$/app/views/memberlist/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberlist/js/memberlist.coffee" afterPath="$PROJECT_DIR$/app/views/memberlist/js/memberlist.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberlist/js/memberlist.js" afterPath="$PROJECT_DIR$/app/views/memberlist/js/memberlist.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberlist/js/memberlist.map" afterPath="$PROJECT_DIR$/app/views/memberlist/js/memberlist.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/memberlist.php" afterPath="$PROJECT_DIR$/app/controllers/memberlist.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/memberlist_model.php" afterPath="$PROJECT_DIR$/app/models/memberlist_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="patel.iws" />
@@ -35,62 +31,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="chat.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/memberlist/js/chat.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="142" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="758" max-vertical-offset="1349">
-              <folding>
-                <marker date="1399377476599" expanded="false" signature="628:638" placeholder="..." />
-                <marker date="1399377476599" expanded="false" signature="938:948" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="memberlist.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/memberlist/js/memberlist.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="23" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/memberlist/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="50" selection-start="483" selection-end="483" vertical-scroll-proportion="-11.962963" vertical-offset="0" max-vertical-offset="627">
+            <state line="17" column="50" selection-start="483" selection-end="483" vertical-scroll-proportion="-9.62963" vertical-offset="63" max-vertical-offset="627">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="memberlist.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/memberlist.php">
+      <file leaf-file-name="memberlist.coffee" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/memberlist/js/memberlist.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="34" selection-start="2033" selection-end="2040" vertical-scroll-proportion="0.53900707" vertical-offset="1368" max-vertical-offset="3534">
+            <state line="20" column="22" selection-start="364" selection-end="364" vertical-scroll-proportion="0.642978" vertical-offset="0" max-vertical-offset="591">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="memberlist_model.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/memberlist_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="114" selection-start="693" selection-end="693" vertical-scroll-proportion="-14.777778" vertical-offset="171" max-vertical-offset="2185">
-              <folding>
-                <marker date="1399377181706" expanded="true" signature="184:218" placeholder="SELECT * FRO..." />
-                <marker date="1399377181706" expanded="true" signature="393:455" placeholder="UPDATE chatm..." />
-                <marker date="1399377181706" expanded="true" signature="616:706" placeholder="SELECT count..chatmessage..." />
-                <marker date="1399377181706" expanded="true" signature="916:923" placeholder="SELECT * FRO..." />
-                <marker date="1399377181706" expanded="true" signature="916:999" placeholder="SELECT count..chatmessage..." />
-                <marker date="1399377181706" expanded="true" signature="916:997" placeholder="SELECT count..chatmessage..." />
-                <marker date="1399377181706" expanded="true" signature="1190:1296" placeholder="INSERT INTO ..." />
-                <marker date="1399377181706" expanded="true" signature="1640:1749" placeholder="SELECT * FRO..chatmessage..." />
-                <marker date="1399377181706" expanded="true" signature="1995:2112" placeholder="SELECT * FRO..chatmessage..." />
-                <marker date="1399377181706" expanded="true" signature="2363:2404" placeholder="SELECT usern..user..." />
-                <marker date="1399377181706" expanded="true" signature="2625:2680" placeholder="SELECT date ..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -110,9 +64,10 @@
       <list>
         <option value="$PROJECT_DIR$/app/models/memberlist_model.php" />
         <option value="$PROJECT_DIR$/app/views/memberlist/index.php" />
+        <option value="$PROJECT_DIR$/app/views/memberlist/js/memberlist.js" />
         <option value="$PROJECT_DIR$/app/views/memberlist/js/chat.coffee" />
-        <option value="$PROJECT_DIR$/app/views/memberlist/js/memberlist.coffee" />
         <option value="$PROJECT_DIR$/app/controllers/memberlist.php" />
+        <option value="$PROJECT_DIR$/app/views/memberlist/js/memberlist.coffee" />
       </list>
     </option>
   </component>
@@ -232,23 +187,9 @@
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="memberlist.coffee" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -265,7 +206,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="memberlist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -304,7 +267,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -349,8 +312,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1178">
           <folding>
-            <marker date="1399377476599" expanded="false" signature="628:638" placeholder="..." />
-            <marker date="1399377476599" expanded="false" signature="938:948" placeholder="..." />
+            <marker date="1399379694023" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1399379694023" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -380,17 +343,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="29" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1786">
           <folding>
-            <marker date="1399377181706" expanded="true" signature="184:218" placeholder="SELECT * FRO..." />
-            <marker date="1399377181706" expanded="true" signature="393:455" placeholder="UPDATE chatm..." />
-            <marker date="1399377181706" expanded="true" signature="616:706" placeholder="SELECT count..chatmessage..." />
-            <marker date="1399377181706" expanded="true" signature="916:923" placeholder="SELECT * FRO..." />
-            <marker date="1399377181706" expanded="true" signature="916:999" placeholder="SELECT count..chatmessage..." />
-            <marker date="1399377181706" expanded="true" signature="916:997" placeholder="SELECT count..chatmessage..." />
-            <marker date="1399377181706" expanded="true" signature="1190:1296" placeholder="INSERT INTO ..." />
-            <marker date="1399377181706" expanded="true" signature="1640:1749" placeholder="SELECT * FRO..chatmessage..." />
-            <marker date="1399377181706" expanded="true" signature="1995:2112" placeholder="SELECT * FRO..chatmessage..." />
-            <marker date="1399377181706" expanded="true" signature="2363:2404" placeholder="SELECT usern..user..." />
-            <marker date="1399377181706" expanded="true" signature="2625:2680" placeholder="SELECT date ..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="UPDATE chatm..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT count..chatmessage..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT count..chatmessage..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT count..chatmessage..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..chatmessage..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..chatmessage..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT usern..user..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT date ..." />
           </folding>
         </state>
       </provider>
@@ -400,6 +363,49 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/memberlist_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="114" selection-start="693" selection-end="693" vertical-scroll-proportion="0.7241379" vertical-offset="171" max-vertical-offset="2185">
+          <folding>
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="UPDATE chatm..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT count..chatmessage..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT count..chatmessage..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT count..chatmessage..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..chatmessage..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..chatmessage..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT usern..user..." />
+            <marker date="1399377181706" expanded="true" signature="-1:-1" placeholder="SELECT date ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/memberlist/js/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1805">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/memberlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="9" selection-start="2175" selection-end="2175" vertical-scroll-proportion="0.8421986" vertical-offset="1273" max-vertical-offset="3534">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/memberlist/js/chat.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="17" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="758" max-vertical-offset="1406">
+          <folding>
+            <marker date="1399379694023" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1399379694023" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/memberlist/chat.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591">
@@ -407,52 +413,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/memberlist_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="114" selection-start="693" selection-end="693" vertical-scroll-proportion="-14.777778" vertical-offset="171" max-vertical-offset="2185">
-          <folding>
-            <marker date="1399377181706" expanded="true" signature="184:218" placeholder="SELECT * FRO..." />
-            <marker date="1399377181706" expanded="true" signature="393:455" placeholder="UPDATE chatm..." />
-            <marker date="1399377181706" expanded="true" signature="616:706" placeholder="SELECT count..chatmessage..." />
-            <marker date="1399377181706" expanded="true" signature="916:923" placeholder="SELECT * FRO..." />
-            <marker date="1399377181706" expanded="true" signature="916:999" placeholder="SELECT count..chatmessage..." />
-            <marker date="1399377181706" expanded="true" signature="916:997" placeholder="SELECT count..chatmessage..." />
-            <marker date="1399377181706" expanded="true" signature="1190:1296" placeholder="INSERT INTO ..." />
-            <marker date="1399377181706" expanded="true" signature="1640:1749" placeholder="SELECT * FRO..chatmessage..." />
-            <marker date="1399377181706" expanded="true" signature="1995:2112" placeholder="SELECT * FRO..chatmessage..." />
-            <marker date="1399377181706" expanded="true" signature="2363:2404" placeholder="SELECT usern..user..." />
-            <marker date="1399377181706" expanded="true" signature="2625:2680" placeholder="SELECT date ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/memberlist/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="50" selection-start="483" selection-end="483" vertical-scroll-proportion="-11.962963" vertical-offset="0" max-vertical-offset="627">
+        <state line="17" column="50" selection-start="483" selection-end="483" vertical-scroll-proportion="-9.62963" vertical-offset="63" max-vertical-offset="627">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/memberlist/js/chat.coffee">
+    <entry file="file://$PROJECT_DIR$/app/views/memberlist/js/memberlist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="142" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="587" max-vertical-offset="1349">
-          <folding>
-            <marker date="1399377476599" expanded="false" signature="628:638" placeholder="..." />
-            <marker date="1399377476599" expanded="false" signature="938:948" placeholder="..." />
-          </folding>
+        <state line="14" column="11" selection-start="345" selection-end="354" vertical-scroll-proportion="0.4500846" vertical-offset="0" max-vertical-offset="855">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/memberlist/js/memberlist.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="23" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/memberlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="34" selection-start="2033" selection-end="2040" vertical-scroll-proportion="0.53900707" vertical-offset="1368" max-vertical-offset="3534">
+        <state line="20" column="22" selection-start="364" selection-end="364" vertical-scroll-proportion="0.642978" vertical-offset="0" max-vertical-offset="591">
           <folding />
         </state>
       </provider>

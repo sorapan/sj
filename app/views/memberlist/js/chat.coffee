@@ -8,7 +8,10 @@ timestamp = null
 $(document).ready ()->
 
 	fetchmessage()
-	ViewAll()
+
+	window.focus ()->
+		ViewAll()
+
 	$("#sendmes").click (e)->
 		e.preventDefault()
 		msg = $("#ip").val()
@@ -36,6 +39,7 @@ fetchmessage = ()->
 				for i of d
 					$('#op').append d[i].sender+" : "+d[i].msg+" <span style=\"color:grey\">"+d[i].date+"</span><br>"
 			timestamp = d[0].timestamp
+			ViewAll()
 			fetchmessage_update()
 
 fetchmessage_update = ()->
@@ -53,7 +57,6 @@ fetchmessage_update = ()->
 			timestamp = d.timestamp
 
 		complete : ()->
-
 			ViewAll()
 			fetchmessage_update()
 
