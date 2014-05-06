@@ -31,6 +31,7 @@ class post extends Controller{
         $data = array(
             'header' => $_POST['header'],
             'note' => $_POST['note'],
+            'detail' => $_POST['detail'],
             'userid' => Session::get('user_id')
         );
         self::CallModel()->PushData($data);

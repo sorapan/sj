@@ -76,6 +76,8 @@
     width: 100%;
     margin-bottom: 10px;
     position: relative; }
+    #content .reply a {
+      text-decoration: none; }
     #content .reply .tp_edit, #content .reply .tp_del {
       color: indianred;
       padding: 0 5px 0 5px;
