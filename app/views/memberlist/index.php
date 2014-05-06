@@ -3,7 +3,8 @@
     <table id="mbl_table">
     <tr>
         <th>Username</th>
-        <th>Chat</th>
+        <th>แชท</th>
+        <th>ข้อความใหม่</th>
     </tr>
 <?php
 
@@ -14,6 +15,7 @@
             echo '<tr>';
             echo '<td>'.$list['username'].'</td>';
             echo '<td><a class="chatlink" href="'.URL.'memberlist/chat/'.$list['id'].'">click</a></td>';
+            echo '<td><span id="'.$list['id'].'">0</span></td>';
             echo '</tr>';
 
         }

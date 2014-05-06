@@ -41,6 +41,68 @@ class memberlist extends Controller{
 
     }
 
+    function unreadNopoll(){
+
+        Session::init();
+        $userid = Session::get('user_id');
+        $res = array();
+        $member = self::CallModel()->fetchMemberlist();
+        foreach ($member as $m){
+            if($m['id'] != $userid){
+                $a = self::CallModel()->getunread($m['id'],$userid);
+                $res[$m['id']] = $a[0];
+            }
+        }
+        echo json_encode($res);
+
+
+    }
+
+    function unread(){
+
+        Session::init();
+        $userid = Session::get('user_id');
+        Session::init();
+        $countunread = self::CallModel()->countUnread($userid);
+        session_write_close();
+        ini_set('max_execution_time', 31);
+        $timeout = 260; //300
+
+        while($timeout > 0){
+            if($countunread[0] == 0){
+
+                $timeout--;
+                $countunread = self::CallModel()->countUnread($userid);
+                clearstatcache();
+                flush();
+                usleep(100000);
+
+            }else{
+                break;
+            }
+        }
+
+
+        $res = array();
+        $member = self::CallModel()->fetchMemberlist();
+        foreach ($member as $m){
+            if($m['id'] != $userid){
+                $a = self::CallModel()->getunread($m['id'],$userid);
+                $res[$m['id']] = $a[0];
+            }
+        }
+        if($timeout > 0) echo json_encode($res);
+        Session::init();
+
+    }
+
+    function SetViewAll(){
+
+        Session::init();
+        self::CallModel()->SetViewAll(Session::get('user_id'));
+
+    }
+
     function polling(){
 
         session_write_close();
@@ -69,7 +131,6 @@ class memberlist extends Controller{
             else echo $this->data_last();
 
         }
-
         Session::init();
 
     }

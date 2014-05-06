@@ -8,6 +8,7 @@ timestamp = null
 $(document).ready ()->
 
 	fetchmessage()
+	ViewAll()
 	$("#sendmes").click (e)->
 		e.preventDefault()
 		msg = $("#ip").val()
@@ -53,4 +54,12 @@ fetchmessage_update = ()->
 
 		complete : ()->
 
+			ViewAll()
 			fetchmessage_update()
+
+ViewAll = ()->
+	$.ajax
+		url:'../SetViewAll'
+		type:'POST'
+
+

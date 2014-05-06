@@ -17,6 +17,37 @@ class memberlist_model extends Model{
 
     }
 
+    function SetViewAll($receiver){
+
+        $query = $this->db->prepare('UPDATE chatmessage SET viewed = "Y" WHERE receiver = :receiver');
+        $query->execute(array(
+            ':receiver' => $receiver
+        ));
+
+    }
+
+    function getunread($s,$r){
+
+        $query = $this->db->prepare('SELECT count(viewed) FROM chatmessage WHERE sender = :s AND receiver = :r AND viewed = "N"');
+        $query->execute(array(
+            ':s' => $s,
+            ':r' => $r
+        ));
+        return $query->fetch();
+
+
+    }
+
+    function countUnread($receiver){
+
+        $query = $this->db->prepare('SELECT count(viewed) FROM chatmessage WHERE receiver = :receiver AND viewed = "N"');
+        $query->execute(array(
+            'receiver' => $receiver
+        ));
+        return $query->fetch();
+
+    }
+
     function getMessage($data){
 
         $query = $this->db->prepare('INSERT INTO `chatmessage` (`message`,`date`,`sender`,`receiver`) VALUES (:message,:date,:sender,:receiver)');
