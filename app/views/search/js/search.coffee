@@ -13,6 +13,11 @@ $(document).on 'change','.radio',()->
 		choice = "deatail"
 		search()
 
+$(document).on 'click','#x_btn', (e)->
+	e.preventDefault()
+	$("#search").val("")
+	$('#result').html ''
+
 
 search = ()->
 	$.ajax

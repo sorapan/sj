@@ -3,6 +3,13 @@
   height: 60px;
   width: 100%;
   background-color: #5a5a5a; }
+  #nav #x_btn {
+    margin-left: -4px;
+    border: 1px solid #969696;
+    background-color: white;
+    color: #969696;
+    height: 33px;
+    cursor: pointer; }
 
 #search_ip {
   line-height: 60px;
@@ -12,7 +19,7 @@
   #search_ip input {
     border: 0;
     width: 240px;
-    height: 20px; }
+    height: 30px; }
 
 #choice {
   color: white;

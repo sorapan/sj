@@ -2,7 +2,7 @@
     <a href="<?php echo URL?>" style="color:white;margin-left: 20px">หน้าหลัก</a>
     <span id="search_ip">
         <label for="search">ค้นหา : </label><input type="text" id="search">
-        <button>Search</button>
+        <button id="x_btn">X</button>
     </span>
     <span id="choice">
         ค้นหาจาก

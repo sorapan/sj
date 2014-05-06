@@ -18,6 +18,12 @@
     }
   });
 
+  $(document).on('click', '#x_btn', function(e) {
+    e.preventDefault();
+    $("#search").val("");
+    return $('#result').html('');
+  });
+
   search = function() {
     return $.ajax({
       url: 'search/fetch',
