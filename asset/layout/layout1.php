@@ -4,6 +4,8 @@
     <title>สงขลาเจริญการช่าง</title>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
+    <link rel="shortcut icon" type="image/jpeg" href="<?php echo URL ?>asset/img/sj2.jpg"/>
+
     <link rel="stylesheet" href="<?php echo URL ?>asset/css/reset.css">
     <link rel="stylesheet" href="<?php echo URL ?>asset/css/fontface.css">
     <link rel="stylesheet" href="<?php echo URL ?>asset/a_layout1/css/style_layout1.css">
