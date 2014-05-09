@@ -4,7 +4,6 @@ $(function(){
     var timestamp = null;
     var firsttimeFetch = 1;
 
-
     $(document).on('click',".tp_del",function(){
 
         var a = confirm('คุณแน่ใจที่จะลบกระทู้ใช่หรือไม่');
@@ -16,31 +15,25 @@ $(function(){
     $(document).on('click',".tp_edit",function(){
 
         var a = confirm('คุณแน่ใจที่จะแก้ไขกระทู้ใช่หรือไม่');
-        if(a) return true;
-        else return false;
+        if(!a) return false;
+
 
     });
 
     Cycle();
     function Cycle(){
 
-        $.ajax({
+        ajx = $.ajax({
             url:"index/fetchMessage",
             type:"POST",
             data:{
                 timestamp:timestamp,
-                firsttimeFetch:firsttimeFetch
+                firsttimeFetch:firsttimeFetch,
             },
             dataType:"JSON",
             success: function(data){
 
                 for(i=0 ; i<data.msg.length ; i++){
-//                    $.rb_Reply({
-//                        date : data.last_update[i],
-//                        header : data.hdr[i],
-//                        message : data.msg[i],
-//                        url : "http://patel/topic/id/"+data.topicID[i]
-//                    },"ap");
 
                     $.rb_Reply({
                         status: data.status[i],
@@ -66,12 +59,12 @@ $(function(){
 
     function CycleUpdate(){
 
-        $.ajax({
+        ajx = $.ajax({
             url:"index/fetchMessage",
             type:"POST",
             data:{
                 timestamp:timestamp,
-                firsttimeFetch:firsttimeFetch
+                firsttimeFetch:firsttimeFetch,
             },
             dataType:"JSON",
             success: function(data){
@@ -96,16 +89,32 @@ $(function(){
         });
     }
 
-    function ifimg(){
+    function nonCycle(){
 
-        return $(this).remove();
+            $.ajax({
+            url:"index/fetchMessagenonLoop",
+            type:"POST",
+            data:{
+                show:fig
+            },
+            dataType:"JSON",
+            success: function(data){
 
-    }
+                $.rb_Reply({
+                    status: data.status,
+                    header: data.hdr,
+                    user: data.user,
+                    date: data.date,
+                    detail: data.detail,
+                    last_update: data.last_update,
+                    topicid: data.topicID,
+                    verify: data.verify
+                },"pre");
 
-    function ifOne($num){
-
-        if($num != "1") return $num;
-        else return "";
+                timestamp = parseInt(data.now_time);
+                firsttimeFetch = data.firsttimeFetch;
+            }
+        });
 
     }
 

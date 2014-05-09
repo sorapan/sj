@@ -32,6 +32,9 @@ class login_model extends Model{
 
         }else{
 
+
+            Session::init();
+            Session::set('logmes', 'Login ผิดพลาด');
             header("location: ".URL."login");
 
         }

@@ -14,7 +14,8 @@ class index extends Controller{
             "index/js/Content.js",
             "index/js/Loadmore.js",
             "index/js/tp_plugin.js",
-            "index/js/PageController.js");
+            "index/js/PageController.js"
+        );
 
     }
 

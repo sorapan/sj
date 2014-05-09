@@ -11,7 +11,6 @@ class index_model extends Model{
     function fetchMessage(){
 
         $data = array();
-
         $query = $this->db->prepare("Select * From `post` Order By `last_update` DESC Limit 5 Offset 0");
         $query->execute();
         $row = $query->fetchAll();
@@ -34,18 +33,20 @@ class index_model extends Model{
         $data['now_time'] = $this->TimeStamp();
         $data['firsttimeFetch'] = 0;
         return json_encode($data);
+//        echo "\nPDO::errorInfo():\n";
+//        print_r($query->errorInfo());
 //        echo $data['carimg'][0][0][0];
 
     }
 
+
     function fetchMessage_Last(){
 
         $data = array();
-
         $query = $this->db->prepare("Select * From `post` Order By `last_update` DESC");
         $query->execute();
         $row = $query->fetchAll();
-        $data["date"]= date('d/m/Y - h:i A',(int)$row[0]['date']);
+        $data["date"]= date('d/m/Y - h:i A',(int)$row['date']);
         $data["last_update"] = date('d/m/Y - h:i A',(int)$row[0]['last_update']);
         $data["msg"] = $row[0]['note'];
         $data["hdr"] = $row[0]['header'];

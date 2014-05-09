@@ -5,7 +5,7 @@
         background-color: gold;
     }
     .res{
-        color: black;
+        color: white;
     }
 </style>
 

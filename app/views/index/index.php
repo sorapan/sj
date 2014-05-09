@@ -2,7 +2,9 @@
     $(".tp_del").click(function(){
 
         var a = confirm('คุณแน่ใจที่จะลบกระทู้ใช่หรือไม่');
-        if(a){return true;
+        if(a){
+
+        }
         else return false;
 
     });

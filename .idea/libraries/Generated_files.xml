@@ -2,15 +2,16 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/app/views/post_update/js/post_update.js" />
-        <item url="file://$PROJECT_DIR$/app/views/post/js/upload_img2.js" />
-        <item url="file://$PROJECT_DIR$/app/views/index/js/tp_plugin.js" />
-        <item url="file://$PROJECT_DIR$/app/views/topic/js/topic_control.js" />
-        <item url="file://$PROJECT_DIR$/app/views/search/js/search.js" />
-        <item url="file://$PROJECT_DIR$/app/views/tpmanage/js/edit.js" />
-        <item url="file://$PROJECT_DIR$/app/views/users/js/users_pagecontrol.js" />
         <item url="file://$PROJECT_DIR$/app/views/memberlist/js/memberlist.js" />
+        <item url="file://$PROJECT_DIR$/app/views/tpmanage/js/edit.js" />
+        <item url="file://$PROJECT_DIR$/app/views/index/js/tp_plugin.js" />
         <item url="file://$PROJECT_DIR$/app/views/memberlist/js/chat.js" />
+        <item url="file://$PROJECT_DIR$/app/views/post_update/js/post_update.js" />
+        <item url="file://$PROJECT_DIR$/app/views/index/js/content2.js" />
+        <item url="file://$PROJECT_DIR$/app/views/topic/js/topic_control.js" />
+        <item url="file://$PROJECT_DIR$/app/views/post/js/upload_img2.js" />
+        <item url="file://$PROJECT_DIR$/app/views/users/js/users_pagecontrol.js" />
+        <item url="file://$PROJECT_DIR$/app/views/search/js/search.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -19,15 +20,16 @@
       <root url="file://$PROJECT_DIR$/app/views/tpmanage/js/upload_img2.js" />
       <root url="file://$PROJECT_DIR$/app/views/tpmanage/js/upload_img2.js" />
       <root url="file://$PROJECT_DIR$/app/views/index/js/topic_plugin.js" />
-      <root url="file://$PROJECT_DIR$/app/views/post_update/js/post_update.js" />
-      <root url="file://$PROJECT_DIR$/app/views/post/js/upload_img2.js" />
-      <root url="file://$PROJECT_DIR$/app/views/topic/js/topic_control.js" />
-      <root url="file://$PROJECT_DIR$/app/views/index/js/tp_plugin.js" />
-      <root url="file://$PROJECT_DIR$/app/views/search/js/search.js" />
-      <root url="file://$PROJECT_DIR$/app/views/tpmanage/js/edit.js" />
-      <root url="file://$PROJECT_DIR$/app/views/users/js/users_pagecontrol.js" />
       <root url="file://$PROJECT_DIR$/app/views/memberlist/js/memberlist.js" />
+      <root url="file://$PROJECT_DIR$/app/views/tpmanage/js/edit.js" />
       <root url="file://$PROJECT_DIR$/app/views/memberlist/js/chat.js" />
+      <root url="file://$PROJECT_DIR$/app/views/index/js/tp_plugin.js" />
+      <root url="file://$PROJECT_DIR$/app/views/post_update/js/post_update.js" />
+      <root url="file://$PROJECT_DIR$/app/views/topic/js/topic_control.js" />
+      <root url="file://$PROJECT_DIR$/app/views/index/js/content2.js" />
+      <root url="file://$PROJECT_DIR$/app/views/post/js/upload_img2.js" />
+      <root url="file://$PROJECT_DIR$/app/views/users/js/users_pagecontrol.js" />
+      <root url="file://$PROJECT_DIR$/app/views/search/js/search.js" />
     </CLASSES>
     <SOURCES />
   </library>

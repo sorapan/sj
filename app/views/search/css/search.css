@@ -10,6 +10,8 @@
     color: #969696;
     height: 33px;
     cursor: pointer; }
+  #nav #var {
+    width: 200px; }
 
 #search_ip {
   line-height: 60px;

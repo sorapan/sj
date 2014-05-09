@@ -19,8 +19,12 @@ class users extends Controller{
 
     function index(){
 
-        $this->view->data = self::CallModel()->index();
-        $this->view->render("users/index");
+        if(Session::get('role')=="user"){
+            header("location:".URL."error/d9");
+        }else{
+            $this->view->data = self::CallModel()->index();
+            $this->view->render("users/index");
+        }
 
     }
 

@@ -2,7 +2,7 @@
 
     <table id="mbl_table">
     <tr>
-        <th>Username</th>
+        <th>ชื่อผู้ใช้งาน</th>
         <th>แชท</th>
         <th>ข้อความใหม่</th>
     </tr>
