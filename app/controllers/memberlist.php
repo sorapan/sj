@@ -5,6 +5,10 @@ class memberlist extends Controller{
     function __construct(){
 
         parent::__construct();
+
+        Session::init();
+        Session::checkLogin();
+
         $this->view->js = array(
             'memberlist/js/memberlist.js',
             'memberlist/js/chat.js',

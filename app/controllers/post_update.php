@@ -5,7 +5,10 @@ class post_update extends Controller{
     function __construct() {
 
         parent::__construct();
+
         Session::init();
+        Session::checkLogin();
+
         Session::set('sayhi', 0);
         $this->view->css = array("post_update/css/post_update.css");
         $this->view->js = array("post_update/js/post_update.js");

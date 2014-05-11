@@ -5,6 +5,10 @@ class topic extends Controller{
     function __construct(){
 
         parent::__construct();
+
+        Session::init();
+        Session::checkLogin();
+
         $this->view->css = array("topic/css/topic_style.css");
         $this->view->js = array("topic/js/topic_control.js");
 

@@ -5,6 +5,10 @@ class search extends Controller{
     function __construct(){
 
         parent::__construct();
+
+        Session::init();
+        Session::checkLogin();
+
         $this->view->css = array(
             'search/css/search.css'
         );

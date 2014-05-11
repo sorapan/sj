@@ -5,7 +5,10 @@ class post extends Controller{
     function __construct() {
 
         parent::__construct();
+
         Session::init();
+        Session::checkLogin();
+
         Session::set('sayhi', 0);
 //        Session::checkLogin();
 

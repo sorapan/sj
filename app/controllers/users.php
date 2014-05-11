@@ -6,6 +6,9 @@ class users extends Controller{
 
         parent::__construct();
 
+        Session::init();
+        Session::checkLogin();
+
         $this->view->css = array(
             "users/css/users_style.css",
             "users/css/create.css",

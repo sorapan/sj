@@ -5,6 +5,10 @@ class profile extends Controller{
     function __construct(){
 
         parent::__construct();
+
+        Session::init();
+        Session::checkLogin();
+
         $this->view->css = array("profile/css/minibox.css");
 
     }
