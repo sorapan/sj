@@ -22,7 +22,14 @@ class search extends Controller{
 
     function fetch(){
 
-        $res = self::CallModel()->fetch($_POST['word'],$_POST['choice']);
+        if($_POST['choice'] == "all") $choi = " ";
+        else $choi = "AND ".$_POST['choice']." LIKE '%".$_POST['word']."%'";
+
+        if($_POST['veri'] == "all") $veri = "IN ('N','Y')";
+        else if($_POST['veri'] == "no") $veri = "= 'N' ";
+        else if($_POST['veri'] == "yes") $veri = "= 'Y' ";
+
+        $res = self::CallModel()->fetch($choi,$veri);
         echo json_encode($res);
 
     }

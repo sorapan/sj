@@ -53,11 +53,11 @@
 
 /* ---------------------Content--------------------- */
 #blog_content {
-  margin-left: 20%;
+  margin-left: 18%;
   position: inherit;
   float: left;
   background-color: transparent;
-  width: 700px;
+  width: 660px;
   min-height: 25%;
   height: auto; }
 

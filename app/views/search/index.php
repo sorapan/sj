@@ -5,13 +5,18 @@
         <button id="x_btn">X</button>
     </span>
     <span id="choice">
-        ค้นหาจาก
+        ค้นหาจาก :
         <select id="var">
             <option value="header">ป้ายทะเบียน</option>
             <option value="detail">รายละเอียด</option>
+            <option value="all">แสดงทั้งหมด</option>
         </select>
-        <input checked type="radio" name="aa" value="header" class="radio" id="header"><label for="header"> : ป้ายทะเบียน</label>
-        <input type="radio" name="aa" value="detail" class="radio" id="detail"><label for="detail"> : รายละเอียด</label>
+         แสดงกระทู้ :
+        <select id="veri">
+            <option value="all">แสดงทั้งหมด</option>
+            <option value="no">แสดงกระทู้ที่ยังไม่เสร็จ</option>
+            <option value="yes">แสดงกระทู้ที่เสร็จแล้ว</option>
+        </select>
     </span>
 </div>
 <div id="result">
