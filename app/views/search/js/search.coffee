@@ -1,7 +1,6 @@
 
 
 choice = "header"
-val = "header"
 
 $(document).on 'keyup','#search',()->
 	search()
@@ -13,10 +12,6 @@ $(document).on 'change','.radio',()->
 	else
 		choice = "deatail"
 		search()
-
-$(document).on 'change','#var',()->
-	val = $(this).val()
-	search()
 
 $(document).on 'click','#x_btn', (e)->
 	e.preventDefault()
