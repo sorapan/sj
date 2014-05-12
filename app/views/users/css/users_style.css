@@ -5,13 +5,14 @@
   #bigbox #menu {
     position: fixed;
     height: 100%;
-    background-color: #b4b4b4; }
+    background-color: #b4b4b4;
+    margin-left: 8%; }
   #bigbox #content {
-    margin: 20px 0 0 250px; }
+    margin: 20px 0 0 40%; }
 
 #usertable tr, #usertable td, #usertable th {
   border: 1px solid #5a5a5a;
-  width: 180px; }
+  width: 100px; }
 #usertable th {
   background-color: #5a5a5a;
   color: white; }
