@@ -66,7 +66,7 @@ class tpmanage_model extends Model{
 
     function UpdateData($data,$topicid){
 
-        $query = $this->db->prepare("UPDATE post SET header=:header,note=:note,detail=:detail,note2=:note2,note3=:note3 WHERE topicID = :topicid");
+        $query = $this->db->prepare("UPDATE post SET header=:header,note=:note,detail=:detail,note2=:note2,note3=:note3,last_update=:lastupdate WHERE topicID = :topicid");
 
         $query->execute(array(
             ':header' => $data['header'],
@@ -74,7 +74,8 @@ class tpmanage_model extends Model{
             ':detail' => $data['detail'],
             ':note2' => $data['note2'],
             ':note3' => $data['note3'],
-            ':topicid' => $topicid
+            ':topicid' => $topicid,
+            ':lastupdate' => time()
         ));
 
 
