@@ -1,4 +1,4 @@
-<div style="margin: 30px">
+<div style="margin: 5% 0 0 20%">
 
     <table id="mbl_table">
     <tr>
