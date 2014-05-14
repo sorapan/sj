@@ -13,16 +13,25 @@
 			topicid: ""
 		, a)
 
-		if data.status == "1" then color = 'green'
-		else if data.status == "2" then color = 'blue'
-		else if data.status == "3" then color = 'red'
+		if data.status == "1"
+			color = 'green'
+			statusmes = "เริ่มซ่อม"
+		else if data.status == "2"
+			color = 'blue'
+			statusmes = "ระหว่างซ่อม"
+		else if data.status == "3"
+			color = 'red'
+			statusmes = "ซ๋อมเสร็จแล้ว"
+			if data.verify == 'Y'
+				color = 'gold'
+				statusmes = "เสร็จสมบูรณ์"
 
 		if data.verify == "Y" then vrfy = '<span style="color:green">เสร็จสิ้น</span>'
 		else if data.verify == "N" then vrfy = '<span style="color:red">กำลังดำเนินงาน</span>'
 
 		topic = '<div class="reply">'+
 		'<a href="tpmanage/edit/'+data.topicid+'" class="tp_edit">แก้ไข</a><a href="tpmanage/del/'+data.topicid+'" class="tp_del">ลบ</a>'+
-		'<span style="background-color:'+color+'" class="rep_status">'+data.status+'</span>'+
+		'<span style="background-color:'+color+'" class="rep_status">'+statusmes+'</span>'+
 		'<span class="head">'+data.header+'</span><br><br>'+
 		'<a href="topic/id/'+data.topicid+'"><div>'+
 		'<span class="descrip">รายละเอียด : </span>'+data.detail+'<br>'+

@@ -2,6 +2,26 @@ $(function(){
 
     CheckUrlNButtonValue();
 
+    $(document).on('click',".show_upload,.show_car_upload,.doc",function(){
+
+        window.scrollTo(0, 0);
+        $("#showpic").html('<img src="'+$(this).attr('src')+'">');
+        $("#showpic").css({
+            'display':'block',
+        });
+        $("#modal").show();
+        $("#closepic").show();
+
+    });
+
+    $(document).on('click',"#closepic",function(){
+
+        $("#showpic").hide();
+        $("#modal").hide();
+        $("#closepic").hide();
+
+    });
+
     function CheckUrlNButtonValue(){
 
         var str=location.href.toLowerCase();

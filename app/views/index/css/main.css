@@ -99,7 +99,7 @@
     #content .reply .rep_status {
       position: absolute;
       margin: 0;
-      width: 24px;
+      width: 160px;
       height: 24px;
       line-height: 24px;
       text-align: center;
@@ -111,7 +111,7 @@
       float: right;
       position: relative; }
     #content .reply .head {
-      text-indent: 40px;
+      text-indent: 200px;
       color: #373737;
       background-color: #f0f0ff;
       position: absolute;

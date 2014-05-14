@@ -31,6 +31,9 @@
 
 </head>
 <body>
+<div id="showpic"></div>
+<div id="modal"></div>
+<span id="closepic">ปิดหน้าต่าง</span>
 
 <!--<div id="header">-->
 <!--    <div id="sign"><img src="--><?php //echo URL ?><!--asset/img/logo.jpg"></div>-->

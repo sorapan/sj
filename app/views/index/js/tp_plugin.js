@@ -3,7 +3,7 @@
   (function($) {
     var PreventHtmlTag;
     $.rb_Reply = function(a, q) {
-      var aptemplate, color, data, pretemplate, topic, vrfy;
+      var aptemplate, color, data, pretemplate, statusmes, topic, vrfy;
       data = $.extend({
         status: "",
         header: "",
@@ -16,17 +16,24 @@
       }, a);
       if (data.status === "1") {
         color = 'green';
+        statusmes = "เริ่มซ่อม";
       } else if (data.status === "2") {
         color = 'blue';
+        statusmes = "ระหว่างซ่อม";
       } else if (data.status === "3") {
         color = 'red';
+        statusmes = "ซ๋อมเสร็จแล้ว";
+        if (data.verify === 'Y') {
+          color = 'gold';
+          statusmes = "เสร็จสมบูรณ์";
+        }
       }
       if (data.verify === "Y") {
         vrfy = '<span style="color:green">เสร็จสิ้น</span>';
       } else if (data.verify === "N") {
         vrfy = '<span style="color:red">กำลังดำเนินงาน</span>';
       }
-      topic = '<div class="reply">' + '<a href="tpmanage/edit/' + data.topicid + '" class="tp_edit">แก้ไข</a><a href="tpmanage/del/' + data.topicid + '" class="tp_del">ลบ</a>' + '<span style="background-color:' + color + '" class="rep_status">' + data.status + '</span>' + '<span class="head">' + data.header + '</span><br><br>' + '<a href="topic/id/' + data.topicid + '"><div>' + '<span class="descrip">รายละเอียด : </span>' + data.detail + '<br>' + '<span class="descrip">สร้างโดย : </span>' + data.user + '<br>' + '<span class="descrip">อัพเดทล่าสุด : </span>' + data.last_update + '' + '<span class="descrip2">สถานะ : ' + vrfy + '</span><br>' + '<span class="descrip">วันที่สร้าง : </span>' + data.date + '<br><br>' + '</div></a></div>';
+      topic = '<div class="reply">' + '<a href="tpmanage/edit/' + data.topicid + '" class="tp_edit">แก้ไข</a><a href="tpmanage/del/' + data.topicid + '" class="tp_del">ลบ</a>' + '<span style="background-color:' + color + '" class="rep_status">' + statusmes + '</span>' + '<span class="head">' + data.header + '</span><br><br>' + '<a href="topic/id/' + data.topicid + '"><div>' + '<span class="descrip">รายละเอียด : </span>' + data.detail + '<br>' + '<span class="descrip">สร้างโดย : </span>' + data.user + '<br>' + '<span class="descrip">อัพเดทล่าสุด : </span>' + data.last_update + '' + '<span class="descrip2">สถานะ : ' + vrfy + '</span><br>' + '<span class="descrip">วันที่สร้าง : </span>' + data.date + '<br><br>' + '</div></a></div>';
       aptemplate = function() {
         return $("#content").append(topic);
       };
