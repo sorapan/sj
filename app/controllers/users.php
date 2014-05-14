@@ -82,14 +82,26 @@ class users extends Controller{
 
     function insert(){
 
-        $data = array(
-            "username" => $_POST['username'],
-            "password" => $_POST['password'],
-            "class" => $_POST['class']
-        );
-
-        self::CallModel()->insert($data);
-        header("location:".URL."users");
+        $res ="fuck";
+        $username = $this->CallModel()->fetchUsername();
+        foreach($username as $user){
+            if($user[0] != $_POST['username']){
+                $res="godlikeme";
+            }else{
+                $res="fuck";
+                break;
+            }
+        }
+        if($res=="godlikeme"){
+            $data = array(
+                "username" => $_POST['username'],
+                "password" => $_POST['password'],
+                "class" => $_POST['class']
+            );
+            self::CallModel()->insert($data);
+    //        header("location:".URL."users");
+        }
+        echo $res;
 
     }
 

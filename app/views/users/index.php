@@ -17,14 +17,31 @@
             <th>Tools</th>
             </tr>
             <?php
+            Session::init();
                 foreach($this->data as $key=>$val){
-                    echo"<tr>";
-                    echo"<td>".$val['id']."</td>";
-                    echo"<td>".$val['username']."</td>";
-                    echo"<td>".$val['class']."</td>";
-                    echo"<td><span><a class='edit' href='".URL."users/edit/".$val['id']."'>แก้ไข</a> | ";
-                    echo"<a class='del' href='".URL."users/delete/".$val['id']."'>ลบ</a></span></td>";
-                    echo"</tr>";
+                    if(Session::get('role')=='owner'){
+                        echo"<tr>";
+                        echo"<td>".$val['id']."</td>";
+                        echo"<td>".$val['username']."</td>";
+                        echo"<td>".$val['class']."</td>";
+                        echo"<td><span><a class='edit' href='".URL."users/edit/".$val['id']."'>แก้ไข</a> | ";
+                        if(Session::get('user_id') != $val['id']){
+                            echo"<a class='del' href='".URL."users/delete/".$val['id']."'>ลบ</a></span></td>";
+                        }
+                        echo"</tr>";
+                    }else if(Session::get('role')!='owner'){
+                        if($val['class'] != 'owner'){
+                            echo"<tr>";
+                            echo"<td>".$val['id']."</td>";
+                            echo"<td>".$val['username']."</td>";
+                            echo"<td>".$val['class']."</td>";
+                            echo"<td><span><a class='edit' href='".URL."users/edit/".$val['id']."'>แก้ไข</a> | ";
+                            if(Session::get('user_id') != $val['id']){
+                                echo"<a class='del' href='".URL."users/delete/".$val['id']."'>ลบ</a></span></td>";
+                            }
+                            echo"</tr>";
+                        }
+                    }
                 }
             ?>
         </table>

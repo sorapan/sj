@@ -18,6 +18,14 @@ class users_model extends Model{
 
     }
 
+    function fetchUsername(){
+
+        $query = $this->db->prepare("SELECT username FROM user");
+        $query->execute();
+        return $query->fetchAll();
+
+    }
+
     function Backup(){
 
         $name = date("Y-m-d-H-i-s");

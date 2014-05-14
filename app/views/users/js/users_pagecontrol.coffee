@@ -40,4 +40,7 @@ $(document).ready ()->
 				password:$('#pass').val()
 				class:$('#role').val()
 			success: (d)->
-				location.reload();
+				if d == "fuck"
+					alert "ชื่อผู้ใช้ซ้ำครับ"
+				else
+					location.reload();

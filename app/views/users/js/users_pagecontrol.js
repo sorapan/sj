@@ -46,7 +46,11 @@
           "class": $('#role').val()
         },
         success: function(d) {
-          return location.reload();
+          if (d === "fuck") {
+            return alert("ชื่อผู้ใช้ซ้ำครับ");
+          } else {
+            return location.reload();
+          }
         }
       });
     });
