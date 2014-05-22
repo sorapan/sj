@@ -57,7 +57,7 @@ CREATE TABLE `img` (
   `status` enum('1','2','3') DEFAULT NULL,
   `type` tinytext,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=73 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -66,7 +66,7 @@ CREATE TABLE `img` (
 
 LOCK TABLES `img` WRITE;
 /*!40000 ALTER TABLE `img` DISABLE KEYS */;
-INSERT INTO `img` VALUES (25,'Scan0017.jpg','000008','1','crame'),(26,'Scan0005.jpg','000008','1','drive'),(27,'S103715947[1].jpg','000008','1','img'),(28,'S103715948[1].jpg','000008','1','img'),(29,'S103715950[1].jpg','000008','1','img'),(30,'S103715953[1].jpg','000008','1','img'),(31,'S103715954[1].jpg','000008','1','img'),(32,'S103715957[1].jpg','000008','1','img'),(33,'S103715958[1].jpg','000008','1','img'),(34,'S103715959[1].jpg','000008','1','img'),(35,'S103715960[1].jpg','000008','1','img'),(36,'Scan0017.jpg','000010','1','crame'),(37,'Scan0025.jpg','000010','1','cussy'),(38,'Scan0005.jpg','000010','1','drive'),(39,'Scan0017.jpg','000010','1','grom'),(40,'S103715947[1].jpg','000010','1','img'),(41,'S103715948[1].jpg','000010','1','img'),(42,'S103715950[1].jpg','000010','1','img'),(43,'S103715953[1].jpg','000010','1','img'),(44,'S103715954[1].jpg','000010','1','img'),(45,'S103715957[1].jpg','000010','1','img'),(46,'S103715971[1].jpg','000011','1','img'),(47,'IMG_3666_resize - Copy.JPG','000008','2','img'),(48,'IMG_3668_resize - Copy.JPG','000008','2','img'),(49,'IMG_3668_resize.JPG','000008','2','img'),(50,'IMG_3669_resize.JPG','000008','2','img'),(51,'IMG_3670_resize.JPG','000008','2','img'),(52,'IMG_3671_resize.JPG','000008','2','img'),(53,'IMG_3713_resize.JPG','000008','2','img'),(54,'IMG_3714_resize.JPG','000008','2','img'),(55,'Scan0017.jpg','000011','1','crame'),(56,'Scan0025.jpg','000011','1','drive'),(57,'Scan0005.jpg','000011','1','grom'),(58,'Scan0005.jpg','000012','1','crame'),(59,'Scan0025.jpg','000012','1','cussy'),(60,'Scan0017.jpg','000012','1','drive'),(61,'Scan0005.jpg','000012','1','grom'),(62,'S103715947[1].jpg','000012','1','img'),(63,'S103715948[1].jpg','000012','1','img'),(64,'S103715950[1].jpg','000012','1','img'),(65,'S103715964[1].jpg','000008','3','img'),(66,'S103715960[1].jpg','000008','3','fin'),(67,'Scan0017.jpg','000013','1','crame'),(68,'Scan0017.jpg','000013','1','cussy'),(69,'Scan0025.jpg','000013','1','drive'),(70,'Scan0005.jpg','000013','1','grom'),(71,'100_1705_resize.JPG','000013','1','img'),(72,'100_1706_resize.JPG','000013','1','img');
+INSERT INTO `img` VALUES (36,'Scan0017.jpg','000010','1','crame'),(37,'Scan0025.jpg','000010','1','cussy'),(38,'Scan0005.jpg','000010','1','drive'),(39,'Scan0017.jpg','000010','1','grom'),(40,'S103715947[1].jpg','000010','1','img'),(41,'S103715948[1].jpg','000010','1','img'),(42,'S103715950[1].jpg','000010','1','img'),(43,'S103715953[1].jpg','000010','1','img'),(44,'S103715954[1].jpg','000010','1','img'),(45,'S103715957[1].jpg','000010','1','img'),(46,'S103715971[1].jpg','000011','1','img'),(55,'Scan0017.jpg','000011','1','crame'),(56,'Scan0025.jpg','000011','1','drive'),(57,'Scan0005.jpg','000011','1','grom'),(58,'Scan0005.jpg','000012','1','crame'),(59,'Scan0025.jpg','000012','1','cussy'),(60,'Scan0017.jpg','000012','1','drive'),(61,'Scan0005.jpg','000012','1','grom'),(62,'S103715947[1].jpg','000012','1','img'),(63,'S103715948[1].jpg','000012','1','img'),(64,'S103715950[1].jpg','000012','1','img'),(73,'IMG_3666_resize - Copy.JPG','000012','2','img'),(74,'IMG_3666_resize.JPG','000012','2','img'),(75,'IMG_3667_resize - Copy.JPG','000012','2','img'),(76,'100_1705_resize.JPG','000012','3','img'),(77,'100_1706_resize.JPG','000012','3','img'),(78,'100_1707_resize.JPG','000012','3','img'),(79,'100_1708_resize.JPG','000012','3','img'),(80,'Scan0025.jpg','000012','3','fin');
 /*!40000 ALTER TABLE `img` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -94,7 +94,7 @@ CREATE TABLE `post` (
   `verify` enum('Y','N') DEFAULT 'N',
   `edit_date` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -103,7 +103,7 @@ CREATE TABLE `post` (
 
 LOCK TABLES `post` WRITE;
 /*!40000 ALTER TABLE `post` DISABLE KEYS */;
-INSERT INTO `post` VALUES (8,'000008','กด2531','ซีวิคดำ','ซีวิคดำ','กำลังซ่อม','wwww','2','2','4',1399851599,'3',1399865199,'Y',NULL),(10,'000010','ทท3567','ขาว','หกดหกเเด',NULL,NULL,'2',NULL,NULL,1399853540,'1',1399853540,'N',NULL),(11,'000011','มม6677','หกดหกด','ดดดดด','','','2',NULL,NULL,1399853625,'1',1399854273,'N',NULL),(12,'000012','กก1234','ซีวิค','ฟฟฟ',NULL,NULL,'2',NULL,NULL,1399864795,'1',1399864795,'N',NULL),(13,'000013','11111','11111','1111111',NULL,NULL,'2',NULL,NULL,1399882781,'1',1399882781,'N',NULL);
+INSERT INTO `post` VALUES (10,'000010','ทท3567','ขาว','หกดหกเเด',NULL,NULL,'2',NULL,NULL,1399853540,'1',1399853540,'N',NULL),(11,'000011','มม6677','หกดหกด','ดดดดด','','','2',NULL,NULL,1399853625,'1',1399854273,'N',NULL),(12,'000012','กก1234','ซีวิค','ฟฟฟ','อัพเดทครั้งที่ 2','กกกก','2','2','2',1399864795,'3',1400078580,'Y',NULL);
 /*!40000 ALTER TABLE `post` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -120,7 +120,7 @@ CREATE TABLE `user` (
   `password` text,
   `class` enum('user','admin','owner') DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -129,7 +129,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (2,'rb04','1','owner'),(3,'epic','1','admin'),(4,'qq','qq','user'),(5,'atm','1','admin');
+INSERT INTO `user` VALUES (2,'rb04','1','owner'),(3,'epic','1','admin'),(4,'qq','qq','user'),(5,'atm','1','admin'),(6,'aaq','q','user');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -142,4 +142,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-05-13 19:35:24
+-- Dump completed on 2014-05-22 14:51:57

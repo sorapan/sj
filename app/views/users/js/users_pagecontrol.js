@@ -7,17 +7,15 @@
     $("#click_backup").click(function() {
       return $.ajax({
         url: 'Backupit',
-        success: function(d) {}
-      });
-    });
-    $(' #click_backup').click(function() {
-      return $.ajax({
-        url: ''
+        success: function(d) {
+          alert('Backup สำเร็จ');
+          return self.close();
+        }
       });
     });
     $(' .edit').click(function(e) {
       e.preventDefault();
-      return window.open($(this).attr('href'), 'backup', 'scrollbars=1,height=450,width=500');
+      return window.open($(this).attr('href'), 'edit', 'scrollbars=1,height=450,width=500');
     });
     $(' .del').click(function() {
       if (confirm('คุณต้องการที่จะลบ?')) {

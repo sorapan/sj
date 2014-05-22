@@ -29,7 +29,7 @@ class users_model extends Model{
     function Backup(){
 
         $name = date("Y-m-d-H-i-s");
-        $cd = '"C:\Program Files\MySQL\MySQL Server 5.6\bin\mysqldump" -h'.DB_HOST.' -u'.DB_USER.' -p'.DB_PASS.' '.DB_NAME.' > sql_backup/'.$name.'.sql';
+        $cd = '"'.MYSQL_Bin.'mysqldump" -h'.DB_HOST.' -u'.DB_USER.' -p'.DB_PASS.' '.DB_NAME.' > sql_backup/'.$name.'.sql';
         exec($cd);
 
     }

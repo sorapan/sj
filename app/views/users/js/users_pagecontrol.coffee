@@ -8,14 +8,13 @@ $(document).ready ()->
 		$.ajax
 			url: 'Backupit'
 			success:(d)->
+				alert 'Backup สำเร็จ'
+				self.close()
 
-	$(' #click_backup').click ()->
-		$.ajax
-			url:''
 
 	$(' .edit').click (e)->
 		e.preventDefault()
-		window.open $(this).attr('href'), 'backup', 'scrollbars=1,height=450,width=500' ;
+		window.open $(this).attr('href'), 'edit', 'scrollbars=1,height=450,width=500' ;
 
 	$(' .del').click ()->
 		if confirm 'คุณต้องการที่จะลบ?' then true
