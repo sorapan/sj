@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ed07943-e9f4-4d3d-9bac-d7afdd7b96b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/edit.php" afterPath="$PROJECT_DIR$/app/views/users/edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/css/main.css" afterPath="$PROJECT_DIR$/app/views/index/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/css/main.sass" afterPath="$PROJECT_DIR$/app/views/index/css/main.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/เกี่ยวกับโปรแกรม.txt" afterPath="$PROJECT_DIR$/เกี่ยวกับโปรแกรม.txt" />
     </list>
     <ignored path="patel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,19 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="createuser.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/createuser.php">
+      <file leaf-file-name="main.sass" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/index/css/main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="6" selection-start="427" selection-end="427" vertical-scroll-proportion="-7.740741" vertical-offset="0" max-vertical-offset="323">
+            <state line="58" column="14" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.60638297" vertical-offset="760" max-vertical-offset="3629">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_pagecontrol.coffee" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/users/js/users_pagecontrol.coffee">
+      <file leaf-file-name="style_layout1.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/asset/a_layout1/css/style_layout1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="956" selection-end="956" vertical-scroll-proportion="0.8071066" vertical-offset="378" max-vertical-offset="969">
+            <state line="108" column="16" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0" vertical-offset="1596" max-vertical-offset="3325">
               <folding />
             </state>
           </provider>
@@ -77,15 +77,15 @@
         <option value="$PROJECT_DIR$/app/views/users/index.php" />
         <option value="$PROJECT_DIR$/app/controllers/users.php" />
         <option value="$PROJECT_DIR$/app/views/users/createuser.php" />
-        <option value="$PROJECT_DIR$/app/views/index/css/main.sass" />
         <option value="$PROJECT_DIR$/app/views/index/js/tp_plugin.coffee" />
         <option value="$PROJECT_DIR$/asset/layout/layout1.php" />
         <option value="$PROJECT_DIR$/asset/a_layout1/js/PageControl.js" />
-        <option value="$PROJECT_DIR$/asset/a_layout1/css/style_layout1.css" />
         <option value="$PROJECT_DIR$/app/views/users/js/users_pagecontrol.coffee" />
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/app/models/users_model.php" />
         <option value="$PROJECT_DIR$/app/views/users/edit.php" />
+        <option value="$PROJECT_DIR$/asset/a_layout1/css/style_layout1.css" />
+        <option value="$PROJECT_DIR$/app/views/index/css/main.sass" />
       </list>
     </option>
   </component>
@@ -98,7 +98,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -156,15 +156,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
+              <option name="myItemId" value="asset" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -178,19 +170,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="asset" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="a_layout1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -204,15 +188,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="asset" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
+              <option name="myItemId" value="a_layout1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -252,7 +232,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -270,7 +254,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -355,7 +361,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -363,7 +369,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33409092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21752267" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -553,11 +559,6 @@
         <state line="9" column="30" selection-start="158" selection-end="158" vertical-scroll-proportion="0.30319148" vertical-offset="0" max-vertical-offset="627" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index/css/main.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="27" selection-start="2218" selection-end="2218" vertical-scroll-proportion="0.572695" vertical-offset="1995" max-vertical-offset="3629" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index/js/tp_plugin.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="42" selection-start="472" selection-end="472" vertical-scroll-proportion="0.4856176" vertical-offset="207" max-vertical-offset="1235" />
@@ -583,11 +584,6 @@
         <state line="12" column="50" selection-start="611" selection-end="621" vertical-scroll-proportion="0.40425533" vertical-offset="0" max-vertical-offset="1102" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/asset/a_layout1/css/style_layout1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="8" selection-start="356" selection-end="383" vertical-scroll-proportion="0.8358714" vertical-offset="0" max-vertical-offset="3325" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/asset/a_layout1/js/PageControl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="28" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1007" />
@@ -600,30 +596,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/backup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="564">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="564" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="36" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.20567375" vertical-offset="454" max-vertical-offset="1045">
-          <folding />
-        </state>
+        <state line="30" column="36" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.20567375" vertical-offset="454" max-vertical-offset="1045" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="42" selection-start="2003" selection-end="2003" vertical-scroll-proportion="1.751773" vertical-offset="874" max-vertical-offset="2261">
-          <folding />
-        </state>
+        <state line="98" column="42" selection-start="2003" selection-end="2003" vertical-scroll-proportion="1.751773" vertical-offset="874" max-vertical-offset="2261" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="68" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="475">
-          <folding />
-        </state>
+        <state line="19" column="68" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="475" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/เกี่ยวกับโปรแกรม.txt">
@@ -633,49 +621,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/users_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="27" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0" vertical-offset="589" max-vertical-offset="1729">
-          <folding>
-            <marker date="1400745110403" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1400745110403" expanded="true" signature="-1:-1" placeholder="SELECT usern..user..." />
-            <marker date="1400745110403" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1400745110403" expanded="true" signature="-1:-1" placeholder="UPDATE user ..." />
-            <marker date="1400745110403" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1400745110403" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
+        <state line="31" column="27" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0" vertical-offset="589" max-vertical-offset="1729" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/css/create.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/css/users_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.028764805" vertical-offset="17" max-vertical-offset="779">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.028764805" vertical-offset="17" max-vertical-offset="779" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="59" selection-start="287" selection-end="287" vertical-scroll-proportion="0.16843972" vertical-offset="0" max-vertical-offset="564">
-          <folding />
-        </state>
+        <state line="5" column="59" selection-start="287" selection-end="287" vertical-scroll-proportion="0.16843972" vertical-offset="0" max-vertical-offset="564" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/createuser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="427" selection-end="427" vertical-scroll-proportion="-7.740741" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
+        <state line="11" column="6" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="323" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/js/users_pagecontrol.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="956" selection-end="956" vertical-scroll-proportion="0.8071066" vertical-offset="378" max-vertical-offset="969">
+        <state line="45" column="0" selection-start="956" selection-end="956" vertical-scroll-proportion="1.035533" vertical-offset="243" max-vertical-offset="969" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/a_layout1/css/style_layout1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="16" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0" vertical-offset="1596" max-vertical-offset="3325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index/css/main.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="14" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.60638297" vertical-offset="760" max-vertical-offset="3629">
           <folding />
         </state>
       </provider>
